@@ -101,7 +101,7 @@ export default function Home() {
             {/* Social Icons and Resume Button */}
             <div className="flex flex-wrap gap-5 pt-6 items-center">
               <a 
-                href="https://github.com/yourusername" 
+                href="https://github.com/ayan-goel" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative transition duration-300"
@@ -116,7 +116,7 @@ export default function Home() {
               </a>
               
               <a 
-                href="https://linkedin.com/in/yourusername" 
+                href="https://www.linkedin.com/in/ayan-goel/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="group relative transition duration-300"
@@ -131,7 +131,7 @@ export default function Home() {
               </a>
               
               <a 
-                href="mailto:your.email@example.com" 
+                href="mailto:agoel320@gatech.edu" 
                 className="group relative transition duration-300"
                 aria-label="Email"
               >

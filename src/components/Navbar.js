@@ -34,26 +34,14 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex justify-between h-16 md:h-20">
-          <div className="flex items-center">
-            <Link href="/" className="flex-shrink-0 flex items-center group">
-              <span className={`text-xl font-bold tracking-tight transition-colors duration-300 ${
-                scrolled || pathname !== '/'
-                  ? 'text-primary-600'
-                  : 'text-secondary-800 dark:text-white'
-              } group-hover:text-primary-500`}>
-                Ayan Goel
-              </span>
-            </Link>
-          </div>
-          
-          {/* Desktop menu */}
-          <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
+        <div className="flex justify-center h-16 md:h-20">
+          {/* Desktop menu - now centered */}
+          <div className="hidden md:flex items-center justify-center space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 href={item.path}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 relative ${
+                className={`px-4 py-2 rounded-md text-base font-medium transition-all duration-300 relative ${
                   pathname === item.path
                     ? 'text-primary-600'
                     : `${
@@ -71,8 +59,8 @@ export default function Navbar() {
             ))}
           </div>
           
-          {/* Mobile menu button */}
-          <div className="flex md:hidden items-center">
+          {/* Mobile menu button - centered */}
+          <div className="flex md:hidden items-center justify-center w-full">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`transition-colors duration-300 ${
@@ -116,7 +104,7 @@ export default function Navbar() {
               <Link
                 key={item.path}
                 href={item.path}
-                className={`block px-3 py-2.5 rounded-lg text-base font-medium transition-colors duration-300 ${
+                className={`block px-3 py-2.5 rounded-lg text-base font-medium text-center transition-colors duration-300 ${
                   pathname === item.path
                     ? 'text-primary-600 bg-primary-50 dark:bg-primary-900/20'
                     : 'text-secondary-600 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:text-primary-400 dark:hover:bg-secondary-800/50'
