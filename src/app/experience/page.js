@@ -14,7 +14,7 @@ export default function Experience() {
       description: [
         "Improving the functionality of the FanDuel Sportsbook through full-stack development"
       ],
-      technologies: ["JavaScript", "React", "PostgreSQL", "AWS"]
+      technologies: ["JavaScript", "TypeScript", "React", "React Native"]
     },
     {
       title: "Microsoft",
@@ -28,7 +28,7 @@ export default function Experience() {
         "Leveraging Azure Cognitive Services to develop multi-modal agent capabilities, enabling faster incident resolution",
         "Optimizing ML-based agent interaction by A/B testing of various scenarios, improving automation accuracy",
       ],
-      technologies: ["React", "Node.js", "TypeScript", "Azure"]
+      technologies: ["Azure Cognitive Services", "Microsoft Copilot"]
     },
     {
       title: "United States Soccer Federation",
@@ -42,7 +42,7 @@ export default function Experience() {
         "Established searchable database of 150+ stadiums with filters for capacity, location, and amenities, accelerating venue selection",
         "Created attendance forecasting tool analyzing regional demographics and historical patterns to maximize ticket revenue potential"
       ],
-      technologies: ["JavaScript", "React", "PostgreSQL", "AWS"]
+      technologies: ["Tableau", "Excel", "SQL", "Python"]
     },
     {
       title: "The Medford Research Group",
@@ -56,7 +56,7 @@ export default function Experience() {
         "Conducting 500+ DFT simulations with  ChatDFT LLM to assess reproducibility and assisted scientific computing",
         "Reproducing DFT calculations from 30+ published research papers to evaluate ChatDFT accuracy, enhancing model training"
       ],
-      technologies: ["JavaScript", "React", "PostgreSQL", "AWS"]
+      technologies: ["SPARC", "High Performance Computing", "Python", "Atomic Simulation Environments"]
     },
     {
       title: "Alpha Kappa Psi - Epsilon Sigma",
@@ -70,7 +70,7 @@ export default function Experience() {
         "Implemented full-stack points tracking app allowing members to monitor event participation and progress through dashboard",
         "Led 10-person development team using Agile methodology, implementing sprints and stand-ups that accelerated feature delivery",
       ],
-      technologies: ["JavaScript", "React", "PostgreSQL", "AWS"]
+      technologies: ["JavaScript", "React", "MongoDB", "AWS", "Firebase", "Node.js", "TensorFlow"]
     },
     {
       title: "Trading @ Georgia Tech",
@@ -84,7 +84,7 @@ export default function Experience() {
         "Created 8 dynamic React data visualizations including real-time stock movements and interactive candlestick charts",
         "Architected WebSocket integration for real-time price updates, trade notifications, order placements, and portfolio tracking"
       ],
-      technologies: ["JavaScript", "React", "PostgreSQL", "AWS"]
+      technologies: ["JavaScript", "React", "Node.js", "Express.js", "Socket.io"]
     },
     {
       title: "LifeCycle Building Center",
@@ -98,7 +98,7 @@ export default function Experience() {
         "Executed SQL-based transaction analysis across 2.3M+ records, uncovering 5 key market segments driving revenue",
         "Developed customized matplotlib visualizations to communicate complex trend analyses to non-technical stakeholders"
       ],
-      technologies: ["JavaScript", "React", "PostgreSQL", "AWS"]
+      technologies: ["Python", "Scikit-learn", "Pandas", "NumPy", "SQL", "Google BigQuery", "Matplotlib"]
     },
     {
       title: "FIRST Tech Challenge Team 14116",
@@ -112,7 +112,7 @@ export default function Experience() {
         "Utilized a PID controller and RoadRunner motion profiling libraries to achieve a 90% autonomous success rate",
         "Mentored fellow team programmers and set up Git for the team to ensure smooth collaboration and source control"
       ],
-      technologies: ["JavaScript", "React", "PostgreSQL", "AWS"]
+      technologies: ["Java", "Python", "PID", "OpenCV", "RoadRunner", "TensorFlow"]
     }
   ];
 
@@ -148,8 +148,11 @@ export default function Experience() {
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-16 md:py-24">
       <div className="mb-16 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gradient bg-gradient-to-r from-secondary-800 to-secondary-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">Experience</h1>
-        <p className="text-lg text-secondary-600 dark:text-gray-300 max-w-2xl mx-auto">Follow my professional journey and educational background.</p>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gradient bg-gradient-to-r from-secondary-800 to-secondary-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent relative inline-block">
+          Experience
+          <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-primary-500 to-blue-400 transform origin-left"></span>
+        </h1>
+        <p className="text-lg text-secondary-600 dark:text-gray-300 max-w-2xl mx-auto mt-4 mb-8">Follow my professional journey and educational background.</p>
       </div>
       
       {/* Work Experience */}
@@ -345,9 +348,9 @@ export default function Experience() {
       <div className="text-center mt-16">
         <Link 
           href="/" 
-          className="inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-500 transition-colors duration-300 text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg font-medium"
+          className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-400 transition-all duration-300 text-white px-8 py-3 rounded-full shadow-md hover:shadow-lg font-medium group"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transition-transform duration-300 group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
           Back to Home
