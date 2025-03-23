@@ -187,7 +187,7 @@ export default function Home() {
                   <div className="h-full w-full flex items-center justify-center">
                     <span className="text-lg font-light text-secondary-400 dark:text-secondary-300">Profile Photo</span>
                     <Image 
-                      src="/images/pfp2.jpg" 
+                      src="/images/pfp.jpg" 
                       alt="Ayan Goel" 
                       fill
                       sizes="(max-width: 768px) 288px, 384px"
