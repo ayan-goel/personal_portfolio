@@ -48,7 +48,7 @@ export default function Projects() {
     {
       title: "Personal Portfolio",
       description: "This very website you are on right now.",
-      technologies: ["React", "SVG", "D3.js"],
+      technologies: ["Next.js", "Tailwind CSS", "JavaScript"],
       githubLink: "https://github.com/ayan-goel/personal_portfolio"
     }
   ];
