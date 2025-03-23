@@ -85,16 +85,16 @@ export default function Home() {
           <div className="w-full md:w-3/5 order-2 md:order-1 space-y-8">
             <div className="space-y-4 animate-fade-in">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.8] pb-5">
-                Hi, I'm <span className="text-gradient bg-gradient-to-r from-primary-600 via-blue-500 to-primary-400 bg-clip-text text-transparent inline-block pb-2">Ayan.</span>
+                Hi, I&#39;m <span className="text-gradient bg-gradient-to-r from-primary-600 via-blue-500 to-primary-400 bg-clip-text text-transparent inline-block pb-2">Ayan.</span>
               </h1>
               
               <h2 className="text-2xl md:text-3xl font-medium text-secondary-700 dark:text-gray-200 mt-6">
-                I'm a <TypingAnimation texts={roles} />
+                I&#39;m a <TypingAnimation texts={roles} />
               </h2>
             </div>
             
             <p className="text-lg md:text-xl text-secondary-600 dark:text-gray-300 max-w-xl leading-relaxed font-light animate-fade-in animate-delay-200">
-              I'm passionate about creating innovative solutions through elegant code. With a strong foundation in computer science
+              I&#39;m passionate about creating innovative solutions through elegant code. With a strong foundation in computer science
               and a deep curiosity for emerging technologies, I build applications that solve real problems.
             </p>
             
@@ -225,13 +225,13 @@ export default function Home() {
                   <div className="p-5 md:p-6">
                     <div className="prose prose-lg dark:prose-invert max-w-none">
                       <p className="text-lg text-secondary-600 dark:text-gray-300 mb-6 leading-relaxed">
-                        I'm a junior computer science undergraduate at Georgia Tech with a strong foundation in fundamentals like data structures and algorithms 
+                        I&#39;m a junior computer science undergraduate at Georgia Tech with a strong foundation in fundamentals like data structures and algorithms 
                         and hands-on experience in full-stack development, AI integrations, and data-driven solutions. 
-                        I've contributed to a wide variety of projects and used tools in frontend, backend, and DevOps, making me versatile for any need.
+                        I&#39;ve contributed to a wide variety of projects and used tools in frontend, backend, and DevOps, making me versatile for any need.
                       </p>
                       
                       <p className="text-lg text-secondary-600 dark:text-gray-300 mb-6 leading-relaxed">
-                      Through internships at FanDuel and Microsoft and various other involvements at Georgia Tech, I've architected scalable systems, 
+                      Through internships at FanDuel and Microsoft and various other involvements at Georgia Tech, I&#39;ve architected scalable systems, 
                       optimized workflows, and driven impactful results, while working with diverse teams in professional settings.
                       I enjoy tackling complex problems with elegant, 
                       efficient solutions and am always seeking ways to continue growing and building technology
@@ -572,9 +572,9 @@ export default function Home() {
                 <svg className="w-16 h-16 mx-auto mb-8 text-primary-600 dark:text-primary-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
                 </svg>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gradient bg-gradient-to-r from-secondary-800 to-secondary-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent leading-tight tracking-tight pb-2">Let's Work Together.</h2>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gradient bg-gradient-to-r from-secondary-800 to-secondary-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent leading-tight tracking-tight pb-2">Let&#39;s Work Together.</h2>
                 <p className="text-lg md:text-xl text-secondary-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
-                  I'm currently seeking software engineering internship positions.
+                  I&#39;m currently seeking software engineering internship positions.
                   View my work and/or contact me to discuss how I can contribute to your team.
                 </p>
                 <div className="flex flex-wrap justify-center gap-6">

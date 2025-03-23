@@ -327,7 +327,7 @@ export default function Experience() {
                 <h3 className="text-xl font-bold mb-4 text-secondary-800 dark:text-white">Awards</h3>
                 <ul className="list-disc list-inside space-y-3 text-secondary-600 dark:text-gray-300">
                   <li className="pl-1">
-                    <span className="text-base font-medium">Faculty Honors/Dean's List: Fall 2024</span>
+                    <span className="text-base font-medium">Faculty Honors/Dean&#39;s List: Fall 2024</span>
                   </li>
                   <li className="pl-1">
                     <span className="text-base font-medium">Valedictorian Award</span>
@@ -339,7 +339,7 @@ export default function Experience() {
                     <span className="text-base font-medium">Eagle Scout Award</span>
                   </li>
                   <li className="pl-1">
-                    <span className="text-base font-medium">FIRST Tech Challenge Dean's List Finalist</span>
+                    <span className="text-base font-medium">FIRST Tech Challenge Dean&#39;s List Finalist</span>
                   </li>
                 </ul>
               </div>
