@@ -37,7 +37,7 @@ export default function Projects() {
       demoLink: "https://devpost.com/software/medisenseai"
     },
     {
-      title: "Premier Leauge Betting Assistant",
+      title: "Premier League Betting Assistant",
       description: "Created dashboard to help Premier League bettors make more informed decisions. Applied Selenium to webscrape data from DraftKings, Bet365, and Pinnacle to compare real-time PL match odds and find arbitrage opportunities. Calculated the percentage chance of bets to hit with scraped data and used D3.js to visualize the data.",
       technologies: ["Python", "Selenium", "D3.js", "NumPy", "Pandas"],
       githubLink: "https://github.com/ayan-goel/soccer-betting-analysis"
