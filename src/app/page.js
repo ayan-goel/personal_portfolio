@@ -65,7 +65,7 @@ export default function Home() {
 	  "Machine Learning Engineer",
 	  "Data Scientist",
 	  "DevOps Practitioner",
-    "Systems Developer"
+    "Systems Designer"
   ];
   
   const sectionRefs = {
@@ -83,7 +83,7 @@ export default function Home() {
       <section className="pt-24 md:pt-40 lg:pt-44 pb-16 md:pb-24 px-4 md:px-6 min-h-[100vh] flex items-center">
         <div className="flex flex-col md:flex-row md:items-center gap-16 md:gap-20 lg:gap-24">
           <div className="w-full md:w-3/5 order-2 md:order-1 space-y-8">
-            <div className="space-y-4">
+            <div className="space-y-4 animate-fade-in">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.8] pb-5">
                 Hi, I'm <span className="text-gradient bg-gradient-to-r from-primary-600 via-blue-500 to-primary-400 bg-clip-text text-transparent inline-block pb-2">Ayan.</span>
               </h1>
@@ -93,13 +93,13 @@ export default function Home() {
               </h2>
             </div>
             
-            <p className="text-lg md:text-xl text-secondary-600 dark:text-gray-300 max-w-xl leading-relaxed font-light">
+            <p className="text-lg md:text-xl text-secondary-600 dark:text-gray-300 max-w-xl leading-relaxed font-light animate-fade-in animate-delay-200">
               I'm passionate about creating innovative solutions through elegant code. With a strong foundation in computer science
               and a deep curiosity for emerging technologies, I build applications that solve real problems.
             </p>
             
             {/* Social Icons and Resume Button */}
-            <div className="flex flex-wrap gap-5 pt-6 items-center">
+            <div className="flex flex-wrap gap-5 pt-6 items-center animate-fade-in animate-delay-400">
               <a 
                 href="https://github.com/ayan-goel" 
                 target="_blank" 
@@ -145,7 +145,7 @@ export default function Home() {
               
               <div className="pl-2">
                 <a 
-                  href="/your-resume.pdf" 
+                  href="/ayan_goel_resume.pdf" 
                   download
                   className="relative inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-500 transition-colors duration-300 text-white px-8 py-3.5 rounded-full shadow-md hover:shadow-lg z-10 font-medium"
                 >
@@ -168,39 +168,34 @@ export default function Home() {
             </div>
           </div>
           
-          <div className="w-full md:w-2/5 order-1 md:order-2 flex justify-center mb-8 md:mb-0">
+          <div className="w-full md:w-2/5 order-1 md:order-2 flex justify-center mb-8 md:mb-0 animate-fade-in animate-delay-300">
             <div className="relative h-72 w-72 md:h-96 md:w-96">
-              {/* Decorative elements */}
-              <div className="absolute -z-10 rounded-full bg-gradient-to-br from-primary-400/30 to-blue-300/30 dark:from-primary-700/30 dark:to-blue-600/30 h-full w-full blur-3xl"></div>
-              <div className="absolute -z-10 -bottom-8 -right-4 rounded-full bg-gradient-to-br from-pink-400/20 to-purple-300/20 dark:from-pink-700/20 dark:to-purple-600/20 h-32 w-32 md:h-48 md:w-48 opacity-80 blur-2xl"></div>
+              {/* Enhanced blue glow behind image */}
+              <div className="absolute -z-10 -inset-1 rounded-full bg-gradient-to-br from-primary-500/70 to-blue-400/70 dark:from-primary-600/80 dark:to-blue-500/80 blur-3xl"></div>
               
-              {/* Profile picture container */}
-              <div className="relative">
-                {/* Frame */}
-                <div className="absolute inset-0 rounded-[2.5rem] border-8 md:border-[12px] border-white dark:border-secondary-900 shadow-2xl overflow-hidden backdrop-blur-sm">
+              {/* Second glow layer for depth */}
+              <div className="absolute -z-10 -inset-10 rounded-full bg-gradient-to-tr from-blue-500/40 to-primary-400/40 dark:from-blue-600/50 dark:to-primary-500/50 blur-2xl"></div>
+              
+              {/* Decorative elements */}
+              <div className="absolute -z-5 -top-6 -left-6 w-32 h-32 bg-blue-500/15 dark:bg-blue-400/15 rounded-full rotate-12 blur-xl"></div>
+              <div className="absolute -z-5 -bottom-6 -right-6 w-40 h-40 bg-primary-500/15 dark:bg-primary-400/15 rounded-full -rotate-12 blur-xl"></div>
+              
+              {/* Profile picture container - removed border and adjusted shadow */}
+              <div className="relative h-full w-full">
+                <div className="absolute inset-0 rounded-full overflow-hidden">
                   {/* Actual picture */}
-                  <div className="h-full w-full bg-gradient-to-br from-gray-100 to-gray-200 dark:from-secondary-800 dark:to-secondary-700 flex items-center justify-center">
+                  <div className="h-full w-full flex items-center justify-center">
                     <span className="text-lg font-light text-secondary-400 dark:text-secondary-300">Profile Photo</span>
                     <Image 
-                      src="/images/pfp.jpg" 
+                      src="/images/pfp2.jpg" 
                       alt="Ayan Goel" 
                       fill
                       sizes="(max-width: 768px) 288px, 384px"
                       priority
                       style={{ objectFit: 'cover' }}
-                      className="saturate-[1.1]"
+                      className="rounded-full"
                     />
                   </div>
-                </div>
-                
-                {/* Highlighted frame corners for depth */}
-                <div className="absolute -top-2 -left-2 w-16 h-16 border-t-8 border-l-8 md:border-t-[12px] md:border-l-[12px] border-white dark:border-secondary-900 rounded-tl-3xl"></div>
-                <div className="absolute -top-2 -right-2 w-16 h-16 border-t-8 border-r-8 md:border-t-[12px] md:border-r-[12px] border-white dark:border-secondary-900 rounded-tr-3xl"></div>
-                <div className="absolute -bottom-2 -left-2 w-16 h-16 border-b-8 border-l-8 md:border-b-[12px] md:border-l-[12px] border-white dark:border-secondary-900 rounded-bl-3xl"></div>
-                <div className="absolute -bottom-2 -right-2 w-16 h-16 border-b-8 border-r-8 md:border-b-[12px] md:border-r-[12px] border-white dark:border-secondary-900 rounded-br-3xl"></div>
-                
-                {/* Image container */}
-                <div className="h-72 w-72 md:h-96 md:w-96 rounded-[2rem] overflow-hidden bg-gradient-to-br from-primary-50 to-blue-50 dark:from-primary-900/40 dark:to-blue-900/40 shadow-xl animate-float">
                 </div>
               </div>
             </div>
@@ -215,7 +210,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
             {/* About Me - Left Column */}
             <div className="w-full lg:w-1/2" ref={sectionRefs.about} id="about">
-              <div className="mb-10">
+              <div className="mb-10 animate-fade-in" style={{ animationDelay: '0.5s' }}>
                 <div className="inline-block">
                   <h2 className="relative text-4xl md:text-5xl font-bold text-gradient bg-gradient-to-r from-secondary-800 to-secondary-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
                     About Me
@@ -250,7 +245,7 @@ export default function Home() {
             
             {/* Skills - Right Column */}
             <div className="w-full lg:w-1/2" ref={sectionRefs.skills} id="skills">
-              <div className="mb-10">
+              <div className="mb-10 animate-fade-in" style={{ animationDelay: '0.7s' }}>
                 <div className="inline-block">
                   <h2 className="relative text-4xl md:text-5xl font-bold text-gradient bg-gradient-to-r from-secondary-800 to-secondary-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
                     Top Skills

@@ -28,7 +28,7 @@ export default function Experience() {
         "Leveraging Azure Cognitive Services to develop multi-modal agent capabilities, enabling faster incident resolution",
         "Optimizing ML-based agent interaction by A/B testing of various scenarios, improving automation accuracy",
       ],
-      technologies: ["Azure Cognitive Services", "Microsoft Copilot"]
+      technologies: ["Azure Cognitive Services", "Microsoft Copilot", "System Design", "AI Agents"]
     },
     {
       title: "United States Soccer Federation",
@@ -147,7 +147,7 @@ export default function Experience() {
 
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-16 md:py-24">
-      <div className="mb-16 text-center">
+      <div className="mb-16 text-center animate-fade-in">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gradient bg-gradient-to-r from-secondary-800 to-secondary-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent relative inline-block">
           Experience
           <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-primary-500 to-blue-400 transform origin-left"></span>
@@ -157,14 +157,18 @@ export default function Experience() {
       
       {/* Work Experience */}
       <section className="mb-20">
-        <div className="flex items-center mb-10">
+        <div className="flex items-center mb-10 animate-fade-in animate-delay-200">
           <h2 className="text-3xl font-bold text-secondary-800 dark:text-white">Work Experience</h2>
           <div className="h-0.5 flex-grow ml-6 bg-gradient-to-r from-primary-500/60 to-blue-400/60"></div>
         </div>
         
         <div className="space-y-10">
           {experiences.map((exp, index) => (
-            <div key={index} className="group relative transition duration-500">
+            <div 
+              key={index} 
+              className="group relative transition duration-500 animate-fade-in"
+              style={{ animationDelay: `${(index+3) * 0.1}s` }}
+            >
               <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500 to-blue-400 dark:from-primary-600 dark:to-blue-500 rounded-2xl opacity-50 group-hover:opacity-80 blur-sm transition duration-500"></div>
               <div className="relative bg-white/90 dark:bg-secondary-800/90 backdrop-blur-sm rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:translate-y-[-5px] border border-gray-100 dark:border-secondary-700">
                 <div className="p-6 md:p-8">
@@ -230,7 +234,7 @@ export default function Experience() {
       </section>
       
       {/* Education */}
-      <section className="mb-20">
+      <section className="mb-20 animate-fade-in" style={{ animationDelay: '1s' }}>
         <div className="flex items-center mb-10">
           <h2 className="text-3xl font-bold text-secondary-800 dark:text-white">Education</h2>
           <div className="h-0.5 flex-grow ml-6 bg-gradient-to-r from-primary-500/60 to-blue-400/60"></div>
@@ -238,7 +242,7 @@ export default function Experience() {
         
         <div className="space-y-10">
           {education.map((edu, index) => (
-            <div key={index} className="group relative transition duration-500">
+            <div key={index} className="group relative transition duration-500 animate-fade-in" style={{ animationDelay: `${(index+11) * 0.1}s` }}>
               <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500 to-blue-400 dark:from-primary-600 dark:to-blue-500 rounded-2xl opacity-50 group-hover:opacity-80 blur-sm transition duration-500"></div>
               <div className="relative bg-white/90 dark:bg-secondary-800/90 backdrop-blur-sm rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:translate-y-[-5px] border border-gray-100 dark:border-secondary-700">
                 <div className="p-6 md:p-8">
@@ -293,7 +297,7 @@ export default function Experience() {
       </section>
       
       {/* Skills */}
-      <section className="mb-16">
+      <section className="mb-16 animate-fade-in" style={{ animationDelay: '1.3s' }}>
         <div className="flex items-center mb-10">
           <h2 className="text-3xl font-bold text-secondary-800 dark:text-white">Skills & Awards</h2>
           <div className="h-0.5 flex-grow ml-6 bg-gradient-to-r from-primary-500/60 to-blue-400/60"></div>
@@ -345,7 +349,7 @@ export default function Experience() {
       </section>
 
       {/* Back to Home Button */}
-      <div className="text-center mt-16">
+      <div className="text-center mt-16 animate-fade-in animate-delay-800">
         <Link 
           href="/" 
           className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-400 transition-all duration-300 text-white px-8 py-3 rounded-full shadow-md hover:shadow-lg font-medium group"
