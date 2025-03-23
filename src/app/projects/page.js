@@ -7,8 +7,9 @@ export default function Projects() {
       title: "Monty.ai",
       description: "Application that allows users to develop their own trading strategies and backtest on past stock data and monte carlo simulations while receiving LLM insights to improve their strategies.",
       technologies: ["Python", "JavaScript", "React", "FastAPI", "Polygon API", "yFinance", "Gemini API"],
-      image: "/images/projects/monty.png",
-      githubLink: "https://github.com/ayan-goel/monty"
+      image: "/images/projects/monty2.png",
+      githubLink: "https://github.com/ayan-goel/monty",
+      demoLink: "https://devpost.com/software/monty-0h2xbj"
     },
     {
       title: "Trading Platform",
@@ -22,7 +23,8 @@ export default function Projects() {
       description: "A web application that allows users to practice their public speaking skills by recording and analyzing their speech and offering LLM-based feedback to improve their performance.",
       technologies: ["JavaScript", "Python", "Next.js", "Flask", "OpenCV", "TensorFlow", "MongoDB", "NVIDIA NIM"],
       image: "/images/projects/speakeasy.png",
-      githubLink: "https://github.com/ayan-goel/SpeakEasy"
+      githubLink: "https://github.com/ayan-goel/SpeakEasy",
+      demoLink: "https://devpost.com/software/speakeasy-p960yl"
     }
   ];
 
@@ -31,7 +33,8 @@ export default function Projects() {
       title: "MediSense AI",
       description: "Engineered a full-stack web application that helps patients easily find diagnoses for conditions based on symptoms. Tuned Google BERT LLM predicting prognoses with 91% accuracy across 150+ trials with 50,000+ medical reports. Trained Logistic Regression & Random Forest models assessing risk factors with 83% accuracy on 560,000+ rows.",
       technologies: ["Python", "Scikit-learn", "Google BERT LLM", "NumPy", "Pandas", "Streamlit"],
-      githubLink: "https://github.com/ayan-goel/HackGT11"
+      githubLink: "https://github.com/ayan-goel/HackGT11",
+      demoLink: "https://devpost.com/software/medisenseai"
     },
     {
       title: "Premier Leauge Betting Assistant",
@@ -119,6 +122,20 @@ export default function Projects() {
                     </svg>
                     View Code
                   </a>
+                  {project.demoLink && (
+                    <a 
+                      href={project.demoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-500 text-white dark:bg-primary-600 dark:text-white text-sm rounded-full shadow-sm hover:shadow-md border border-primary-400 dark:border-primary-500 hover:bg-primary-600 dark:hover:bg-primary-700 transition-all duration-300 font-medium"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" className="flex-shrink-0">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                      </svg>
+                      Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -155,17 +172,33 @@ export default function Projects() {
                           </span>
                         ))}
                       </div>
-                      <a 
-                        href={project.githubLink} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 mt-3 px-4 py-2 bg-gray-100 text-secondary-700 dark:bg-secondary-700 dark:text-white text-sm rounded-full shadow-sm hover:shadow-md border border-gray-200 dark:border-secondary-600 hover:bg-gray-200 dark:hover:bg-secondary-600 transition-all duration-300 font-medium"
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" className="flex-shrink-0">
-                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                        View Code
-                      </a>
+                      <div className="flex flex-wrap gap-3 mt-3">
+                        <a 
+                          href={project.githubLink} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 text-secondary-700 dark:bg-secondary-700 dark:text-white text-sm rounded-full shadow-sm hover:shadow-md border border-gray-200 dark:border-secondary-600 hover:bg-gray-200 dark:hover:bg-secondary-600 transition-all duration-300 font-medium"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" className="flex-shrink-0">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                          </svg>
+                          View Code
+                        </a>
+                        {project.demoLink && (
+                          <a 
+                            href={project.demoLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 bg-primary-500 text-white dark:bg-primary-600 dark:text-white text-sm rounded-full shadow-sm hover:shadow-md border border-primary-400 dark:border-primary-500 hover:bg-primary-600 dark:hover:bg-primary-700 transition-all duration-300 font-medium"
+                          >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" className="flex-shrink-0">
+                              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                              <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/>
+                            </svg>
+                            Demo
+                          </a>
+                        )}
+                      </div>
                     </div>
                   </li>
                 ))}
