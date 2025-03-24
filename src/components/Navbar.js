@@ -29,7 +29,7 @@ export default function Navbar() {
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/80 dark:bg-secondary-900/80 backdrop-blur-md shadow-sm' 
+          ? 'bg-white/80 backdrop-blur-md shadow-sm' 
           : 'bg-transparent'
       }`}
     >
@@ -46,8 +46,8 @@ export default function Navbar() {
                     ? 'text-primary-600'
                     : `${
                         scrolled || pathname !== '/'
-                          ? 'text-secondary-600 hover:text-primary-600 dark:text-gray-200 dark:hover:text-primary-400'
-                          : 'text-secondary-800 hover:text-primary-600 dark:text-white dark:hover:text-primary-400'
+                          ? 'text-secondary-600 hover:text-primary-600'
+                          : 'text-secondary-800 hover:text-primary-600'
                       }`
                 }`}
               >
@@ -65,8 +65,8 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`transition-colors duration-300 ${
                 scrolled || pathname !== '/'
-                  ? 'text-secondary-600 dark:text-gray-200'
-                  : 'text-secondary-800 dark:text-white'
+                  ? 'text-secondary-600'
+                  : 'text-secondary-800'
               } hover:text-primary-600 focus:outline-none`}
             >
               <svg
@@ -98,7 +98,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white/95 dark:bg-secondary-900/95 backdrop-blur-sm shadow-lg border-b border-gray-200 dark:border-gray-800">
+        <div className="md:hidden bg-white/95 backdrop-blur-sm shadow-lg border-b border-gray-200">
           <div className="px-3 pt-3 pb-4 space-y-1">
             {navItems.map((item) => (
               <Link
@@ -106,8 +106,8 @@ export default function Navbar() {
                 href={item.path}
                 className={`block px-3 py-2.5 rounded-lg text-base font-medium text-center transition-colors duration-300 ${
                   pathname === item.path
-                    ? 'text-primary-600 bg-primary-50 dark:bg-primary-900/20'
-                    : 'text-secondary-600 hover:text-primary-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:text-primary-400 dark:hover:bg-secondary-800/50'
+                    ? 'text-primary-600 bg-primary-50'
+                    : 'text-secondary-600 hover:text-primary-600 hover:bg-gray-50'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >

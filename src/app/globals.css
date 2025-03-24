@@ -19,14 +19,6 @@
   --font-source-code-pro: 'Source Code Pro', monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 17, 24, 39;
-    --background-end-rgb: 13, 18, 30;
-  }
-}
-
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
