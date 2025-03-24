@@ -101,7 +101,7 @@ export default function Projects() {
                   {project.technologies.map((tech, idx) => (
                     <span 
                       key={idx}
-                      className="px-3 py-1 bg-primary-50 text-primary-700 text-sm rounded-full border border-primary-100 hover:bg-primary-100 transition-colors duration-300"
+                      className="px-3 py-1.5 bg-primary-50 text-primary-700 text-sm rounded-full border border-primary-200 shadow-sm hover:shadow hover:bg-primary-100 hover:border-primary-300 hover:-translate-y-0.5 transition-all duration-300 font-medium"
                     >
                       {tech}
                     </span>
@@ -166,7 +166,7 @@ export default function Projects() {
                         {project.technologies.map((tech, idx) => (
                           <span 
                             key={idx}
-                            className="px-3 py-1 bg-primary-50 text-primary-700 text-sm rounded-full border border-primary-100 hover:bg-primary-100 transition-colors duration-300"
+                            className="px-3 py-1.5 bg-primary-50 text-primary-700 text-sm rounded-full border border-primary-200 shadow-sm hover:shadow hover:bg-primary-100 hover:border-primary-300 hover:-translate-y-0.5 transition-all duration-300 font-medium"
                           >
                             {tech}
                           </span>
