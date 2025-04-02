@@ -145,7 +145,7 @@ export default function Home() {
               
               <div className="pl-2">
                 <a 
-                  href="/ayan_goel_resume.pdf" 
+                  href="/ayan_goel.pdf" 
                   download
                   className="relative inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-500 transition-colors duration-300 text-white px-8 py-3.5 rounded-full shadow-md hover:shadow-lg z-10 font-medium"
                 >
