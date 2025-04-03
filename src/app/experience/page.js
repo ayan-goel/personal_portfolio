@@ -24,11 +24,11 @@ export default function Experience() {
       logo: "/images/companies/microsoft.webp",
       description: [
         "Building multi-agent Copilot system reducing non-critical incident resolution time, saving $360 per incident",
-        "Designing asynchronous agent workflow pipeline with 99\% reliability, decreasing intervention requirement",
+        "Designing asynchronous agent workflow pipeline using Autogen and Semantic Kernel for continuous data transfer",
         "Leveraging Azure Cognitive Services to develop multi-modal agent capabilities, enabling faster incident resolution",
         "Optimizing ML-based agent interaction by A/B testing of various scenarios, improving automation accuracy",
       ],
-      technologies: ["Azure Cognitive Services", "Microsoft Copilot", "System Design", "AI Agents"]
+      technologies: ["Azure Cognitive Services", "Microsoft Copilot", "System Design", "AI Agents", "Autogen", "Semantic Kernel"]
     },
     {
       title: "United States Soccer Federation",
@@ -310,12 +310,12 @@ export default function Experience() {
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-4 text-secondary-800 dark:text-white">Technical Skills</h3>
                 <div className="flex flex-wrap gap-2">
-                  {['Java', 'Python', 'C/C++', 'SQL/MySQL', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Rust', 'MATLAB', 'Assembly', 'Node.js', 
-                  'React.js', 'React Native', 'Angular', 'Next.js', 'D3.js', 'Express.js', 'Flask', 'FastAPI', 'Django', 
-                  'Bootstrap', 'Selenium', 'Scikit-learn', 'PyTorch', 'TensorFlow', 'MongoDB', 'Firebase', 'AWS', 'Socket.io', 'Docker', 'Kubernetes'].map((skill, idx) => (
+                  {['Java', 'Python', 'C/C++', 'SQL', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Rust', 'MATLAB', 'Assembly', 'Node.js', 
+                  'React.js', 'React Native', 'Angular', 'Next.js', 'D3.js', 'Express.js', 'Flask', 'FastAPI', 'Django', 'REST APIs',
+                  'Bootstrap', 'Selenium', 'Scikit-learn', 'PyTorch', 'TensorFlow','PostgreSQL', 'MySQL', 'MongoDB', 'Firebase', 'AWS Lambda', 'AWS S3', 'AWS EC2', 'Docker', 'Kubernetes'].map((skill, idx) => (
                     <span 
                       key={idx}
-                      className="px-3 py-1.5 bg-gray-100 dark:bg-secondary-700 text-secondary-800 dark:text-gray-200 text-sm rounded-full border border-gray-200 dark:border-secondary-600"
+                      className="px-3 py-1.5 bg-primary-50 text-primary-700 text-sm rounded-full border border-primary-200 shadow-sm hover:shadow hover:bg-primary-100 hover:border-primary-300 hover:-translate-y-0.5 transition-all duration-300 font-medium"
                     >
                       {skill}
                     </span>
