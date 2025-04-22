@@ -23,10 +23,10 @@ export default function Experience() {
       period: "February 2025 - May 2025",
       logo: "/images/companies/microsoft.webp",
       description: [
-        "Building multi-agent Copilot system reducing non-critical incident resolution time, saving $360 per incident",
+        "Building multi-agent Copilot system reducing non-critical incident resolution time by 50%, saving $360 per incident",
         "Designing asynchronous agent workflow pipeline using Autogen and Semantic Kernel for continuous data transfer",
-        "Leveraging Azure Cognitive Services to develop multi-modal agent capabilities, enabling faster incident resolution",
-        "Optimizing ML-based agent interaction by A/B testing of various scenarios, improving automation accuracy",
+        "Optimized agent interaction by testing of 35+ profiles (goal oriented, rule based, ML-based, etc.) for intelligent resolution",
+        "Wrote 25+ product specs and agent interaction protocols enabling integration between agents and external support APIs",
       ],
       technologies: ["Azure Cognitive Services", "Microsoft Copilot", "System Design", "AI Agents", "Autogen", "Semantic Kernel"]
     },

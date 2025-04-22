@@ -19,16 +19,22 @@ export default function Projects() {
       githubLink: "https://github.com/ayan-goel/Trading-Competition"
     },
     {
-      title: "SpeakEasy",
-      description: "A web application that allows users to practice their public speaking skills by recording and analyzing their speech and offering LLM-based feedback to improve their performance.",
-      technologies: ["JavaScript", "Python", "Next.js", "Flask", "OpenCV", "TensorFlow", "MongoDB", "NVIDIA NIM"],
-      image: "/images/projects/speakeasy.png",
-      githubLink: "https://github.com/ayan-goel/SpeakEasy",
-      demoLink: "https://devpost.com/software/speakeasy-p960yl"
+      title: "Power Travel",
+      description: "A web application that allows users to create AI-generated travel itineraries and manage custom travel itineraries. Includes map integration, weather updates, hidden gems, and more.",
+      technologies: ["JavaScript", "Python", "Django", "HTML/CSS", "MySQL", "OpenAI API", "Google Maps API"],
+      image: "/images/projects/powertravel.png",
+      githubLink: "https://github.com/ayan-goel/travelApp",
     }
   ];
 
   const additionalProjects = [
+    {
+      title: "SpeakEasy",
+      description: "A web application that allows users to practice their public speaking skills by recording and analyzing their speech and offering LLM-based feedback to improve their performance.",
+      technologies: ["JavaScript", "Python", "Next.js", "Flask", "OpenCV", "TensorFlow", "MongoDB", "NVIDIA NIM"],
+      githubLink: "https://github.com/ayan-goel/SpeakEasy",
+      demoLink: "https://devpost.com/software/speakeasy-p960yl"
+    },
     {
       title: "MediSense AI",
       description: "Engineered a full-stack web application that helps patients easily find diagnoses for conditions based on symptoms. Tuned Google BERT LLM predicting prognoses with 91% accuracy across 150+ trials with 50,000+ medical reports. Trained Logistic Regression & Random Forest models assessing risk factors with 83% accuracy on 560,000+ rows.",
