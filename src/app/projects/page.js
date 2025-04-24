@@ -19,15 +19,22 @@ export default function Projects() {
       githubLink: "https://github.com/ayan-goel/Trading-Competition"
     },
     {
-      title: "Power Travel",
-      description: "A web application that allows users to create AI-generated travel itineraries and manage custom travel itineraries. Includes map integration, weather updates, hidden gems, and more.",
-      technologies: ["JavaScript", "Python", "Django", "HTML/CSS", "MySQL", "OpenAI API", "Google Maps API"],
-      image: "/images/projects/powertravel.png",
-      githubLink: "https://github.com/ayan-goel/travelApp",
+      title: "Resume Hub",
+      description: "Resume search tool for AKPsi Business Fraternity that parses resumes with AI and allows users to find those with similar major, year, skills, and experience. Supports batch uploading of 100+ resumes at once.",
+      technologies: ["Next.js", "Node.js", "Express.js", "PostgreSQL", "AWS S3", "AWS EC2"],
+      image: "/images/projects/resume_database.png",
+      githubLink: "https://github.com/ayan-goel/resume_app",
+      demoLink: "https://gtakpsi-resume-app.vercel.app/"
     }
   ];
 
   const additionalProjects = [
+    {
+      title: "Power Travel",
+      description: "A web application that allows users to create AI-generated travel itineraries and manage custom travel itineraries. Includes map integration, weather updates, hidden gems, and more.",
+      technologies: ["JavaScript", "Python", "Django", "HTML/CSS", "MySQL", "OpenAI API", "Google Maps API"],
+      githubLink: "https://github.com/ayan-goel/travelApp",
+    },
     {
       title: "SpeakEasy",
       description: "A web application that allows users to practice their public speaking skills by recording and analyzing their speech and offering LLM-based feedback to improve their performance.",
