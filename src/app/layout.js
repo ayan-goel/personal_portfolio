@@ -21,7 +21,7 @@ export const metadata = {
   title: "Ayan Goel | Software Engineer",
   description: "Software Engineering Portfolio for Ayan Goel",
   icons: {
-    icon: '/favicon.ico',
+    icon: '/images/a_logo.png',
   },
 };
 
