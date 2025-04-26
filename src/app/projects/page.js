@@ -6,10 +6,18 @@ export default function Projects() {
     {
       title: "Monty.ai",
       description: "Application that allows users to develop their own trading strategies and backtest on past stock data and monte carlo simulations while receiving LLM insights to improve their strategies.",
-      technologies: ["Python", "JavaScript", "React", "FastAPI", "Polygon API", "yFinance", "Gemini API"],
+      technologies: ["Python", "JavaScript", "React", "FastAPI", "Polygon API", "yFinance", "Gemini API", "AWS EC2"],
       image: "/images/projects/monty2.png",
       githubLink: "https://github.com/ayan-goel/monty",
       demoLink: "https://devpost.com/software/monty-0h2xbj"
+    },
+    {
+      title: "Resume Hub",
+      description: "Resume search tool for AKPsi Business Fraternity that parses resumes with AI and allows users to find those with similar major, year, skills, and experience. Supports batch uploading of 100+ resumes at once.",
+      technologies: ["Next.js", "Node.js", "Express.js","JavaScript", "PostgreSQL", "AWS S3", "AWS EC2"],
+      image: "/images/projects/resume_database.png",
+      githubLink: "https://github.com/ayan-goel/resume_app",
+      demoLink: "https://gtakpsi-resume-app.vercel.app/"
     },
     {
       title: "Trading Platform",
@@ -17,22 +25,14 @@ export default function Projects() {
       technologies: ["JavaScript", "React", "Node.js", "Express.js", "REST APIs", "Socket.io"],
       image: "/images/projects/tadingcomp.png",
       githubLink: "https://github.com/ayan-goel/Trading-Competition"
-    },
-    {
-      title: "Resume Hub",
-      description: "Resume search tool for AKPsi Business Fraternity that parses resumes with AI and allows users to find those with similar major, year, skills, and experience. Supports batch uploading of 100+ resumes at once.",
-      technologies: ["Next.js", "Node.js", "Express.js", "PostgreSQL", "AWS S3", "AWS EC2"],
-      image: "/images/projects/resume_database.png",
-      githubLink: "https://github.com/ayan-goel/resume_app",
-      demoLink: "https://gtakpsi-resume-app.vercel.app/"
     }
   ];
 
   const additionalProjects = [
     {
-      title: "Power Travel",
+      title: "AI-Powered Travel Planner",
       description: "A web application that allows users to create AI-generated travel itineraries and manage custom travel itineraries. Includes map integration, weather updates, hidden gems, and more.",
-      technologies: ["JavaScript", "Python", "Django", "HTML/CSS", "MySQL", "OpenAI API", "Google Maps API"],
+      technologies: ["JavaScript", "Python", "Django", "Bootstrap", "MySQL", "Gemini API", "MapBox API"],
       githubLink: "https://github.com/ayan-goel/travelApp",
     },
     {
