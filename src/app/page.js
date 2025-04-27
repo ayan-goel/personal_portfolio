@@ -74,14 +74,17 @@ export default function Home() {
   };
   
   const scrollToSection = (section) => {
-    sectionRefs[section].current.scrollIntoView({ behavior: 'smooth' });
+    sectionRefs[section].current.scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
 
   return (
     <div className="w-full max-w-7xl mx-auto mt-20 md:mt-0">
       {/* Hero Section with Profile Picture */}
       <section className="pt-24 md:pt-40 lg:pt-44 pb-16 md:pb-24 px-4 md:px-6 min-h-[100vh] flex items-center">
-        <div className="flex flex-col md:flex-row md:items-center gap-16 md:gap-20 lg:gap-24">
+        <div 
+          className="flex flex-col md:flex-row md:items-center gap-16 md:gap-20 lg:gap-24"
+          style={{ transform: 'translateY(-30px) translateX(30px)' }}
+        >
           <div className="w-full md:w-3/5 order-2 md:order-1 space-y-8">
             <div className="space-y-4 animate-fade-in">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.8] pb-5">
