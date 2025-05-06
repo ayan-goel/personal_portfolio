@@ -30,10 +30,11 @@ export default function Projects() {
 
   const additionalProjects = [
     {
-      title: "AI-Powered Travel Planner",
+      title: "Travel Star (AI-Powered Travel Planner)",
       description: "A web application that allows users to create AI-generated travel itineraries and manage custom travel itineraries. Includes map integration, weather updates, hidden gems, and more.",
       technologies: ["JavaScript", "Python", "Django", "Bootstrap", "MySQL", "Gemini API", "MapBox API"],
       githubLink: "https://github.com/ayan-goel/travelApp",
+      demoLink: "https://travelstar.pythonanywhere.com"
     },
     {
       title: "SpeakEasy",
