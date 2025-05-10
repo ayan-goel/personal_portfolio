@@ -23,9 +23,9 @@ export default function Experience() {
       period: "February 2025 - May 2025",
       logo: "/images/companies/microsoft.webp",
       description: [
-        "Building multi-agent Copilot system reducing non-critical incident resolution time by 50%, saving $360 per incident",
-        "Designing asynchronous agent workflow pipeline using Autogen and Semantic Kernel for continuous data transfer",
-        "Optimized agent interaction by testing of 35+ profiles (goal oriented, rule based, ML-based, etc.) for intelligent resolution",
+        "Built multi-agent Copilot system reducing non-critical incident resolution time by 50%, saving $360 per incident/$504K Annually",
+        "Designed/coded asynchronous agent workflow pipeline using Autogen and Semantic Kernel for continuous data transfer",
+        "Optimized agent interaction by testing of 35+ profiles (goal oriented, rule based, ML-based, etc.) to maxmize logical resolution",
         "Wrote 25+ product specs and agent interaction protocols enabling integration between agents and external support APIs",
       ],
       technologies: ["Azure Cognitive Services", "Microsoft Copilot", "System Design", "AI Agents", "Autogen", "Semantic Kernel"]
@@ -51,10 +51,10 @@ export default function Experience() {
       period: "December 2024 - Present",
       logo: "/images/companies/vip.png",
       description: [
-        "Automating SPARC-based Density Functional Theory workflows with Python scripts, reducing setup effort",
+        "Automating SPARC-based Density Functional Theory workflows with Python scripts, reducing setup effort by 20%",
         "Simulating molecular structures using HPC-based DFT with Atomic Simulation Envs to process 1,000+ interactions",
-        "Conducting 500+ DFT simulations with  ChatDFT LLM to assess reproducibility and assisted scientific computing",
-        "Reproducing DFT calculations from 30+ published research papers to evaluate ChatDFT accuracy, enhancing model training"
+        "Configured 45+ C files for various physical/chemical calculations such as adsorption, spin polarization, and charge density",
+        "Reproducing DFT calculations from 15+ published research papers to evaluate ChatDFT accuracy, enhancing model training"
       ],
       technologies: ["SPARC", "High Performance Computing", "Python", "Atomic Simulation Environments"]
     },
@@ -66,8 +66,8 @@ export default function Experience() {
       logo: "/images/companies/akpsi.png",
       description: [
         "Constructed interactive interview preparation tool featuring AI generated practice questions and real-time feedback",
-        "Collaborated on custom rush application centralizing information for 160+ candidates, reducing decision time for selection process",
-        "Implemented full-stack points tracking app allowing members to monitor event participation and progress through dashboard",
+        "Collaborated on React, MongoDB, & AWS-based rush application centralizing info for 160+ candidates, reducing decision time",
+        "Implemented resume database/search tool using Next.js, PostgreSQL, and AWS helping 110+ members develop connections",
         "Led 10-person development team using Agile methodology, implementing sprints and stand-ups that accelerated feature delivery",
       ],
       technologies: ["JavaScript", "React", "MongoDB", "AWS", "Firebase", "Node.js", "TensorFlow"]
@@ -80,9 +80,9 @@ export default function Experience() {
       logo: "/images/companies/trading.png",
       description: [
         "Engineered responsive trading platform interface that supported national mock trading competitions with 400+ concurrent users ",
-        "Developed and optimized 10+ REST API endpoints connecting frontend to backend services, enabling 2,500+ trade simulations ",
-        "Created 8 dynamic React data visualizations including real-time stock movements and interactive candlestick charts",
-        "Architected WebSocket integration for real-time price updates, trade notifications, order placements, and portfolio tracking"
+        "Utilized Node.js for Web Socket communication to enable real-time bid/ask updates, order book sync, and 2500+ live trades ",
+        "Created 10+ REST API endpoints designed with Express.js for order submission/cancellation and querying/visualization",
+        "Crafted 8 React visualizations, including stock movements and candlestick charts, to visualize changing market dynamics"
       ],
       technologies: ["JavaScript", "React", "Node.js", "Express.js", "Socket.io"]
     },
@@ -310,8 +310,8 @@ export default function Experience() {
               <div className="mb-8">
                 <h3 className="text-xl font-bold mb-4 text-secondary-800 dark:text-white">Technical Skills</h3>
                 <div className="flex flex-wrap gap-2">
-                  {['Java', 'Python', 'C/C++', 'SQL', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Rust', 'MATLAB', 'Assembly', 'Node.js', 
-                  'React.js', 'React Native', 'Angular', 'Next.js', 'D3.js', 'Express.js', 'Flask', 'FastAPI', 'Django', 'REST APIs',
+                  {['Java', 'Python', 'C/C++', 'SQL', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Rust', 'Dart', 'MATLAB', 'Assembly', 'Node.js', 
+                  'React.js', 'React Native', 'Angular', 'Next.js', 'D3.js', 'Express.js', 'Flask', 'FastAPI', 'Django', 'REST APIs', 'Flutter',
                   'Bootstrap', 'Selenium', 'Scikit-learn', 'PyTorch', 'TensorFlow','PostgreSQL', 'MySQL', 'MongoDB', 'Firebase', 'AWS Lambda', 'AWS S3', 'AWS EC2', 'Docker', 'Kubernetes'].map((skill, idx) => (
                     <span 
                       key={idx}

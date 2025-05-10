@@ -397,13 +397,13 @@ export default function Home() {
                           </div>
                         </div>
                         
-                        {/* React Native */}
+                        {/* Dart */}
                         <div className="group/icon flex flex-col items-center justify-center">
                           <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" className="w-8 h-8 relative z-10" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" className="w-8 h-8 relative z-10" />
                             <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
-                              <span className="text-xs font-medium">React Native</span>
+                              <span className="text-xs font-medium">Dart</span>
                             </div>
                           </div>
                         </div>
