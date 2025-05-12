@@ -327,7 +327,7 @@ export default function Experience() {
                 <h3 className="text-xl font-bold mb-4 text-secondary-800 dark:text-white">Awards</h3>
                 <ul className="list-disc list-inside space-y-3 text-secondary-600 dark:text-gray-300">
                   <li className="pl-1">
-                    <span className="text-base font-medium">Faculty Honors/Dean&#39;s List: Fall 2024</span>
+                    <span className="text-base font-medium">Faculty Honors/Dean&#39;s List: Fall 2024, Spring 2025</span>
                   </li>
                   <li className="pl-1">
                     <span className="text-base font-medium">Valedictorian Award</span>
