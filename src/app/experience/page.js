@@ -25,10 +25,10 @@ export default function Experience() {
       description: [
         "Completed selective mentorship program learning investing, valuation, financial modeling, and quantitative analysis",
         "Creating and optimizing trading strategies to enhance performance and build upon current portfolio of $2.5 million",
-        "Contributing to the development ofautomated trading systems and controllers to execute trades across stocks and ETFs",
+        "Contributing to the development of automated trading systems and controllers to execute trades across stocks and ETFs",
         "Collaborating with sector teams to backtest models and refine strategies based on historical market data and performance metrics"
       ],
-      technologies: ["JavaScript", "TypeScript", "React", "React Native"]
+      technologies: ["Python", "NumPy", "Pandas", "SciPy", "Scikit-learn", "Matplotlib", "XGBoost", "FinBERT", "Financial Modeling", "Statsmodels"]
     },
     {
       title: "Microsoft",
