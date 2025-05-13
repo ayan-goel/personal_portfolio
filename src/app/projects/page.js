@@ -25,7 +25,7 @@ export default function Projects() {
       technologies: ["Flutter", "Dart", "Firebase", "Firestore", "Firebase Functions", "Calendly API", "Google Maps API", "Gemini API"],
       image: "/images/projects/merge.png",
       githubLink: "https://github.com/ayan-goel/merge_fitness",
-      demoLink: "https://drive.google.com/file/d/1KTI1JpwymAKwgA9qpRQOL4Joy_fKiLiV/view"
+      demoLink: "https://drive.google.com/file/d/1KTI1JpwymAKwgA9qpRQOL4Joy_fKiLiV/view?usp=sharing"
     },
     {
       title: "Trading Platform",
