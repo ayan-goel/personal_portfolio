@@ -12,7 +12,21 @@ export default function Experience() {
       period: "May 2025 - August 2025",
       logo: "/images/companies/fanduel.png",
       description: [
-        "Improving the functionality of the FanDuel Sportsbook through full-stack development"
+        "Improving the function and adding features to the FanDuel Sportsbook through full-stack TypeScript and JavaScript development"
+      ],
+      technologies: ["JavaScript", "TypeScript", "React", "React Native"]
+    },
+    {
+      title: "Georgia Tech Student Foundation Investments Committee",
+      company: "Quantitative Analyst",
+      location: "Atlanta, GA",
+      period: "January 2025 - Present",
+      logo: "/images/companies/gtsf.jpeg",
+      description: [
+        "Completed selective mentorship program learning investing, valuation, financial modeling, and quantitative analysis",
+        "Creating and optimizing trading strategies to enhance performance and build upon current portfolio of $2.5 million",
+        "Contributing to the development ofautomated trading systems and controllers to execute trades across stocks and ETFs",
+        "Collaborating with sector teams to backtest models and refine strategies based on historical market data and performance metrics"
       ],
       technologies: ["JavaScript", "TypeScript", "React", "React Native"]
     },
@@ -148,10 +162,12 @@ export default function Experience() {
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-16 md:py-24">
       <div className="mb-16 text-center animate-fade-in">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gradient bg-gradient-to-r from-secondary-800 to-secondary-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent relative inline-block">
-          Experience
-          <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-primary-500 to-blue-400 transform origin-left"></span>
-        </h1>
+        <div className="inline-block relative">
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-secondary-800 to-secondary-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent relative z-10 pb-2">
+            Experience
+          </h1>
+          <div className="absolute left-0 w-full h-1 bg-gradient-to-r from-primary-500 to-blue-400 z-0" style={{ bottom: '0.3rem' }}></div>
+        </div>
         <p className="text-lg text-secondary-600 dark:text-gray-300 max-w-2xl mx-auto mt-4 mb-8">Follow my professional journey and educational background.</p>
       </div>
       

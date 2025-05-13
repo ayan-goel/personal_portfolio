@@ -576,7 +576,7 @@ export default function Home() {
                   <path fillRule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
                 </svg>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gradient bg-gradient-to-r from-secondary-800 to-secondary-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent leading-tight tracking-tight pb-2">Let&#39;s Work Together.</h2>
-                <p className="text-lg md:text-xl text-secondary-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                <p className="text-lg md:text-xl text-secondary-600 dark:text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
                   I&#39;m currently seeking software engineering internship positions.
                   View my work and/or contact me to discuss how I can contribute to your team.
                 </p>
