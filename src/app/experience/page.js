@@ -164,8 +164,8 @@ export default function Experience() {
       <div className="mb-16 text-center animate-fade-in">
         <div className="inline-block relative">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-secondary-800 to-secondary-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent relative z-10 pb-2">
-            Experience
-          </h1>
+          Experience
+        </h1>
           <div className="absolute left-0 w-full h-1 bg-gradient-to-r from-primary-500 to-blue-400 z-0" style={{ bottom: '0.3rem' }}></div>
         </div>
         <p className="text-lg text-secondary-600 dark:text-gray-300 max-w-2xl mx-auto mt-4 mb-8">Follow my professional journey and educational background.</p>
@@ -213,10 +213,10 @@ export default function Experience() {
                           </p>
                         </div>
                         <div className="text-right mt-2 md:mt-0">
-                          <p className="text-secondary-600 dark:text-gray-400 text-sm md:text-base">
+                          <p className="text-primary-600 dark:text-primary-400 text-sm md:text-base font-bold">
                             {exp.period}
                           </p>
-                          <p className="text-secondary-600 dark:text-gray-400 text-sm md:text-base">
+                          <p className="text-primary-600 dark:text-primary-400 text-sm md:text-base font-bold">
                             {exp.location}
                           </p>
                         </div>
@@ -287,10 +287,10 @@ export default function Experience() {
                           </p>
                         </div>
                         <div className="text-right mt-2 md:mt-0">
-                          <p className="text-secondary-600 dark:text-gray-400 text-sm md:text-base">
+                          <p className="text-primary-600 dark:text-primary-400 text-sm md:text-base font-bold">
                             {edu.period}
                           </p>
-                          <p className="text-secondary-600 dark:text-gray-400 text-sm md:text-base">
+                          <p className="text-primary-600 dark:text-primary-400 text-sm md:text-base font-bold">
                             {edu.location}
                           </p>
                         </div>
@@ -324,18 +324,506 @@ export default function Experience() {
           <div className="relative bg-white/90 dark:bg-secondary-800/90 backdrop-blur-sm rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:translate-y-[-5px] border border-gray-100 dark:border-secondary-700">
             <div className="p-6 md:p-8">
               <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4 text-secondary-800 dark:text-white">Technical Skills</h3>
-                <div className="flex flex-wrap gap-2">
-                  {['Java', 'Python', 'C/C++', 'SQL', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Rust', 'Dart', 'MATLAB', 'Assembly', 'Node.js', 
-                  'React.js', 'React Native', 'Angular', 'Next.js', 'D3.js', 'Express.js', 'Flask', 'FastAPI', 'Django', 'REST APIs', 'Flutter',
-                  'Bootstrap', 'Selenium', 'Scikit-learn', 'PyTorch', 'TensorFlow','PostgreSQL', 'MySQL', 'MongoDB', 'Firebase', 'AWS Lambda', 'AWS S3', 'AWS EC2', 'Docker', 'Kubernetes'].map((skill, idx) => (
-                    <span 
-                      key={idx}
-                      className="px-3 py-1.5 bg-primary-50 text-primary-700 text-sm rounded-full border border-primary-200 shadow-sm hover:shadow hover:bg-primary-100 hover:border-primary-300 hover:-translate-y-0.5 transition-all duration-300 font-medium"
-                    >
-                      {skill}
-                    </span>
-                  ))}
+                <h3 className="text-xl font-bold mb-4 text-secondary-800 dark:text-white">All Technical Skills</h3>
+                
+                <div className="grid grid-cols-11 gap-3">
+                  {/* JavaScript */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">JavaScript</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* TypeScript */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">TypeScript</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Python */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Python</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Java */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Java</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* C++ */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">C++</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* C */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">C</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* SQL */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-8 h-8 fill-current text-blue-600 relative z-10">
+                        <path d="M12 2c-5.05 0-9.375 1.81-9.375 4.044v11.912C2.625 20.19 6.95 22 12 22s9.375-1.81 9.375-4.044V6.044C21.375 3.81 17.05 2 12 2zM3.375 6.044C3.375 4.962 6.857 3.375 12 3.375s8.625 1.587 8.625 2.669V7.65C18.5 8.798 15.396 9.5 12 9.5s-6.5-.702-8.625-1.85V6.044zm0 3.956c1.894 1.022 4.825 1.563 8.625 1.563s6.731-.54 8.625-1.563v3.25C18.5 14.298 15.396 15 12 15s-6.5-.702-8.625-1.85v-3.15zm0 5.5c1.894 1.022 4.825 1.563 8.625 1.563s6.731-.54 8.625-1.563v3.5C20.625 20.188 17.143 21.75 12 21.75S3.375 20.188 3.375 19.1v-3.6z"/>
+                      </svg>
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">SQL</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Rust */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" alt="Rust" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Rust</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Dart */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Dart</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* React */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">React</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Next.js */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-8 h-8 dark:invert relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Next.js</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* HTML */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">HTML5</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* CSS */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">CSS3</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* React Native */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">React Native</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Angular */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Angular</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Flutter */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Flutter</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Bootstrap */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Bootstrap</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Node.js */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Node.js</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Express.js */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" className="w-8 h-8 dark:invert relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Express.js</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* PostgreSQL */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">PostgreSQL</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* MongoDB */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">MongoDB</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* TensorFlow */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">TensorFlow</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* PyTorch */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">PyTorch</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* NumPy */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">NumPy</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Pandas */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Pandas</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Flask */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" className="w-8 h-8 dark:invert relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Flask</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* FastAPI */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">FastAPI</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Django */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" className="w-8 h-8 relative z-10 dark:invert" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Django</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* MATLAB */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" alt="MATLAB" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">MATLAB</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* D3.js */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-plain.svg" alt="D3.js" className="w-8 h-8 relative z-10 dark:invert" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">D3.js</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* MySQL */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">MySQL</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Firebase */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Firebase</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Docker */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Docker</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Kubernetes */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Kubernetes</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Selenium */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Selenium</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Scikit-learn */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Scikit-learn</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* SciPy */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-8 h-8 fill-current text-[#0054a6] relative z-10">
+                        <path d="M10.42 21h3.43v-7.528H7.19L13.203 2.38v7.528h4.029L11.376 21.62z" />
+                      </svg>
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">SciPy</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* AWS Lambda */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <div className="w-10 h-10 relative z-10 flex items-center justify-center bg-[#FF9900] rounded-lg">
+                        <span className="text-white font-bold text-xl">λ</span>
+                      </div>
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">AWS Lambda</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* AWS S3 */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <div className="w-10 h-10 relative z-10 flex items-center justify-center">
+                        <div className="w-9 h-9 bg-[#FF9900] flex items-center justify-center text-white font-bold text-lg">
+                          S3
+                        </div>
+                      </div>
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">AWS S3</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* AWS EC2 */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <div className="w-10 h-10 relative z-10 flex items-center justify-center">
+                        <div className="w-9 h-9 bg-[#FF9900] flex items-center justify-center text-white font-bold text-lg">
+                          EC2
+                        </div>
+                      </div>
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">AWS EC2</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Azure */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Azure</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* GCP */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="GCP" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">GCP</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Git */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Git</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Linux */}
+                  <div className="group/icon flex flex-col items-center justify-center">
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" className="w-8 h-8 relative z-10" />
+                      <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
+                        <span className="text-xs font-medium">Linux</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               
