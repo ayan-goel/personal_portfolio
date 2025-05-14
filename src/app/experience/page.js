@@ -729,9 +729,7 @@ export default function Experience() {
                   <div className="group/icon flex flex-col items-center justify-center">
                     <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
                       <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
-                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-8 h-8 fill-current text-[#0054a6] relative z-10">
-                        <path d="M10.42 21h3.43v-7.528H7.19L13.203 2.38v7.528h4.029L11.376 21.62z" />
-                      </svg>
+                      <img src="https://scipy.org/images/logo.svg" alt="SciPy" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">SciPy</span>
                       </div>
@@ -742,7 +740,7 @@ export default function Experience() {
                   <div className="group/icon flex flex-col items-center justify-center">
                     <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
                       <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
-                      <div className="w-10 h-10 relative z-10 flex items-center justify-center bg-[#FF9900] rounded-lg">
+                      <div className="w-9 h-9 bg-[#FF9900] flex items-center justify-center rounded relative z-10">
                         <span className="text-white font-bold text-xl">λ</span>
                       </div>
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
@@ -755,10 +753,11 @@ export default function Experience() {
                   <div className="group/icon flex flex-col items-center justify-center">
                     <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
                       <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
-                      <div className="w-10 h-10 relative z-10 flex items-center justify-center">
-                        <div className="w-9 h-9 bg-[#FF9900] flex items-center justify-center text-white font-bold text-lg">
-                          S3
-                        </div>
+                      <div className="w-9 h-9 bg-[#E93A30] flex items-center justify-center rounded relative z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" className="w-6 h-6 fill-current text-white">
+                          <path d="M25 1L8 10v30l17 9 17-9V10L25 1zm14 37.5l-14 7.5-14-7.5V12.5L25 5l14 7.5v30z" />
+                          <path d="M25 20a5 5 0 100 10 5 5 0 000-10z" />
+                        </svg>
                       </div>
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">AWS S3</span>
@@ -770,10 +769,10 @@ export default function Experience() {
                   <div className="group/icon flex flex-col items-center justify-center">
                     <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
                       <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
-                      <div className="w-10 h-10 relative z-10 flex items-center justify-center">
-                        <div className="w-9 h-9 bg-[#FF9900] flex items-center justify-center text-white font-bold text-lg">
-                          EC2
-                        </div>
+                      <div className="w-9 h-9 bg-[#FF9900] flex items-center justify-center rounded relative z-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-6 h-6 fill-current text-white">
+                          <path d="M3.5 3C2.67 3 2 3.67 2 4.5V19.5C2 20.33 2.67 21 3.5 21H20.5C21.33 21 22 20.33 22 19.5V4.5C22 3.67 21.33 3 20.5 3H3.5ZM7 7H11V9H7V7ZM7 11H11V13H7V11ZM7 15H11V17H7V15ZM13 7H17V9H13V7ZM13 11H17V13H13V11ZM13 15H17V17H13V15Z" />
+                        </svg>
                       </div>
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">AWS EC2</span>
