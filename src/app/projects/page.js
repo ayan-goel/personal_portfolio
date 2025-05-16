@@ -14,7 +14,7 @@ export default function Projects() {
     {
       title: "Resume Hub",
       description: "Resume search tool for AKPsi Business Fraternity that parses resumes with AI and allows users to find those with similar major, year, skills, and experience. Supports batch uploading of 100+ resumes at once.",
-      technologies: ["Next.js", "Node.js", "Express.js","JavaScript", "PostgreSQL", "OpenAI API", "AWS S3", "AWS EC2"],
+      technologies: ["Next.js", "Node.js", "Express.js","JavaScript", "PostgreSQL", "Supabase", "OpenAI API", "AWS S3", "AWS EC2"],
       image: "/images/projects/resume_database.png",
       githubLink: "https://github.com/ayan-goel/resume_app",
       demoLink: "https://gtakpsi-resume-app.vercel.app/"
