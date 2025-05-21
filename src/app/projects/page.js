@@ -20,7 +20,7 @@ export default function Projects() {
       demoLink: "https://gtakpsi-resume-app.vercel.app/"
     },
     {
-      title: "Trainity",
+      title: "Merge Fitness",
       description: "A companion mobile app for Merge Fitness LLC (300+ clients). Allows trainers to assign workouts/nutrition plans to clients, track their progress, and schedule sessions. Supports AI meal scanning and live trainer tracking.",
       technologies: ["Flutter", "Dart", "Firebase", "Firestore", "Firebase Functions", "Calendly API", "Google Maps API", "Gemini API"],
       image: "/images/projects/merge2.jpeg",
