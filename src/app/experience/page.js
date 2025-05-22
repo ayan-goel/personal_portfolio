@@ -34,7 +34,7 @@ export default function Experience() {
       title: "Microsoft",
       company: "Product Management Intern",
       location: "Atlanta, GA",
-      period: "February 2025 - May 2025",
+      period: "January 2025 - May 2025",
       logo: "/images/companies/microsoft.webp",
       description: [
         "Built multi-agent Copilot system reducing non-critical incident resolution time by 50%, saving $360 per incident/$504K Annually",
