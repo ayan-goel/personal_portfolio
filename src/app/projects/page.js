@@ -43,17 +43,24 @@ export default function Projects() {
       demoLink: "https://travelstar.pythonanywhere.com"
     },
     {
-      title: "SpeakEasy",
-      description: "A web application that allows users to practice their public speaking skills by recording and analyzing their speech and offering LLM-based feedback to improve their performance.",
-      technologies: ["JavaScript", "Python", "Next.js", "Flask", "OpenCV", "TensorFlow", "MongoDB", "NVIDIA NIM"],
-      image: "/images/projects/speakeasy2.png",
-      githubLink: "https://github.com/ayan-goel/SpeakEasy",
-      demoLink: "https://devpost.com/software/speakeasy-p960yl"
+      title: "Interview Pro",
+      description: "A web application where users can practice their interview skills and receive detailed feedback on their content, delivery, and body language using LLMs and Tensorflow. Note: Backend is not hosted 24/7 due to unforunately egregious EC2 hosting costs.",
+      technologies: ["TypeScript", "Next.js", "Supabase", "Python", "Flask", "Tensorflow", "OpenCV", "OpenAI Whisper"],
+      image: "/images/projects/pro2.png",
+      githubLink: "https://github.com/ayan-goel/interview-prep.git",
+      demoLink: "https://interview-pro-alpha.vercel.app"
     },
+    
   ];
 
   const additionalProjects = [
-    
+    {
+      title: "SpeakEasy",
+      description: "A web application that allows users to practice their public speaking skills in a variety of scenarios (recruiters, significant other's parents, etc.) by recording and analyzing their speech and offering LLM-based feedback to improve their performance. Early precursor to Interview Pro project.",
+      technologies: ["JavaScript", "Python", "Next.js", "Flask", "MongoDB", "NVIDIA NIM API"],
+      githubLink: "https://github.com/ayan-goel/SpeakEasy",
+      demoLink: "https://devpost.com/software/speakeasy-p960yl"
+    },
     {
       title: "MediSense AI",
       description: "Engineered a full-stack web application that helps patients easily find diagnoses for conditions based on symptoms. Tuned Google BERT LLM predicting prognoses with 91% accuracy across 150+ trials with 50,000+ medical reports. Trained Logistic Regression & Random Forest models assessing risk factors with 83% accuracy on 560,000+ rows.",
