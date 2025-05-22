@@ -44,7 +44,7 @@ export default function Projects() {
     },
     {
       title: "Interview Pro",
-      description: "A web application where users can practice their interview skills and receive detailed feedback on their content, delivery, and body language using LLMs and Tensorflow. Note: Backend is not hosted 24/7 due to unfortunately egregious EC2 hosting costs.",
+      description: "A web application where users can practice their interview skills and receive detailed feedback on their content, structure, and body language using LLMs and Tensorflow. Note: Backend is not hosted 24/7 due to unfortunately egregious EC2 hosting costs.",
       technologies: ["TypeScript", "Next.js", "Supabase", "Python", "Flask", "Tensorflow", "OpenCV", "OpenAI Whisper"],
       image: "/images/projects/pro2.png",
       githubLink: "https://github.com/ayan-goel/interview-prep.git",
