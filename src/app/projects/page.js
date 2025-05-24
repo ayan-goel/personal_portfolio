@@ -9,7 +9,7 @@ export default function Projects() {
       technologies: ["Python", "JavaScript", "React", "FastAPI", "Polygon API", "yFinance", "Gemini API", "AWS EC2"],
       image: "/images/projects/monty2.png",
       githubLink: "https://github.com/ayan-goel/monty",
-      demoLink: "https://devpost.com/software/monty-0h2xbj"
+      demoLink: "https://monty-alpha.vercel.app"
     },
     {
       title: "Resume Hub",
