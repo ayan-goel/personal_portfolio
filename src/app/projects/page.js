@@ -5,7 +5,7 @@ export default function Projects() {
   const projects = [
     {
       title: "Monty",
-      description: "Application that allows users to develop their own trading strategies and backtest on past stock data and monte carlo simulations while receiving LLM insights to improve their strategies.",
+      description: "Application that allows users to develop their own trading strategies and backtest on past stock data and Monte Carlo simulations while receiving LLM insights to improve their strategies.",
       technologies: ["Python", "JavaScript", "React", "FastAPI", "Polygon API", "yFinance", "Gemini API", "AWS EC2"],
       image: "/images/projects/monty2.png",
       githubLink: "https://github.com/ayan-goel/monty",
