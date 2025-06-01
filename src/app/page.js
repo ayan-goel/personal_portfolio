@@ -321,15 +321,13 @@ export default function Home() {
                           </div>
                         </div>
                         
-                        {/* SQL */}
+                        {/* SQL -> Dart */}
                         <div className="group/icon flex flex-col items-center justify-center">
                           <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-8 h-8 fill-current text-blue-600 relative z-10">
-                              <path d="M12 2c-5.05 0-9.375 1.81-9.375 4.044v11.912C2.625 20.19 6.95 22 12 22s9.375-1.81 9.375-4.044V6.044C21.375 3.81 17.05 2 12 2zM3.375 6.044C3.375 4.962 6.857 3.375 12 3.375s8.625 1.587 8.625 2.669V7.65C18.5 8.798 15.396 9.5 12 9.5s-6.5-.702-8.625-1.85V6.044zm0 3.956c1.894 1.022 4.825 1.563 8.625 1.563s6.731-.54 8.625-1.563v3.25C18.5 14.298 15.396 15 12 15s-6.5-.702-8.625-1.85v-3.15zm0 5.5c1.894 1.022 4.825 1.563 8.625 1.563s6.731-.54 8.625-1.563v3.5C20.625 20.188 17.143 21.75 12 21.75S3.375 20.188 3.375 19.1v-3.6z"/>
-                            </svg>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" className="w-8 h-8 relative z-10" />
                             <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
-                              <span className="text-xs font-medium">SQL</span>
+                              <span className="text-xs font-medium">Dart</span>
                             </div>
                           </div>
                         </div>
@@ -397,13 +395,13 @@ export default function Home() {
                           </div>
                         </div>
                         
-                        {/* Dart */}
+                        {/* Dart -> Flutter */}
                         <div className="group/icon flex flex-col items-center justify-center">
                           <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" className="w-8 h-8 relative z-10" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" className="w-8 h-8 relative z-10" />
                             <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
-                              <span className="text-xs font-medium">Dart</span>
+                              <span className="text-xs font-medium">Flutter</span>
                             </div>
                           </div>
                         </div>

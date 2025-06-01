@@ -12,7 +12,10 @@ export default function Experience() {
       period: "May 2025 - August 2025",
       logo: "/images/companies/fanduel.png",
       description: [
-        "Improving the function and adding features to the FanDuel Sportsbook through full-stack TypeScript and JavaScript development"
+        "Spearheading UI development for the Player Stats page using React/React Native, improving stat access across platforms",
+        "Engineering RESTful integrations using Node & Express to retrieve real-time player data, enhancing backend responsiveness",
+        "Refactoring core frontend component architecture with TypeScript, reducing re-render latency and boosting performance",
+        "Developing reusable UI components with consistent styling and behavior across the app, speeding up feature rollout"
       ],
       technologies: ["JavaScript", "TypeScript", "React", "React Native"]
     },
@@ -79,7 +82,7 @@ export default function Experience() {
       period: "December 2024 - Present",
       logo: "/images/companies/akpsi.png",
       description: [
-        "Constructed interactive interview preparation tool featuring AI generated practice questions and real-time feedback",
+        "Constructed interview preparation tool with Next.js and Flask featuring AI generated practice questions and real-time feedback",
         "Collaborated on React, MongoDB, & AWS-based rush application centralizing info for 160+ candidates, reducing decision time",
         "Implemented resume database/search tool using Next.js, PostgreSQL, and AWS helping 110+ members develop connections",
         "Led 10-person development team using Agile methodology, implementing sprints and stand-ups that accelerated feature delivery",
