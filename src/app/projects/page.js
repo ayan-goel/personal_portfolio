@@ -29,7 +29,7 @@ export default function Projects() {
     },
     {
       title: "Trading Platform",
-      description: "A trading platform UI integrated with a matching engine that facilitates order management and real-time price updates (400+ users). Provides tools to interact with the trading engine by submitting orders, monitoring trades, visualizing the order book, and tracking market prices.",
+      description: "A trading platform UI for Trading at Georgia Tech trading competitions (400+ users), integrated with a matching engine that facilitates order management and real-time price updates. Provides tools to interact with the matching engine by submitting orders, monitoring trades, visualizing the order book, and tracking market prices.",
       technologies: ["JavaScript", "React", "Node.js", "Express.js", "REST APIs", "Socket.io"],
       image: "/images/projects/tadingcomp.png",
       githubLink: "https://github.com/ayan-goel/Trading-Competition"
