@@ -4,6 +4,22 @@ import Link from 'next/link';
 export default function Projects() {
   const projects = [
     {
+      title: "Merge Fitness",
+      description: "A companion mobile app for Merge Fitness LLC (300+ users). Allows trainers to assign workouts/nutrition plans to clients, track their progress, and schedule sessions. Supports live trainer location tracking, video sessions, and in-app payments.",
+      technologies: ["Flutter", "Firebase", "Google Cloud", "Dart", "Calendly API", "Google Maps API", "Stripe API", "Agora API", "Node.js"],
+      image: "/images/projects/merge2.jpeg",
+      githubLink: "https://github.com/ayan-goel/merge_fitness",
+      demoLink: "https://youtu.be/IlhnT_eyvPs"
+    },
+    {
+      title: "Resume Hub",
+      description: "Resume search tool for AKPsi Business Fraternity (110+ users)that parses resumes with AI and allows users to find those with similar major, year, skills, and experience. Supports batch uploading of 100+ resumes at once.",
+      technologies: ["Next.js", "Node.js", "Express.js","JavaScript", "PostgreSQL", "Supabase", "OpenAI API", "AWS S3", "AWS EC2"],
+      image: "/images/projects/resume_search.png",
+      githubLink: "https://github.com/ayan-goel/resume_app",
+      demoLink: "https://gtakpsi-resume-app.vercel.app/"
+    },
+    {
       title: "Monty",
       description: "Application that allows users to develop their own trading strategies and backtest on past stock data and Monte Carlo simulations while receiving LLM insights to improve their strategies.",
       technologies: ["Python", "JavaScript", "React", "FastAPI", "Polygon API", "yFinance", "Gemini API", "AWS EC2"],
@@ -12,24 +28,8 @@ export default function Projects() {
       demoLink: "https://monty-alpha.vercel.app"
     },
     {
-      title: "Resume Hub",
-      description: "Resume search tool for AKPsi Business Fraternity that parses resumes with AI and allows users to find those with similar major, year, skills, and experience. Supports batch uploading of 100+ resumes at once.",
-      technologies: ["Next.js", "Node.js", "Express.js","JavaScript", "PostgreSQL", "Supabase", "OpenAI API", "AWS S3", "AWS EC2"],
-      image: "/images/projects/resume_search.png",
-      githubLink: "https://github.com/ayan-goel/resume_app",
-      demoLink: "https://gtakpsi-resume-app.vercel.app/"
-    },
-    {
-      title: "Merge Fitness",
-      description: "A companion mobile app for Merge Fitness LLC. Allows trainers to assign workouts/nutrition plans to clients, track their progress, and schedule sessions. Supports AI meal scanning and live trainer tracking.",
-      technologies: ["Flutter", "Firebase", "Google Cloud", "Dart", "Calendly API", "Google Maps API", "Gemini API", "Stripe API"],
-      image: "/images/projects/merge2.jpeg",
-      githubLink: "https://github.com/ayan-goel/merge_fitness",
-      demoLink: "https://youtu.be/IlhnT_eyvPs"
-    },
-    {
       title: "Trading Platform",
-      description: "A trading platform UI integrated with a matching engine that facilitates order management and real-time price updates. Provides tools to interact with the trading engine by submitting orders, monitoring trades, visualizing the order book, and tracking market prices.",
+      description: "A trading platform UI integrated with a matching engine that facilitates order management and real-time price updates (400+ users). Provides tools to interact with the trading engine by submitting orders, monitoring trades, visualizing the order book, and tracking market prices.",
       technologies: ["JavaScript", "React", "Node.js", "Express.js", "REST APIs", "Socket.io"],
       image: "/images/projects/tadingcomp.png",
       githubLink: "https://github.com/ayan-goel/Trading-Competition"
@@ -44,11 +44,11 @@ export default function Projects() {
     },
     {
       title: "Interview Pro",
-      description: "A web application where users can practice their interview skills and receive detailed feedback on their content, structure, and body language using LLMs and Tensorflow. Note: Backend is not hosted 24/7 due to unfortunately egregious EC2 hosting costs.",
-      technologies: ["TypeScript", "Next.js", "Supabase", "Python", "Flask", "Tensorflow", "OpenCV", "OpenAI Whisper"],
+      description: "A web application (used by 75+ college students) where users can practice their interview skills and receive detailed feedback on their content, structure, and body language using LLMs and Tensorflow. Note: Backend is not hosted 24/7 due to high AWS hosting costs.",
+      technologies: ["TypeScript", "Next.js", "Supabase", "Python", "Flask", "TensorFlow", "OpenCV", "OpenAI Whisper API"],
       image: "/images/projects/pro2.png",
       githubLink: "https://github.com/ayan-goel/interview-prep.git",
-      demoLink: "https://interview-pro-alpha.vercel.app"
+      demoLink: "https://interview-pro-git-main-ayan-goels-projects.vercel.app"
     },
     
   ];
@@ -113,7 +113,7 @@ export default function Projects() {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500 to-blue-400 rounded-2xl opacity-50 group-hover:opacity-80 blur-sm transition duration-500"></div>
               <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:translate-y-[-5px] group-hover:shadow-xl border border-gray-100 h-full flex flex-col">
                 {/* Project Image */}
-                <div className="h-48 bg-gray-200/80 relative overflow-hidden">
+                <div className={`h-48 relative overflow-hidden ${project.title === 'Merge Fitness' ? 'bg-black' : 'bg-gray-200/80'}`}>
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20 z-10"></div>
                   {project.image ? (
                     <Image
@@ -121,8 +121,8 @@ export default function Projects() {
                       alt={`${project.title} preview`}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      style={{ objectFit: 'cover' }}
-                      className="transition-transform duration-500 group-hover:scale-105"
+                      style={{ objectFit: project.title === 'Merge Fitness' ? 'contain' : 'cover' }}
+                      className={`transition-transform duration-500 group-hover:scale-105 ${project.title === 'Merge Fitness' ? 'p-3' : ''}`}
                     />
                   ) : (
                     <div className="flex items-center justify-center h-full">
@@ -188,7 +188,7 @@ export default function Projects() {
               <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500 to-blue-400 rounded-2xl opacity-50 group-hover:opacity-80 blur-sm transition duration-500"></div>
               <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:translate-y-[-5px] group-hover:shadow-xl border border-gray-100 h-full flex flex-col">
                 {/* Project Image */}
-                <div className="h-48 bg-gray-200/80 relative overflow-hidden">
+                <div className={`h-48 relative overflow-hidden ${project.title === 'Merge Fitness' ? 'bg-black' : 'bg-gray-200/80'}`}>
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20 z-10"></div>
                   {project.image ? (
                     <Image
@@ -196,8 +196,8 @@ export default function Projects() {
                       alt={`${project.title} preview`}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      style={{ objectFit: 'cover' }}
-                      className="transition-transform duration-500 group-hover:scale-105"
+                      style={{ objectFit: project.title === 'Merge Fitness' ? 'contain' : 'cover' }}
+                      className={`transition-transform duration-500 group-hover:scale-105 ${project.title === 'Merge Fitness' ? 'p-3' : ''}`}
                     />
                   ) : (
                     <div className="flex items-center justify-center h-full">
