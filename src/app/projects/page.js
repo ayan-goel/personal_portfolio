@@ -13,7 +13,7 @@ export default function Projects() {
     },
     {
       title: "Resume Hub",
-      description: "Resume search tool for AKPsi Business Fraternity (110+ users)that parses resumes with AI and allows users to find those with similar major, year, skills, and experience. Supports batch uploading of 100+ resumes at once.",
+      description: "Resume search tool for GT AKPsi Business Fraternity (110+ users) that parses resumes with AI and allows users to find those with similar major, year, skills, and experience. Supports batch uploading of 100+ resumes at once.",
       technologies: ["Next.js", "Node.js", "Express.js","JavaScript", "PostgreSQL", "Supabase", "OpenAI API", "AWS S3", "AWS EC2"],
       image: "/images/projects/resume_search.png",
       githubLink: "https://github.com/ayan-goel/resume_app",
@@ -44,7 +44,7 @@ export default function Projects() {
     },
     {
       title: "Interview Pro",
-      description: "A web application (used by 75+ college students) where users can practice their interview skills and receive detailed feedback on their content, structure, and body language using LLMs and Tensorflow. Note: Backend is not hosted 24/7 due to high AWS hosting costs.",
+      description: "A web application (used by 50+ college students) where users can practice their interview skills and receive detailed feedback on their content, structure, and body language using LLMs and Tensorflow. Note: Backend is not hosted 24/7 due to high AWS hosting costs.",
       technologies: ["TypeScript", "Next.js", "Supabase", "Python", "Flask", "TensorFlow", "OpenCV", "OpenAI Whisper API"],
       image: "/images/projects/pro2.png",
       githubLink: "https://github.com/ayan-goel/interview-prep.git",
