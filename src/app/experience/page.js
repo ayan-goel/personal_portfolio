@@ -17,7 +17,7 @@ export default function Experience() {
         "Refactoring core frontend component architecture with TypeScript, reducing re-render latency and boosting performance",
         "Developing reusable UI components with consistent styling and behavior across the app, speeding up feature rollout"
       ],
-      technologies: ["JavaScript", "TypeScript", "React", "React Native"]
+      technologies: ["JavaScript", "TypeScript", "React", "React Native", "Node.js", "Express.js", "Redis", "BuildKite", "Kubernetes"]
     },
     {
       title: "Georgia Tech Student Foundation Investments Committee",
