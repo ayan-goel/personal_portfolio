@@ -48,7 +48,7 @@ export default function Projects() {
       technologies: ["TypeScript", "Next.js", "Supabase", "Python", "Flask", "TensorFlow", "OpenCV", "OpenAI Whisper API"],
       image: "/images/projects/pro2.png",
       githubLink: "https://github.com/ayan-goel/interview-prep.git",
-      demoLink: "https://interview-pro-git-main-ayan-goels-projects.vercel.app"
+      demoLink: "https://interview-pro-alpha.vercel.app/"
     },
     
   ];
