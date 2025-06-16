@@ -20,6 +20,14 @@ export default function Projects() {
       demoLink: "https://gtakpsi-resume-app.vercel.app/"
     },
     {
+      title: "Interview Pro",
+      description: "A web application (used by 50+ college students) where users can practice their interview skills and receive detailed feedback on their content, structure, and body language using LLMs and OpenCV + Tensorflow.",
+      technologies: ["TypeScript", "Next.js", "Supabase", "Python", "Flask", "TensorFlow", "OpenCV", "OpenAI Whisper API"],
+      image: "/images/projects/pro2.png",
+      githubLink: "https://github.com/ayan-goel/interview-prep.git",
+      demoLink: "https://interview-pro-alpha.vercel.app/"
+    },
+    {
       title: "Monty",
       description: "Application that allows users to develop their own trading strategies and backtest on past stock data and Monte Carlo simulations while receiving LLM insights to improve their strategies.",
       technologies: ["Python", "JavaScript", "React", "FastAPI", "Polygon API", "yFinance", "Gemini API", "AWS Lambda", "AWS ECR"],
@@ -41,15 +49,7 @@ export default function Projects() {
       image: "/images/projects/powertravel.png",
       githubLink: "https://github.com/ayan-goel/travelApp",
       demoLink: "https://travelstar.pythonanywhere.com"
-    },
-    {
-      title: "Interview Pro",
-      description: "A web application (used by 50+ college students) where users can practice their interview skills and receive detailed feedback on their content, structure, and body language using LLMs and Tensorflow. Note: Backend is not hosted 24/7 due to high AWS hosting costs.",
-      technologies: ["TypeScript", "Next.js", "Supabase", "Python", "Flask", "TensorFlow", "OpenCV", "OpenAI Whisper API"],
-      image: "/images/projects/pro2.png",
-      githubLink: "https://github.com/ayan-goel/interview-prep.git",
-      demoLink: "https://interview-pro-alpha.vercel.app/"
-    },
+    }
     
   ];
 
