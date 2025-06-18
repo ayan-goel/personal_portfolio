@@ -13,11 +13,11 @@ export default function Experience() {
       logo: "/images/companies/fanduel.png",
       description: [
         "Spearheading UI development for the Player Stats page using React/React Native, improving stat access across platforms",
-        "Engineering RESTful integrations using Node & Express to retrieve real-time player data, enhancing backend responsiveness",
+        "Engineering RESTful integrations using Node & Express to retrieve player data for new sports, supporting millions of API calls",
         "Refactoring core frontend component architecture with TypeScript, reducing re-render latency and boosting performance",
-        "Developing reusable UI components with consistent styling and behavior across the app, speeding up feature rollout"
+        "Integrating feature flags into a scalable serverless data aggregation layer leveraging AWS Lambda and AWS DynamoDB"
       ],
-      technologies: ["JavaScript", "TypeScript", "React", "React Native", "Node.js", "Express.js", "Redis", "BuildKite", "Kubernetes"]
+      technologies: ["JavaScript", "TypeScript", "React", "React Native", "Node.js", "Express.js", "Redis", "AWS"]
     },
     {
       title: "Georgia Tech Student Foundation Investments Committee",
@@ -40,12 +40,13 @@ export default function Experience() {
       period: "January 2025 - May 2025",
       logo: "/images/companies/microsoft.webp",
       description: [
-        "Built multi-agent Copilot system reducing non-critical incident resolution time by 50%, saving $360 per incident/$504K Annually",
-        "Designed/coded asynchronous agent workflow pipeline using Autogen and Semantic Kernel for continuous data transfer",
-        "Optimized agent interaction by testing of 35+ profiles (goal oriented, rule based, ML-based, etc.) to maxmize logical resolution",
-        "Wrote 25+ product specs and agent interaction protocols enabling integration between agents and external support APIs",
+        "Architected multi-agent Copilot system reducing non-critical incident resolution time by 50%, saving $360 per incident/$504K Annually",
+        "Prototyped asynchronous agent workflow pipeline using Autogen and Azure Functions for continuous data transfer",
+        "Optimized agent interaction by testing of 18+ profiles with Azure ML (goal oriented, rule based) to maxmize logical resolution",
+        "Wrote 10+ product specs and Semantic Kernel plugins enabling integration between agents and external support APIs",
+        "Developed 10+ product specs and Semantic Kernel plugins enabling integration between agents and external support APIs",
       ],
-      technologies: ["Azure Cognitive Services", "Microsoft Copilot", "System Design", "AI Agents", "Autogen", "Semantic Kernel"]
+      technologies: ["Azure ML", "Azure Cognitive Services", "System Design", "Azure Functions", "Autogen", "Semantic Kernel"]
     },
     {
       title: "United States Soccer Federation",
