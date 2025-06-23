@@ -55,6 +55,12 @@ export default function Projects() {
 
   const additionalProjects = [
     {
+      title: "C++ High Frequency Market Maker",
+      description: "Deployed latency-optimized High Frequency Trading market maker with Coinbase achieving sub-0.1ms order-to-fill execution. Built multi-threaded system with atomic ops, lockless structures, Redis caching, & thread-safe execution at 120+ trades/sec. Devised real-time microsecond risk management engine preventing 99% of drawdown violations across 2M+ live trades.",
+      technologies: ["C", "C++", "Redis", "LibWebSockets", "Coinbase API", "AWS EC2"],
+      githubLink: "https://github.com/ayan-goel/crypto_bot",
+    },
+    {
       title: "SpeakEasy",
       description: "A web application that allows users to practice their public speaking skills in a variety of scenarios (recruiters, significant other's parents, etc.) by recording and analyzing their speech and offering LLM-based feedback to improve their performance. Early precursor to Interview Pro project.",
       technologies: ["JavaScript", "Python", "Next.js", "Flask", "MongoDB", "NVIDIA NIM API"],
