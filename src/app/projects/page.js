@@ -5,7 +5,7 @@ export default function Projects() {
   const projects = [
     {
       title: "Merge Fitness",
-      description: "A companion mobile app for Merge Fitness LLC (300+ users). Allows trainers to assign workouts/nutrition plans to clients, track their progress, and schedule sessions. Supports live trainer location tracking, video sessions, and in-app payments.",
+      description: "A companion mobile app for Merge Fitness LLC (120+ users). Allows trainers to assign workouts/nutrition plans to clients, track their progress, and schedule sessions. Supports live trainer location tracking, video sessions, and in-app payments.",
       technologies: ["Flutter", "Firebase", "Google Cloud", "Dart", "Calendly API", "Google Maps API", "Stripe API", "Agora API", "Node.js"],
       image: "/images/projects/merge2.jpeg",
       githubLink: "https://github.com/ayan-goel/merge_fitness",
@@ -13,7 +13,7 @@ export default function Projects() {
     },
     {
       title: "Resume Hub",
-      description: "Resume search tool for GT AKPsi Business Fraternity (110+ users) that parses resumes with AI and allows users to find those with similar major, year, skills, and experience. Supports batch uploading of 100+ resumes at once.",
+      description: "Resume search tool for GT Business Fraternity (110+ users) that parses resumes with AI and allows users to find those with similar major, year, skills, and experience. Supports batch uploading of 100+ resumes at once.",
       technologies: ["Next.js", "Node.js", "Express.js","JavaScript", "PostgreSQL", "Supabase", "OpenAI API", "AWS S3", "AWS EC2"],
       image: "/images/projects/resume_search.png",
       githubLink: "https://github.com/ayan-goel/resume_app",
@@ -59,6 +59,13 @@ export default function Projects() {
       description: "Deployed latency-optimized High Frequency Trading market maker with Coinbase achieving sub-0.1ms order-to-fill execution. Built multi-threaded system with atomic ops, lockless structures, Redis caching, & thread-safe execution at 120+ trades/sec. Devised real-time microsecond risk management engine preventing 99% of drawdown violations across 2M+ live trades.",
       technologies: ["C", "C++", "Redis", "LibWebSockets", "Coinbase API", "AWS EC2"],
       githubLink: "https://github.com/ayan-goel/crypto_bot",
+    },
+    {
+      title: "Alpha Kappa Psi Rush Application",
+      description: "Web application for GT's Alpha Kappa Psi fraternity to centralize information of 200+ potential rushees. Used by 100+ fraternity members to expedite the rush process.",
+      technologies: ["React.js", "Rust", "MongoDB", "AWS Lambda", "AWS S3", "Firebase"],
+      githubLink: "https://github.com/ayan-goel/gtakpsi-rush-app",
+      demoLink: "https://rush-app-2024.web.app"
     },
     {
       title: "SpeakEasy",
