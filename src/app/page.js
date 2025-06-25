@@ -138,26 +138,15 @@ export default function Home() {
                 className="group relative transition duration-300"
                 aria-label="Email"
               >
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-red-500 to-pink-500 rounded-full opacity-0 group-hover:opacity-70 blur-sm transition duration-300 group-hover:duration-200"></div>
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500 to-blue-500 rounded-full opacity-0 group-hover:opacity-70 blur-sm transition duration-300 group-hover:duration-200"></div>
                 <div className="relative flex items-center justify-center bg-white dark:bg-secondary-800 p-4 rounded-full shadow-sm group-hover:shadow-md border border-gray-200 dark:border-secondary-700 z-10">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-secondary-700 dark:text-gray-200 group-hover:text-red-500 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-secondary-700 dark:text-gray-200 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
               </a>
               
-              <div className="pl-2">
-                <a 
-                  href="/ayan_goel.pdf" 
-                  download
-                  className="relative inline-flex items-center gap-2 bg-primary-600 hover:bg-primary-500 transition-colors duration-300 text-white px-8 py-3.5 rounded-full shadow-md hover:shadow-lg z-10 font-medium"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                  Resume
-                </a>
-              </div>
+
               
               <button 
                 onClick={() => scrollToSection('about')}
