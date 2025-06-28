@@ -35,15 +35,14 @@ export default function Experience() {
     },
     {
       title: "Microsoft",
-      company: "Product Management Intern",
+      company: "Product Research Intern",
       location: "Atlanta, GA",
       period: "January 2025 - May 2025",
       logo: "/images/companies/microsoft.webp",
       description: [
-        "Architected multi-agent Copilot system reducing non-critical incident resolution time by 50%, saving $360 per incident/$504K Annually",
+        "Architected multi-agent system reducing non-critical incident resolution time by 50%, saving $360 per incident/$504K Annually",
         "Prototyped asynchronous agent workflow pipeline using Autogen and Azure Functions for continuous data transfer",
         "Optimized agent interaction by testing of 18+ profiles with Azure ML (goal oriented, rule based) to maxmize logical resolution",
-        "Wrote 10+ product specs and Semantic Kernel plugins enabling integration between agents and external support APIs",
         "Developed 10+ product specs and Semantic Kernel plugins enabling integration between agents and external support APIs",
       ],
       technologies: ["Azure ML", "Azure Cognitive Services", "System Design", "Azure Functions", "Autogen", "Semantic Kernel"]
@@ -69,12 +68,12 @@ export default function Experience() {
       period: "December 2024 - Present",
       logo: "/images/companies/vip.png",
       description: [
-        "Automating SPARC-based Density Functional Theory workflows with Python scripts, reducing setup effort by 20%",
+        "Automating SPARC-based Density Functional Theory workflows with Python and Bash scripts, reducing setup effort by 20%",
         "Simulating molecular structures using HPC-based DFT with Atomic Simulation Envs to process 1,000+ interactions",
         "Configured 45+ C files for various physical/chemical calculations such as adsorption, spin polarization, and charge density",
         "Reproducing DFT calculations from 15+ published research papers to evaluate ChatDFT accuracy, enhancing model training"
       ],
-      technologies: ["SPARC", "High Performance Computing", "Python", "Atomic Simulation Environments"]
+      technologies: ["SPARC", "High Performance Computing", "Python", "NumPy", "Pandas", "PyTorch", "Scikit-learn", "Bash", "C"]
     },
     {
       title: "Alpha Kappa Psi - Epsilon Sigma",

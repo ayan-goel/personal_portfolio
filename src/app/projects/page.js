@@ -56,13 +56,13 @@ export default function Projects() {
   const additionalProjects = [
     {
       title: "C++ High Frequency Market Maker",
-      description: "Deployed latency-optimized High Frequency Trading market maker with Coinbase achieving sub-0.1ms order-to-fill execution. Built multi-threaded system with atomic ops, lockless structures, Redis caching, & thread-safe execution at 120+ trades/sec. Devised real-time microsecond risk management engine preventing 99% of drawdown violations across 2M+ live trades.",
+      description: "Deployed latency-optimized High Frequency Trading market maker with Coinbase level-2 order book achieving sub-0.1ms order-to-fill execution. Built multi-threaded system with atomic ops, lockless structures, Redis caching, & thread-safe execution at 120+ trades/sec. Devised real-time microsecond risk management engine preventing 99.9% of drawdown violations across 50M+ simulated trades.",
       technologies: ["C", "C++", "Redis", "LibWebSockets", "Coinbase API", "AWS EC2"],
       githubLink: "https://github.com/ayan-goel/crypto_bot",
     },
     {
       title: "Alpha Kappa Psi Rush Application",
-      description: "Web application for GT's Alpha Kappa Psi fraternity to centralize information of 200+ potential rushees. Used by 100+ fraternity members to expedite the rush process.",
+      description: "Web application for GT's Alpha Kappa Psi fraternity to centralize information of 200+ potential new members/rushees. Used by 100+ fraternity members to expedite the rush process through a fully digital collaborative platform.",
       technologies: ["React.js", "Rust", "MongoDB", "AWS Lambda", "AWS S3", "Firebase"],
       githubLink: "https://github.com/ayan-goel/gtakpsi-rush-app",
       demoLink: "https://rush-app-2024.web.app"
