@@ -9,7 +9,7 @@ export default function Projects() {
       technologies: ["Flutter", "Firebase", "Google Cloud", "Dart", "Calendly API", "Google Maps API", "Stripe API", "Agora API", "Node.js"],
       image: "/images/projects/merge2.jpeg",
       githubLink: "https://github.com/ayan-goel/merge_fitness",
-      demoLink: "https://youtu.be/IlhnT_eyvPs"
+      demoLink: "https://apps.apple.com/us/app/merge-fitness/id6747954527"
     },
     {
       title: "Resume Hub",
