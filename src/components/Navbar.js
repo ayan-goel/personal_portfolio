@@ -8,6 +8,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState(null);
 
   // Handle scroll effect
   useEffect(() => {
@@ -50,11 +51,30 @@ export default function Navbar() {
                           : 'text-secondary-800 hover:text-primary-600'
                       }`
                 }`}
+                onMouseEnter={() => setHoveredItem(item.path)}
+                onMouseLeave={() => setHoveredItem(null)}
               >
                 {item.name}
-                {pathname === item.path && (
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary-500 rounded transform origin-left"></span>
-                )}
+                
+                {/* Current section underline */}
+                <span 
+                  className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary-500 rounded transition-transform duration-300 ease-out ${
+                    pathname === item.path
+                      ? hoveredItem && hoveredItem !== item.path
+                        ? 'transform scale-x-0 origin-left'
+                        : 'transform scale-x-100 origin-left'
+                      : 'transform scale-x-0'
+                  }`}
+                />
+                
+                {/* Hover underline */}
+                <span 
+                  className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary-400 rounded transition-transform duration-300 ease-out ${
+                    hoveredItem === item.path && pathname !== item.path
+                      ? 'transform scale-x-100 origin-left'
+                      : 'transform scale-x-0 origin-left'
+                  }`}
+                />
               </Link>
             ))}
           </div>

@@ -1,5 +1,8 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import TypingAnimation from '../../components/TypingAnimation';
 
 export default function Projects() {
   const projects = [
@@ -113,7 +116,18 @@ export default function Projects() {
           <div className="absolute left-0 w-full h-1 bg-gradient-to-r from-primary-500 to-blue-400 z-0" style={{ bottom: '0.3rem' }}></div>
         </div>
         <p className="text-lg text-secondary-600 max-w-2xl mx-auto mt-6">
-          Explore my latest work and personal projects.
+          <TypingAnimation 
+            texts={[
+              "Explore my latest work and personal projects.",
+              "Discover innovative solutions I've built.",
+              "See my passion for code come to life.",
+              "Check out projects that solve real problems."
+            ]}
+            typingSpeed={50}
+            deletingSpeed={25}
+            pauseTime={1800}
+            className="text-lg text-secondary-600"
+          />
         </p>
       </div>
 

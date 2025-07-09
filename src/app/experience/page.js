@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import TypingAnimation from '../../components/TypingAnimation';
 
 export default function Experience() {
   const experiences = [
@@ -171,7 +172,20 @@ export default function Experience() {
         </h1>
           <div className="absolute left-0 w-full h-1 bg-gradient-to-r from-primary-500 to-blue-400 z-0" style={{ bottom: '0.3rem' }}></div>
         </div>
-        <p className="text-lg text-secondary-600 dark:text-gray-300 max-w-2xl mx-auto mt-4 mb-8">Follow my professional journey and educational background.</p>
+        <p className="text-lg text-secondary-600 dark:text-gray-300 max-w-2xl mx-auto mt-4 mb-8">
+          <TypingAnimation 
+            texts={[
+              "Follow my professional journey and educational background.",
+              "Discover my career milestones and academic achievements.",
+              "Explore my professional growth and learning experiences.",
+              "See how I've evolved through work and education."
+            ]}
+            typingSpeed={50}
+            deletingSpeed={25}
+            pauseTime={1800}
+            className="text-lg text-secondary-600 dark:text-gray-300"
+          />
+        </p>
       </div>
       
       {/* Work Experience */}
