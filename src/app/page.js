@@ -57,15 +57,12 @@ export default function Home() {
     "Software Engineer",
     "Computer Scientist",
     "Full-Stack Developer",
-    "AI Enthusiast",
     "Problem Solver",
     "Builder",
-    "Backend Engineer",
-    "Frontend Developer",
 	  "Machine Learning Engineer",
 	  "Data Scientist",
-	  "DevOps Practitioner",
-    "Systems Designer"
+	  "Researcher",
+    "System Designer"
   ];
   
   const sectionRefs = {
