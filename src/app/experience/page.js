@@ -7,8 +7,35 @@ import TypingAnimation from '../../components/TypingAnimation';
 export default function Experience() {
   const experiences = [
     {
+      title: "Narb (AI Tooling Startup)",
+      company: "Software Engineer Intern",
+      location: "Washington, DC",
+      period: "July 2025 - Present",
+      logo: "/images/companies/narb.jpeg",
+      description: [
+        "Building Narbl, an orchestration layer of low-cost LLMs matching reasoning model accuracy at a fraction of the cost and speed",
+        "Utilizing Convex to store and retrieve chat history, enabling LLMs to maintain contextual awareness across multi-turn conversations",
+        "Deploying Convex cloud functions to manage chat uploads, model fallbacks, & retries, increasing request success to 99.9%",
+        "Implementing API integrations and modular architecture, enabling seamless combination of LLM providers and minimizing latency"
+      ],
+      technologies: [ "React Native", "TypeScript", "Next.js", "Node.js", "Convex", "LLM APIs", "Clerk", "Tailwind CSS"]
+    },
+    {
+      title: "Aghazadeh Research Group",
+      company: "Data Science/Research Intern",
+      location: "Atlanta, GA",
+      period: "May 2025 - Present",
+      logo: "/images/companies/gt_coc.jpeg",
+      description: [
+        "Training Bayesian variational autoencoders on evolutionary sequence alignments to predict pathogenic protein mutations",
+        "Engineering Rosetta scripts with Python to generate artifical data points, boosting VAE accuracy  on low-label genes",
+        "Processing large-scale biological datasets from UniRef100, constructing multiple protein domains across taxonomic groups"
+      ],
+      technologies: ["Python", "TensorFlow", "Scikit-learn", "VAEs", "Rosetts", "NumPy", "Pandas", "Matplotlib", "Biopython", "Pandas"]
+    },
+    {
       title: "FanDuel",
-      company: "Software Engineering Intern",
+      company: "Software Engineer Intern",
       location: "Atlanta, GA",
       period: "May 2025 - August 2025",
       logo: "/images/companies/fanduel.png",
@@ -36,7 +63,7 @@ export default function Experience() {
     },
     {
       title: "Microsoft",
-      company: "Product Research Intern",
+      company: "Product Management Intern",
       location: "Atlanta, GA",
       period: "January 2025 - May 2025",
       logo: "/images/companies/microsoft.webp",
@@ -64,7 +91,7 @@ export default function Experience() {
     },
     {
       title: "The Medford Research Group",
-      company: "Research Intern",
+      company: "Data Science/Research Intern",
       location: "Atlanta, GA",
       period: "December 2024 - Present",
       logo: "/images/companies/vip.png",
@@ -120,7 +147,7 @@ export default function Experience() {
     },
     {
       title: "FIRST Tech Challenge Team 14116",
-      company: "Programming Team Leader",
+      company: "Software Engineering Lead",
       location: "Marietta, GA",
       period: "August 2020 - May 2024",
       logo: "/images/companies/first.png",
@@ -215,7 +242,11 @@ export default function Experience() {
                           fill
                           sizes="(max-width: 768px) 80px, 96px"
                           style={{ objectFit: 'contain' }}
-                          className="p-2"
+                          className={
+                            exp.title === "Narb (AI Tooling Startup)" || exp.title === "Aghazadeh Research Group" 
+                              ? "p-0.25" 
+                              : "p-2"
+                          }
                         />
                       </div>
                     </div>
