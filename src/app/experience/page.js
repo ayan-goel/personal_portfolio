@@ -168,10 +168,10 @@ export default function Experience() {
       period: "Expected Graduation: May 2027",
       logo: "/images/education/gt.png",
       description: [
-        "GPA: 4.0/4.0",
+        "GPA: 3.94/4.0",
         "Concentration: Artificial Intelligence and Computer Networking",
         "Relevant Coursework: Data Structures & Algorithms, Design & Analysis of Algorithms, Object-Oriented Programming, Database Systems, Computer Organization and Programming, Introduction to AI, Objects and Design, Discrete Math for CS, Linear Algebra",
-        "Dean's List/Faculty Honors: Fall 2024"
+        "Dean's List/Faculty Honors: Fall 2024, Spring 2025"
       ]
     },
     {
@@ -181,7 +181,7 @@ export default function Experience() {
       period: "",
       logo: "/images/education/walker.png",
       description: [
-        "GPA: 4.8/4.0",
+        "GPA: 4.81/4.0",
         "Relevant Coursework: AP Computer Science A, AP Computer Science Principles, AP Calculus BC, AP Physics C, AP Chemistry",
         "Involvements: FIRST Tech Challenge Robotics Captain, National Honor Society President, Soccer Team Captain"
       ]
@@ -432,7 +432,7 @@ export default function Experience() {
                   <div className="group/icon flex flex-col items-center justify-center">
                     <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
                       <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" className="w-8 h-8 relative z-10" />
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="C" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">C</span>
                       </div>
