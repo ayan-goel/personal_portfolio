@@ -9,7 +9,7 @@ export default function Experience() {
     {
       title: "Narb (AI Tooling Startup)",
       company: "Software Engineer Intern",
-      location: "Washington, DC",
+      location: "Remote",
       period: "July 2025 - Present",
       logo: "/images/companies/narb.jpeg",
       description: [
