@@ -14,7 +14,6 @@ export default function Experience() {
       logo: "/images/companies/narb.jpeg",
       description: [
         "Building Narbl, an orchestration layer of low-cost LLMs matching reasoning model accuracy at a fraction of the cost and speed",
-        "Utilizing Convex to store and retrieve chat history, enabling LLMs to maintain contextual awareness across multi-turn conversations",
         "Deploying Convex cloud functions to manage chat uploads, model fallbacks, & retries, increasing request success to 99.9%",
         "Implementing API integrations and modular architecture, enabling seamless combination of LLM providers and minimizing latency"
       ],
