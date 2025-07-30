@@ -15,12 +15,12 @@ export default function Projects() {
       demoLink: "https://apps.apple.com/us/app/merge-fitness/id6747954527"
     },
     {
-      title: "Resume Hub",
-      description: "Resume search tool for GT Business Fraternity (110+ users) that parses resumes with AI and allows users to find those with similar major, year, skills, and experience. Supports batch uploading of 100+ resumes at once.",
-      technologies: ["Next.js", "Node.js", "Express.js","JavaScript", "PostgreSQL", "Supabase", "OpenAI API", "AWS S3", "AWS EC2"],
-      image: "/images/projects/resume_search.png",
-      githubLink: "https://github.com/ayan-goel/resume_app",
-      demoLink: "https://gtakpsi-resume-app.vercel.app/"
+      title: "Alpha Kappa Psi Rush Application",
+      description: "Web application for GT's Alpha Kappa Psi fraternity to centralize information of 200+ potential new members/rushees. Used by 100+ fraternity members to expedite the rush process through a fully digital collaborative platform.",
+      technologies: ["React.js", "JavaScript", "Rust", "MongoDB", "AWS Lambda", "AWS S3", "Firebase", "Python"],
+      image: "/images/projects/rush-app.png",
+      githubLink: "https://github.com/ayan-goel/gtakpsi-rush-app",
+      demoLink: "https://www.gtakpsi-rush.com"
     },
     {
       title: "Interview Pro",
@@ -64,11 +64,11 @@ export default function Projects() {
       githubLink: "https://github.com/ayan-goel/crypto_bot",
     },
     {
-      title: "Alpha Kappa Psi Rush Application",
-      description: "Web application for GT's Alpha Kappa Psi fraternity to centralize information of 200+ potential new members/rushees. Used by 100+ fraternity members to expedite the rush process through a fully digital collaborative platform.",
-      technologies: ["React.js", "Rust", "MongoDB", "AWS Lambda", "AWS S3", "Firebase"],
-      githubLink: "https://github.com/ayan-goel/gtakpsi-rush-app",
-      demoLink: "https://rush-app-2024.web.app"
+      title: "Resume Hub",
+      description: "Resume search tool for GT Business Fraternity (110+ users) that parses resumes with AI and allows users to find those with similar major, year, skills, and experience. Supports batch uploading of 100+ resumes at once.",
+      technologies: ["Next.js", "Node.js", "Express.js", "PostgreSQL", "Supabase", "OpenAI API", "AWS S3", "AWS EC2"],
+      githubLink: "https://github.com/ayan-goel/resume_app",
+      demoLink: "https://gtakpsi-resume-app.vercel.app/"
     },
     {
       title: "SpeakEasy",

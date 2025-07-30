@@ -7,19 +7,6 @@ import TypingAnimation from '../../components/TypingAnimation';
 export default function Experience() {
   const experiences = [
     {
-      title: "Narb (AI Tooling Startup)",
-      company: "Software Engineer Intern",
-      location: "Remote",
-      period: "July 2025 - Present",
-      logo: "/images/companies/narb.jpeg",
-      description: [
-        "Building Narbl, an orchestration layer of low-cost LLMs matching reasoning model accuracy at a fraction of the cost and speed",
-        "Deploying Convex cloud functions to manage chat uploads, model fallbacks, & retries, increasing request success to 99.9%",
-        "Implementing API integrations and modular architecture, enabling seamless combination of LLM providers and minimizing latency"
-      ],
-      technologies: [ "React Native", "TypeScript", "Next.js", "Node.js", "Convex", "LLM APIs", "Clerk", "Tailwind CSS"]
-    },
-    {
       title: "Aghazadeh Research Group",
       company: "Data Science/Research Intern",
       location: "Atlanta, GA",
@@ -39,12 +26,13 @@ export default function Experience() {
       period: "May 2025 - August 2025",
       logo: "/images/companies/fanduel.png",
       description: [
-        "Spearheading UI development for the Player Stats page using React/React Native, improving stat access across platforms",
-        "Engineering RESTful integrations using Node & Express to retrieve player data for new sports, supporting millions of API calls",
-        "Refactoring core frontend component architecture with TypeScript, reducing re-render latency and boosting performance",
-        "Integrating feature flags into a scalable serverless data aggregation layer leveraging AWS Lambda and AWS DynamoDB"
+        "Refactoring React Native frontend component architecture to use a content management system, reducing UI update time by 90%",
+        "Engineering RESTful integrations using Node & Express to retrieve player data for new sports, supporting 2.5M+ API calls per day",
+        "Integrating features into a data aggregation layer (AWS Lambda & AWS DynamoDB) enabling WNBA player betting for 14M+ users",
+        "Increased backend repository test coverage by 30% by refactoring functions and writing 2500+ lines of test code with Jest",
+        "Researched and resolved major bug in AWS Terraform deployment pipeline, streamlining test builds for 180+ engineers"
       ],
-      technologies: ["JavaScript", "TypeScript", "React", "React Native", "Node.js", "Express.js", "Redis", "AWS"]
+      technologies: ["JavaScript", "TypeScript", "React", "React Native", "Node.js", "Express.js", "Redis", "AWS", "Jest", "Terraform"]
     },
     {
       title: "Georgia Tech Student Foundation Investments Committee",
