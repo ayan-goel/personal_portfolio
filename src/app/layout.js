@@ -1,21 +1,8 @@
-import { Inter, Source_Code_Pro } from "next/font/google";
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import ScrollAnimations from "./scroll-animations";
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-inter",
-});
-
-const sourceCodePro = Source_Code_Pro({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "700"],
-  variable: "--font-source-code-pro",
-});
 
 export const metadata = {
   title: "Ayan Goel | Software Engineer",
@@ -29,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth light">
       <body
-        className={`${inter.variable} ${sourceCodePro.variable} font-sans antialiased min-h-screen flex flex-col bg-gradient-to-br from-white to-gray-50 text-secondary-600`}
+        className={`${GeistSans.className} antialiased min-h-screen flex flex-col bg-gradient-to-br from-white to-gray-50 text-secondary-600`}
       >
         <Navbar />
         <main className="flex-grow container mx-auto px-4 py-8 md:px-6 lg:px-8 animate-fade-in">

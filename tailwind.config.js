@@ -40,8 +40,7 @@ module.exports = {
       },
       fontFamily: {
         sans: [
-          'var(--font-inter)',
-          'Inter',
+          'Geist',
           'ui-sans-serif',
           'system-ui',
           '-apple-system',
@@ -53,8 +52,7 @@ module.exports = {
           'sans-serif'
         ],
         mono: [
-          'var(--font-source-code-pro)',
-          'Source Code Pro',
+          'Geist Mono',
           'ui-monospace',
           'SFMono-Regular',
           'Menlo',

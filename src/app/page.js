@@ -39,7 +39,7 @@ export default function Home() {
         >
           <div className="w-full md:w-3/5 order-2 md:order-1 space-y-8">
             <div className="space-y-4 animate-fade-in">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.8] pb-5">
+              <h1 className="text-6xl md:text-7xl lg:text-8xl font-normal tracking-tight leading-[1.8] pb-5">
                 Hi, I&#39;m <span className="text-gradient bg-gradient-to-r from-primary-600 via-blue-500 to-primary-400 bg-clip-text text-transparent inline-block pb-2">Ayan.</span>
               </h1>
               
@@ -113,7 +113,7 @@ export default function Home() {
           </div>
           
           <div className="w-full md:w-2/5 order-1 md:order-2 flex justify-center mb-8 md:mb-0 animate-fade-in animate-delay-300">
-            <div className="relative h-72 w-72 md:h-96 md:w-96">
+            <div className="relative h-80 w-80 md:h-[26rem] md:w-[26rem]">
               {/* Enhanced blue glow behind image */}
               <div className="absolute -z-10 -inset-1 rounded-full bg-gradient-to-br from-primary-500/70 to-blue-400/70 dark:from-primary-600/80 dark:to-blue-500/80 blur-3xl"></div>
               
