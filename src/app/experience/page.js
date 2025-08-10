@@ -50,7 +50,7 @@ export default function Experience() {
     },
     {
       title: "Microsoft",
-      company: "Product Management Intern",
+      company: "Product/Research Fellow",
       location: "Atlanta, GA",
       period: "January 2025 - May 2025",
       logo: "/images/companies/microsoft.webp",
