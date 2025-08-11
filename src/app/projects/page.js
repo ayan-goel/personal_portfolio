@@ -17,18 +17,10 @@ export default function Projects() {
     {
       title: "Alpha Kappa Psi Rush Application",
       description: "Web application for GT's Alpha Kappa Psi fraternity to centralize information of 200+ potential new members/rushees. Used by 100+ fraternity members to expedite the rush process through a fully digital collaborative platform.",
-      technologies: ["React.js", "JavaScript", "Rust", "MongoDB", "AWS Lambda", "AWS S3", "Firebase", "Python"],
+      technologies: ["React.js", "JavaScript", "Rust", "MongoDB", "AWS Lambda", "AWS S3", "Firebase", "Node.js", "Socket.io"],
       image: "/images/projects/rush-app.png",
       githubLink: "https://github.com/ayan-goel/gtakpsi-rush-app",
       demoLink: "https://www.gtakpsi-rush.com"
-    },
-    {
-      title: "Interview Pro",
-      description: "A web application (used by 50+ college students) where users can practice their interview skills and receive detailed feedback on their content, structure, and body language using LLMs and OpenCV + Tensorflow.",
-      technologies: ["TypeScript", "Next.js", "Supabase", "Python", "Flask", "TensorFlow", "OpenCV", "OpenAI Whisper API"],
-      image: "/images/projects/pro2.png",
-      githubLink: "https://github.com/ayan-goel/interview-prep.git",
-      demoLink: "https://interview-pro-alpha.vercel.app/"
     },
     {
       title: "Monty",
@@ -39,6 +31,14 @@ export default function Projects() {
       demoLink: "https://monty-alpha.vercel.app"
     },
     {
+      title: "Interview Pro",
+      description: "A web application (used by 50+ college students) where users can practice their interview skills and receive detailed feedback on their content, structure, and body language using LLMs and OpenCV + Tensorflow.",
+      technologies: ["TypeScript", "Next.js", "Supabase", "Python", "Flask", "TensorFlow", "OpenCV", "OpenAI Whisper API"],
+      image: "/images/projects/pro2.png",
+      githubLink: "https://github.com/ayan-goel/interview-prep.git",
+      demoLink: "https://interview-pro-alpha.vercel.app/"
+    },
+    {
       title: "Trading Platform",
       description: "A trading platform UI for Trading at Georgia Tech trading competitions (400+ users), integrated with a matching engine that facilitates order management and real-time price updates. Provides tools to interact with the matching engine by submitting orders, monitoring trades, visualizing the order book, and tracking market prices.",
       technologies: ["JavaScript", "React", "Node.js", "Express.js", "REST APIs", "Socket.io"],
@@ -46,23 +46,16 @@ export default function Projects() {
       githubLink: "https://github.com/ayan-goel/Trading-Competition"
     },
     {
-      title: "Travel Star",
-      description: "A web application that allows users to create AI-generated travel itineraries and manage these custom travel itineraries. Includes map integration, weather updates, hidden gems, restaurants, hotels, and more.",
-      technologies: ["JavaScript", "Python", "Django", "Bootstrap", "MySQL", "Gemini API", "MapBox API"],
-      image: "/images/projects/powertravel.png",
-      githubLink: "https://github.com/ayan-goel/travelApp",
-      demoLink: "https://travelstar.pythonanywhere.com"
-    }
+      title: "C++ High Frequency Market Maker",
+      description: "Deployed latency-optimized High Frequency Trading market maker with Coinbase level-2 order book achieving sub-0.1ms order-to-fill execution. Built multi-threaded system with atomic ops, lockless structures, Redis caching, & thread-safe execution at 120+ trades/sec.",
+      technologies: ["C", "C++", "Redis", "LibWebSockets", "Coinbase API", "AWS EC2"],
+      image: "/images/projects/market_maker.png",
+      githubLink: "https://github.com/ayan-goel/crypto_bot",
+    },
     
   ];
 
   const additionalProjects = [
-    {
-      title: "C++ High Frequency Market Maker",
-      description: "Deployed latency-optimized High Frequency Trading market maker with Coinbase level-2 order book achieving sub-0.1ms order-to-fill execution. Built multi-threaded system with atomic ops, lockless structures, Redis caching, & thread-safe execution at 120+ trades/sec. Devised real-time microsecond risk management engine preventing 99.9% of drawdown violations across 50M+ simulated trades.",
-      technologies: ["C", "C++", "Redis", "LibWebSockets", "Coinbase API", "AWS EC2"],
-      githubLink: "https://github.com/ayan-goel/crypto_bot",
-    },
     {
       title: "Resume Hub",
       description: "Resume search tool for GT Business Fraternity (110+ users) that parses resumes with AI and allows users to find those with similar major, year, skills, and experience. Supports batch uploading of 100+ resumes at once.",
@@ -76,6 +69,13 @@ export default function Projects() {
       technologies: ["JavaScript", "Python", "Next.js", "Flask", "MongoDB", "NVIDIA NIM API"],
       githubLink: "https://github.com/ayan-goel/SpeakEasy",
       demoLink: "https://devpost.com/software/speakeasy-p960yl"
+    },
+    {
+      title: "Travel Star",
+      description: "A web application that allows users to create AI-generated travel itineraries and manage these custom travel itineraries. Includes map integration, weather updates, hidden gems, restaurants, hotels, and more.",
+      technologies: ["JavaScript", "Python", "Django", "Bootstrap", "MySQL", "Gemini API", "MapBox API"],
+      githubLink: "https://github.com/ayan-goel/travelApp",
+      demoLink: "https://travelstar.pythonanywhere.com"
     },
     {
       title: "MediSense AI",

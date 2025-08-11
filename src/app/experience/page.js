@@ -158,7 +158,8 @@ export default function Experience() {
       description: [
         "GPA: 3.94/4.0",
         "Concentration: Artificial Intelligence and Computer Networking",
-        "Relevant Coursework: Data Structures & Algorithms, Design & Analysis of Algorithms, Object-Oriented Programming, Database Systems, Computer Organization and Programming, Introduction to AI, Objects and Design, Discrete Math for CS, Linear Algebra",
+        "Relevant Coursework: Data Structures & Algorithms, Design & Analysis of Algorithms, Object-Oriented Programming",
+        "Database Systems, Computer Organization and Programming, Introduction to AI, Discrete Math for CS, Linear Algebra",
         "Dean's List/Faculty Honors: Fall 2024, Spring 2025"
       ]
     },
