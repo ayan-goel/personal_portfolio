@@ -50,7 +50,7 @@ export default function Experience() {
     },
     {
       title: "Microsoft",
-      company: "Product/Research Fellow",
+      company: "Product @ GT Product Research Fellow",
       location: "Atlanta, GA",
       period: "January 2025 - May 2025",
       logo: "/images/companies/microsoft.webp",
@@ -64,7 +64,7 @@ export default function Experience() {
     },
     {
       title: "United States Soccer Federation",
-      company: "Technology Consultant",
+      company: "GT Undergraduate Consulting Club - Technology Consultant",
       location: "Atlanta, GA",
       period: "January 2025 - April 2025",
       logo: "/images/companies/ussf.png",
