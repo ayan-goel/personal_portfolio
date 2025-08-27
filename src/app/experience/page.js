@@ -7,15 +7,16 @@ import TypingAnimation from '../../components/TypingAnimation';
 export default function Experience() {
   const experiences = [
     {
-      title: "Aghazadeh Research Group",
-      company: "Data Science/Research Intern",
+      title: "AI, ML, and Information Research (AMIR) Group",
+      company: "Machine Learning Engineer Intern",
       location: "Atlanta, GA",
       period: "May 2025 - Present",
       logo: "/images/companies/gt_coc.jpeg",
       description: [
         "Training Bayesian variational autoencoders on evolutionary sequence alignments to predict pathogenic protein mutations",
         "Engineering Rosetta scripts with Python to generate artifical data points, boosting VAE accuracy  on low-label genes",
-        "Processing large-scale biological datasets from UniRef100, constructing multiple protein domains across taxonomic groups"
+        "Processing large-scale biological datasets from UniRef100, constructing multiple protein domains across taxonomic groups",
+        "Researching novel training strategies for protein language models such as structure-aware bucketing for 3D residue context"
       ],
       technologies: ["Python", "TensorFlow", "Scikit-learn", "VAEs", "Rosetts", "NumPy", "Pandas", "Matplotlib", "Biopython", "Pandas"]
     },
@@ -78,7 +79,7 @@ export default function Experience() {
     },
     {
       title: "The Medford Research Group",
-      company: "Data Science/Research Intern",
+      company: "Data Science Intern",
       location: "Atlanta, GA",
       period: "December 2024 - Present",
       logo: "/images/companies/vip.png",
