@@ -231,7 +231,7 @@ export default function Experience() {
                           sizes="(max-width: 768px) 80px, 96px"
                           style={{ objectFit: 'contain' }}
                           className={
-                            exp.title === "Narb (AI Tooling Startup)" || exp.title === "Aghazadeh Research Group" 
+                            exp.title == "AI, ML, and Information Research (AMIR) Group" 
                               ? "p-0.25" 
                               : "p-2"
                           }
