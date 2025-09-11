@@ -7,6 +7,20 @@ import TypingAnimation from '../../components/TypingAnimation';
 export default function Experience() {
   const experiences = [
     {
+      title: "Narb (AI Startup)",
+      company: "Software Engineer Intern",
+      location: "Remote",
+      period: "August 2025 - Present",
+      logo: "/images/companies/narb.jpeg",
+      description: [
+        "Spearheading development of Next.js/React Native sneaker recognition platform w/ gamification, reselling, & social features",
+        "Building Convex API using AWS Rekognition & Google Cloud Vision achieving >90% label & stitching detection accuracy",
+        "Prototyping FastAPI newsfeed API with scheduled web-scraping ingestion of 20+ sources & OpenAI LLMs to parse & clean",
+        "Implementing Pinecone vector DB with CLIP-based embeddings for similarity searches, reducing lookup latency to <150 ms"
+      ],
+      technologies: ["Next.js", "React Native", "Convex", "FastAPI", "JavaScript", "Python", "OpenAI API", "Pinecone", "AWS", "GCP"]
+    },
+    {
       title: "AI, ML, and Information Research (AMIR) Group",
       company: "Machine Learning Engineer Intern",
       location: "Atlanta, GA",
@@ -18,7 +32,7 @@ export default function Experience() {
         "Processing large-scale biological datasets from UniRef100, constructing multiple protein domains across taxonomic groups",
         "Researching novel training strategies for protein language models such as structure-aware bucketing for 3D residue context"
       ],
-      technologies: ["Python", "TensorFlow", "Scikit-learn", "VAEs", "Rosetts", "NumPy", "Pandas", "Matplotlib", "Biopython", "Pandas"]
+      technologies: ["Python", "TensorFlow", "Scikit-learn", "VAEs", "Rosetta", "NumPy", "Pandas", "Matplotlib", "Biopython", "Pandas"]
     },
     {
       title: "FanDuel",
@@ -160,7 +174,7 @@ export default function Experience() {
         "GPA: 3.94/4.0",
         "Concentration: Artificial Intelligence and Computer Networking",
         "Relevant Coursework: Data Structures & Algorithms, Design & Analysis of Algorithms, Object-Oriented Programming",
-        "Database Systems, Computer Organization and Programming, Introduction to AI, Discrete Math for CS, Linear Algebra",
+        "Robotics and Perception, Computer Organization and Programming, Introduction to AI, Discrete Math for CS, Linear Algebra",
         "Dean's List/Faculty Honors: Fall 2024, Spring 2025"
       ]
     },
@@ -231,7 +245,7 @@ export default function Experience() {
                           sizes="(max-width: 768px) 80px, 96px"
                           style={{ objectFit: 'contain' }}
                           className={
-                            exp.title == "AI, ML, and Information Research (AMIR) Group" 
+                            exp.title == "AI, ML, and Information Research (AMIR) Group" | exp.title == "Narb (AI Startup)" 
                               ? "p-0.25" 
                               : "p-2"
                           }
