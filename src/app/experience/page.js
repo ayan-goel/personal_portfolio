@@ -13,10 +13,9 @@ export default function Experience() {
       period: "August 2025 - Present",
       logo: "/images/companies/narb.jpeg",
       description: [
-        "Spearheading development of Next.js/React Native sneaker recognition platform w/ gamification, reselling, & social features",
-        "Building Convex API using AWS Rekognition & Google Cloud Vision achieving >90% label & stitching detection accuracy",
-        "Prototyping FastAPI newsfeed API with scheduled web-scraping ingestion of 20+ sources & OpenAI LLMs to parse & clean",
-        "Implementing Pinecone vector DB with CLIP-based embeddings for similarity searches, reducing lookup latency to <150 ms"
+        "Spearheaded highly accurate Next.js chatbot simulating top-tier reasoning model accuracy at 40% lower cost & 3x speed",
+        "Designed FastAPI backend to route across cheap LLMs (OpenAI, Claude, Gemini) & rank outputs using real-time heuristics",
+        "Implemented Pinecone DB to store embeddings for fast context retrieval and consistent LLM grounding (<150ms lookup)",
       ],
       technologies: ["Next.js", "React Native", "Convex", "FastAPI", "JavaScript", "Python", "OpenAI API", "Pinecone", "AWS", "GCP"]
     },
@@ -65,7 +64,7 @@ export default function Experience() {
     },
     {
       title: "Microsoft",
-      company: "Product @ GT Product Research Fellow",
+      company: "Product Fellow",
       location: "Atlanta, GA",
       period: "January 2025 - May 2025",
       logo: "/images/companies/microsoft.webp",
