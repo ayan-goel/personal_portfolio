@@ -7,7 +7,7 @@ import TypingAnimation from '../../components/TypingAnimation';
 export default function Experience() {
   const experiences = [
     {
-      title: "Narb (AI Startup)",
+      title: "Narb (AI Startup Backed by Northrop Grumman)",
       company: "Software Engineer Intern",
       location: "Remote",
       period: "August 2025 - Present",
@@ -244,7 +244,7 @@ export default function Experience() {
                           sizes="(max-width: 768px) 80px, 96px"
                           style={{ objectFit: 'contain' }}
                           className={
-                            exp.title == "AI, ML, and Information Research (AMIR) Group" | exp.title == "Narb (AI Startup)" 
+                            exp.title == "AI, ML, and Information Research (AMIR) Group" | exp.title == "Narb (AI Startup Backed by Northrop Grumman)" 
                               ? "p-0.25" 
                               : "p-2"
                           }
