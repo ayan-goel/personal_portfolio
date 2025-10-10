@@ -21,7 +21,7 @@ export default function Experience() {
     },
     {
       title: "AI, ML, and Information Research (AMIR) Group",
-      company: "Machine Learning Engineer Intern",
+      company: "Undergraduate Researcher",
       location: "Atlanta, GA",
       period: "May 2025 - Present",
       logo: "/images/companies/gt_coc.jpeg",
@@ -50,7 +50,7 @@ export default function Experience() {
     },
     {
       title: "Georgia Tech Student Foundation Investments Committee",
-      company: "Quantitative Analyst",
+      company: "Quantitative Developer",
       location: "Atlanta, GA",
       period: "January 2025 - Present",
       logo: "/images/companies/gtsf.jpeg",
@@ -92,7 +92,7 @@ export default function Experience() {
     },
     {
       title: "The Medford Research Group",
-      company: "Data Science Intern",
+      company: "Undergraduate Researcher",
       location: "Atlanta, GA",
       period: "December 2024 - Present",
       logo: "/images/companies/vip.png",
