@@ -8,7 +8,7 @@ export default function Projects() {
   const projects = [
     {
       title: "Merge Fitness",
-      description: "A companion mobile app for Merge Fitness LLC (120+ users). Allows trainers to assign workouts/nutrition plans to clients, track their progress, and schedule sessions. Supports live trainer location tracking, video sessions, and in-app payments.",
+      description: "A companion mobile app for Merge Fitness LLC used by hundreds of clients. Allows trainers to assign workouts/nutrition plans to clients, track their progress, and schedule sessions. Supports live trainer location tracking, video sessions, and in-app payments.",
       technologies: ["Flutter", "Firebase", "Google Cloud", "Dart", "Calendly API", "Google Maps API", "Stripe API", "Agora API", "Node.js"],
       image: "/images/projects/merge2.jpeg",
       githubLink: "https://github.com/ayan-goel/merge_fitness",
