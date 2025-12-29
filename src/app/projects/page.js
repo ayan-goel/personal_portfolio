@@ -7,9 +7,9 @@ import TypingAnimation from '../../components/TypingAnimation';
 export default function Projects() {
   const projects = [
     {
-      title: "Merge Fitness",
+      title: "Merge Health & Fitness",
       description: "A companion mobile app for Merge Fitness LLC used by hundreds of clients. Allows trainers to assign workouts/nutrition plans to clients, track their progress, and schedule sessions. Supports live trainer location tracking, video sessions, in-app payments, messaging, and more.",
-      technologies: ["Flutter", "FastAPI", "Firebase", "Google Cloud", "Dart", "Calendly API", "Google Maps API", "Stripe API", "Agora API"],
+      technologies: ["Flutter", "FastAPI", "Google Maps API",, "Google Cloud", "Dart", "Calendly API", "Firebase", "Stripe API", "Agora API"],
       image: "/images/projects/merge2.jpeg",
       githubLink: "https://github.com/ayan-goel/merge_fitness",
       demoLink: "https://apps.apple.com/us/app/merge-fitness/id6747954527"
