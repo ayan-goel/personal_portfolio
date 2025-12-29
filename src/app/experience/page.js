@@ -7,31 +7,42 @@ import TypingAnimation from '../../components/TypingAnimation';
 export default function Experience() {
   const experiences = [
     {
+      title: "Millennium",
+      company: "Software Engineer Intern",
+      location: "Miami, FL",
+      period: "May 2026 - August 2026",
+      logo: "/images/companies/millennium.png",
+      description: [
+        "Incoming Summer 2026, working on low latency trading systems and tools for tracking trader PnL using C++, C#, and .NET",
+      ],
+      technologies: ["C++", "C#", ".NET"]
+    },
+    {
       title: "Narb (AI Startup Backed by Northrop Grumman)",
       company: "Software Engineer Intern",
       location: "Remote",
-      period: "August 2025 - Present",
-      logo: "/images/companies/narb.jpeg",
+      period: "August 2025 - November 2025",
+      logo: "/images/companies/narb-new.png",
       description: [
-        "Spearheaded highly accurate Next.js chatbot simulating top-tier reasoning model accuracy at 40% lower cost & 3x speed",
-        "Designed FastAPI backend to route across cheap LLMs (OpenAI, Claude, Gemini) & rank outputs using real-time heuristics",
-        "Implemented Pinecone DB to store embeddings for fast context retrieval and consistent LLM grounding (<150ms lookup)",
+        "Shipped Next.js interface simulating accuracy of top-tier reasoning models at 40% lower cost and 3x inference speed",
+        "Built serverless LLM orchestration stack w/ AWS, Python, & C++, handling 10K+ daily requests at <200ms latency",
+        "Implemented FastAPI routing, consensus verification, & Pinecone embedding retrieval, achieving 55% error reduction",
       ],
-      technologies: ["Next.js", "React Native", "Convex", "FastAPI", "JavaScript", "Python", "OpenAI API", "Pinecone", "AWS", "GCP"]
+      technologies: ["Next.js", "React Native", "Convex", "FastAPI", "JavaScript", "Python", "OpenAI API", "Pinecone", "AWS", "C++"]
     },
     {
       title: "AI, ML, and Information Research (AMIR) Group",
       company: "Undergraduate Researcher",
       location: "Atlanta, GA",
       period: "May 2025 - Present",
-      logo: "/images/companies/gt_coc.jpeg",
+      logo: "/images/education/gt.png",
       description: [
         "Training Bayesian variational autoencoders on evolutionary sequence alignments to predict pathogenic protein mutations",
-        "Engineering Rosetta scripts with Python to generate artifical data points, boosting VAE accuracy  on low-label genes",
-        "Processing large-scale biological datasets from UniRef100, constructing multiple protein domains across taxonomic groups",
-        "Researching novel training strategies for protein language models such as structure-aware bucketing for 3D residue context"
+        "Designing low-complexity masking algorithms with PyTorch to improve transformer pretraining on protein sequences",
+        "Profiling GPU throughput and memory usage to optimize transformer performance under varied corruption regimes",
+        "Building prototypes to extend masking strategies to graph based protein representations by residue level connectivity"
       ],
-      technologies: ["Python", "TensorFlow", "Scikit-learn", "VAEs", "Rosetta", "NumPy", "Pandas", "Matplotlib", "Biopython", "Pandas"]
+      technologies: ["Python", "TensorFlow", "Scikit-learn", "PyTorch", "NumPy", "Pandas", "Matplotlib", "Pandas"]
     },
     {
       title: "FanDuel",
@@ -56,42 +67,29 @@ export default function Experience() {
       logo: "/images/companies/gtsf.jpeg",
       description: [
         "Completed selective mentorship program learning investing, valuation, financial modeling, and quantitative analysis",
-        "Creating and optimizing trading strategies to enhance performance and build upon current portfolio of $2.5 million",
-        "Contributing to the development of automated trading systems and controllers to execute trades across stocks and ETFs",
-        "Collaborating with sector teams to backtest models and refine strategies based on historical market data and performance metrics"
+        "Creating systematic trading software for the largest philanthropic student-run endowment in the USA ($2.6M AUM)",
+        "Automated live Python pipeline ingesting Polygon price streams & SEC fundamentals into CSV feeds of 5+ strategies",
+        "Deployed execution engine that nets orders, enforces portfolio limits, & drives 200+ daily trades through Flask API"
       ],
       technologies: ["Python", "NumPy", "Pandas", "SciPy", "Scikit-learn", "Matplotlib", "XGBoost", "FinBERT", "Financial Modeling", "Statsmodels"]
     },
     {
       title: "Microsoft",
-      company: "Product Fellow",
+      company: "Product Management Fellow",
       location: "Atlanta, GA",
       period: "January 2025 - May 2025",
       logo: "/images/companies/microsoft.webp",
       description: [
+        "Selected from applicant pool of 200+ students to participate in Product @ GT fellowship program with Microsoft Atlanta",
         "Architected multi-agent system reducing non-critical incident resolution time by 50%, saving $360 per incident/$504K Annually",
-        "Prototyped asynchronous agent workflow pipeline using Autogen and Azure Functions for continuous data transfer",
-        "Optimized agent interaction by testing of 18+ profiles with Azure ML (goal oriented, rule based) to maxmize logical resolution",
+        "Prototyped Python agent pipeline (Autogen \& LangChain) for context-aware multi-turn workflows (triage + routing)",
         "Developed 10+ product specs and Semantic Kernel plugins enabling integration between agents and external support APIs",
       ],
-      technologies: ["Azure ML", "Azure Cognitive Services", "System Design", "Azure Functions", "Autogen", "Semantic Kernel"]
+      technologies: ["Python", "LangChain", "System Design", "Azure Functions", "Autogen", "Semantic Kernel"]
     },
+    
     {
-      title: "United States Soccer Federation",
-      company: "GT Undergraduate Consulting Club - Technology Consultant",
-      location: "Atlanta, GA",
-      period: "January 2025 - April 2025",
-      logo: "/images/companies/ussf.png",
-      description: [
-        "Engineered comprehensive event dashboard for 20+ U.S. Soccer executives, optimizing national team match scheduling",
-        "Devised data integration of 500K+ rows of ticket sales, venue market data, and match history, enabling data-driven planning",
-        "Established searchable database of 150+ stadiums with filters for capacity, location, and amenities, accelerating venue selection",
-        "Created attendance forecasting tool analyzing regional demographics and historical patterns to maximize ticket revenue potential"
-      ],
-      technologies: ["Tableau", "Excel", "SQL", "Python"]
-    },
-    {
-      title: "The Medford Research Group",
+      title: "Medford Research Group",
       company: "Undergraduate Researcher",
       location: "Atlanta, GA",
       period: "December 2024 - Present",
@@ -99,7 +97,7 @@ export default function Experience() {
       description: [
         "Automating SPARC-based Density Functional Theory workflows with Python and Bash scripts, reducing setup effort by 20%",
         "Simulating molecular structures using HPC-based DFT with Atomic Simulation Envs to process 1,000+ interactions",
-        "Configured 45+ C files for various physical/chemical calculations such as adsorption, spin polarization, and charge density",
+        "Configured 45+ C++ files for various physical/chemical calculations such as adsorption, spin polarization, and charge density",
         "Reproducing DFT calculations from 15+ published research papers to evaluate ChatDFT accuracy, enhancing model training"
       ],
       technologies: ["SPARC", "High Performance Computing", "Python", "NumPy", "Pandas", "PyTorch", "Scikit-learn", "Bash", "C"]
@@ -112,12 +110,13 @@ export default function Experience() {
       logo: "/images/companies/akpsi.png",
       description: [
         "Constructed interview preparation tool with Next.js and Flask featuring AI generated practice questions and real-time feedback",
-        "Collaborated on React, MongoDB, & AWS-based rush application centralizing info for 160+ candidates, reducing decision time",
-        "Implemented resume database/search tool using Next.js, PostgreSQL, and AWS helping 110+ members develop connections",
+        "Collaborated on React, MongoDB, & AWS-based rush application centralizing info for 200+ candidates, reducing decision time",
+        "Implemented resume database/search tool using Next.js, PostgreSQL, and AWS, helping 150+ members develop connections",
         "Led 10-person development team using Agile methodology, implementing sprints and stand-ups that accelerated feature delivery",
       ],
       technologies: ["JavaScript", "React", "MongoDB", "AWS", "Firebase", "Node.js", "TensorFlow"]
     },
+     /*
     {
       title: "Trading @ Georgia Tech",
       company: "Software Engineer",
@@ -132,6 +131,7 @@ export default function Experience() {
       ],
       technologies: ["JavaScript", "React", "Node.js", "Express.js", "Socket.io"]
     },
+   
     {
       title: "LifeCycle Building Center",
       company: "Data Science Intern",
@@ -160,6 +160,7 @@ export default function Experience() {
       ],
       technologies: ["Java", "Python", "PID", "OpenCV", "RoadRunner", "TensorFlow"]
     }
+      */
   ];
 
   const education = [
@@ -170,11 +171,11 @@ export default function Experience() {
       period: "Expected Graduation: May 2027",
       logo: "/images/education/gt.png",
       description: [
-        "GPA: 3.94/4.0",
+        "GPA: 3.84/4.0",
         "Concentration: Artificial Intelligence and Computer Networking",
-        "Relevant Coursework: Data Structures & Algorithms, Design & Analysis of Algorithms, Object-Oriented Programming",
-        "Robotics and Perception, Computer Organization and Programming, Introduction to AI, Discrete Math for CS, Linear Algebra",
-        "Dean's List/Faculty Honors: Fall 2024, Spring 2025"
+        "Relevant Coursework: Machine Learning, Systems and Networks, Database Implementation",
+        "Data Structures & Algorithms, Design & Analysis of Algorithms, Object-Oriented Programming",
+        "Robotics and Perception, Computer Organization and Programming, Introduction to AI, Discrete Math for CS, Linear Algebra"
       ]
     },
     {
@@ -237,18 +238,17 @@ export default function Experience() {
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center justify-center">
                       <div className="relative w-20 h-20 md:w-24 md:h-24 bg-white dark:bg-secondary-900 rounded-full overflow-hidden shadow-md">
-                        <Image 
-                          src={exp.logo} 
-                          alt={`${exp.company} logo`}
-                          fill
-                          sizes="(max-width: 768px) 80px, 96px"
-                          style={{ objectFit: 'contain' }}
-                          className={
-                            exp.title == "AI, ML, and Information Research (AMIR) Group" | exp.title == "Narb (AI Startup Backed by Northrop Grumman)" 
-                              ? "p-0.25" 
-                              : "p-2"
-                          }
-                        />
+                        <div className={`absolute inset-0 ${exp.title === "Millennium" || exp.title === "AI, ML, and Information Research (AMIR) Group" ? "p-4" : ""}`}>
+                          <div className="relative w-full h-full">
+                            <Image 
+                              src={exp.logo} 
+                              alt={`${exp.company} logo`}
+                              fill
+                              sizes="(max-width: 768px) 80px, 96px"
+                              style={{ objectFit: 'contain' }}
+                            />
+                          </div>
+                        </div>
                       </div>
                     </div>
                     
@@ -868,7 +868,7 @@ export default function Experience() {
                 <h3 className="text-xl font-bold mb-4 text-secondary-800 dark:text-white">Awards</h3>
                 <ul className="list-disc list-inside space-y-3 text-secondary-600 dark:text-gray-300">
                   <li className="pl-1">
-                    <span className="text-base font-medium">Faculty Honors/Dean&#39;s List: Fall 2024, Spring 2025</span>
+                    <span className="text-base font-medium">Georgia Tech Faculty Honors & Dean&#39;s List</span>
                   </li>
                   <li className="pl-1">
                     <span className="text-base font-medium">Valedictorian Award</span>

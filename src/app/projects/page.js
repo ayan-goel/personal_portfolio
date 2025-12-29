@@ -8,7 +8,7 @@ export default function Projects() {
   const projects = [
     {
       title: "Merge Fitness",
-      description: "A companion mobile app for Merge Fitness LLC used by hundreds of clients. Allows trainers to assign workouts/nutrition plans to clients, track their progress, and schedule sessions. Supports live trainer location tracking, video sessions, and in-app payments.",
+      description: "A companion mobile app for Merge Fitness LLC used by hundreds of clients. Allows trainers to assign workouts/nutrition plans to clients, track their progress, and schedule sessions. Supports live trainer location tracking, video sessions, in-app payments, messaging, and more.",
       technologies: ["Flutter", "Firebase", "Google Cloud", "Dart", "Calendly API", "Google Maps API", "Stripe API", "Agora API", "Node.js"],
       image: "/images/projects/merge2.jpeg",
       githubLink: "https://github.com/ayan-goel/merge_fitness",
@@ -16,17 +16,29 @@ export default function Projects() {
     },
     {
       title: "Alpha Kappa Psi Rush Application",
-      description: "Web application for GT's Alpha Kappa Psi fraternity to centralize information of 200+ potential new members/rushees. Used by 100+ fraternity members to expedite the rush process through a fully digital collaborative platform.",
+      description: "Web application for GT's Alpha Kappa Psi fraternity to centralize information of 200+ potential new members/rushees. Used by 150+ fraternity members to expedite the rush process through a fully digital collaborative platform.",
       technologies: ["React.js", "JavaScript", "Rust", "MongoDB", "AWS Lambda", "AWS S3", "Firebase", "Node.js", "Socket.io"],
       image: "/images/projects/rush-app.png",
       githubLink: "https://github.com/ayan-goel/gtakpsi-rush-app",
       demoLink: "https://www.gtakpsi-rush.com"
     },
     {
+      title: "OneCommit",
+      description: "Serving as director of engineering for a GT x Emory based startup creating a novel copilot for high schoolers recruiting for college athletics utilizing an advanced player-school matching algorithm. Currently in development and seeking funding soon.",
+      technologies: ["TypeScript", "React Native", "Expo", "Node.js", "Express.js", "PostgreSQL", "OpenAI API", "AWS EC2", "AWS RDS"],
+      image: "/images/projects/onecommit.png",
+      githubLink: "https://github.com/ayan-goel",
+      demoLink: "https://www.onecommit.us"
+    },
+    
+  ];
+
+  const additionalProjects = [
+    {
       title: "Monty",
       description: "Application that allows users to develop their own trading strategies and backtest on past stock data and Monte Carlo simulations while receiving LLM insights to improve their strategies.",
       technologies: ["Python", "JavaScript", "React", "FastAPI", "Polygon API", "yFinance", "Gemini API", "AWS Lambda", "AWS ECR"],
-      image: "/images/projects/monty2.png",
+     // image: "/images/projects/monty2.png",
       githubLink: "https://github.com/ayan-goel/monty",
       demoLink: "https://monty-alpha.vercel.app"
     },
@@ -34,7 +46,7 @@ export default function Projects() {
       title: "Interview Pro",
       description: "A web application (used by 50+ college students) where users can practice their interview skills and receive detailed feedback on their content, structure, and body language using LLMs and OpenCV + Tensorflow.",
       technologies: ["TypeScript", "Next.js", "Supabase", "Python", "Flask", "TensorFlow", "OpenCV", "OpenAI Whisper API"],
-      image: "/images/projects/pro2.png",
+     // image: "/images/projects/pro2.png",
       githubLink: "https://github.com/ayan-goel/interview-prep.git",
       demoLink: "https://interview-pro-alpha.vercel.app/"
     },
@@ -42,23 +54,19 @@ export default function Projects() {
       title: "Trading Platform",
       description: "A trading platform UI for Trading at Georgia Tech trading competitions (400+ users), integrated with a matching engine that facilitates order management and real-time price updates. Provides tools to interact with the matching engine by submitting orders, monitoring trades, visualizing the order book, and tracking market prices.",
       technologies: ["JavaScript", "React", "Node.js", "Express.js", "REST APIs", "Socket.io"],
-      image: "/images/projects/tadingcomp.png",
+    //  image: "/images/projects/tadingcomp.png",
       githubLink: "https://github.com/ayan-goel/Trading-Competition"
     },
     {
       title: "C++ High Frequency Market Maker",
       description: "Deployed latency-optimized High Frequency Trading market maker with Coinbase level-2 order book achieving sub-0.1ms order-to-fill execution. Built multi-threaded system with atomic ops, lockless structures, Redis caching, & thread-safe execution at 120+ trades/sec.",
       technologies: ["C", "C++", "Redis", "LibWebSockets", "Coinbase API", "AWS EC2"],
-      image: "/images/projects/market_maker.png",
+     // image: "/images/projects/market_maker.png",
       githubLink: "https://github.com/ayan-goel/crypto_bot",
     },
-    
-  ];
-
-  const additionalProjects = [
     {
       title: "Resume Hub",
-      description: "Resume search tool for GT Business Fraternity (110+ users) that parses resumes with AI and allows users to find those with similar major, year, skills, and experience. Supports batch uploading of 100+ resumes at once.",
+      description: "Resume search tool for GT Business Fraternity (150+ users) that parses resumes with AI and allows users to find those with similar major, year, skills, and experience. Supports batch uploading of 100+ resumes at once.",
       technologies: ["Next.js", "Node.js", "Express.js", "PostgreSQL", "Supabase", "OpenAI API", "AWS S3", "AWS EC2"],
       githubLink: "https://github.com/ayan-goel/resume_app",
       demoLink: "https://gtakpsi-resume-app.vercel.app/"
