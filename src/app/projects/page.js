@@ -9,22 +9,22 @@ export default function Projects() {
     {
       title: "Merge Fitness",
       description: "A companion mobile app for Merge Fitness LLC used by hundreds of clients. Allows trainers to assign workouts/nutrition plans to clients, track their progress, and schedule sessions. Supports live trainer location tracking, video sessions, in-app payments, messaging, and more.",
-      technologies: ["Flutter", "Firebase", "Google Cloud", "Dart", "Calendly API", "Google Maps API", "Stripe API", "Agora API", "Node.js"],
+      technologies: ["Flutter", "FastAPI", "Firebase", "Google Cloud", "Dart", "Calendly API", "Google Maps API", "Stripe API", "Agora API"],
       image: "/images/projects/merge2.jpeg",
       githubLink: "https://github.com/ayan-goel/merge_fitness",
       demoLink: "https://apps.apple.com/us/app/merge-fitness/id6747954527"
     },
     {
       title: "Alpha Kappa Psi Rush Application",
-      description: "Web application for GT's Alpha Kappa Psi fraternity to centralize information of 200+ potential new members/rushees. Used by 150+ fraternity members to expedite the rush process through a fully digital collaborative platform.",
-      technologies: ["React.js", "JavaScript", "Rust", "MongoDB", "AWS Lambda", "AWS S3", "Firebase", "Node.js", "Socket.io"],
+      description: "Web application for GT's Alpha Kappa Psi fraternity to centralize information of 200+ potential new members/rushees. Used by 150+ fraternity members to expedite the rush process and reduce rate of error through a fully digital collaborative platform.",
+      technologies: ["React.js", "TypeScript", "Rust", "MongoDB", "AWS Lambda", "AWS S3", "Firebase", "Node.js", "Socket.io"],
       image: "/images/projects/rush-app.png",
       githubLink: "https://github.com/ayan-goel/gtakpsi-rush-app",
       demoLink: "https://www.gtakpsi-rush.com"
     },
     {
       title: "OneCommit",
-      description: "Serving as director of engineering for a GT x Emory based startup creating a novel copilot for high schoolers recruiting for college athletics utilizing an advanced player-school matching algorithm. Currently in development and seeking funding soon.",
+      description: "Serving as director of engineering for a GT x Emory based startup creating a novel copilot for high schoolers recruiting for college athletics utilizing an advanced player-school matching algorithm combining adaptive heuristics and LLM analysis. Currently in development and seeking funding soon.",
       technologies: ["TypeScript", "React Native", "Expo", "Node.js", "Express.js", "PostgreSQL", "OpenAI API", "AWS EC2", "AWS RDS"],
       image: "/images/projects/onecommit.png",
       githubLink: "https://github.com/ayan-goel",
