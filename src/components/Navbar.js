@@ -30,7 +30,7 @@ export default function Navbar() {
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/80 backdrop-blur-md shadow-sm' 
+          ? 'bg-black/80 backdrop-blur-md shadow-sm shadow-neutral-900' 
           : 'bg-transparent'
       }`}
     >
@@ -44,12 +44,8 @@ export default function Navbar() {
                 href={item.path}
                 className={`px-4 py-2 rounded-md text-base font-medium transition-all duration-300 relative ${
                   pathname === item.path
-                    ? 'text-primary-600'
-                    : `${
-                        scrolled || pathname !== '/'
-                          ? 'text-secondary-600 hover:text-primary-600'
-                          : 'text-secondary-800 hover:text-primary-600'
-                      }`
+                    ? 'text-white'
+                    : 'text-neutral-400 hover:text-white'
                 }`}
                 onMouseEnter={() => setHoveredItem(item.path)}
                 onMouseLeave={() => setHoveredItem(null)}
@@ -58,7 +54,7 @@ export default function Navbar() {
                 
                 {/* Current section underline */}
                 <span 
-                  className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary-500 rounded transition-transform duration-300 ease-out ${
+                  className={`absolute bottom-0 left-0 w-full h-0.5 bg-white rounded transition-transform duration-300 ease-out ${
                     pathname === item.path
                       ? hoveredItem && hoveredItem !== item.path
                         ? 'transform scale-x-0 origin-left'
@@ -69,7 +65,7 @@ export default function Navbar() {
                 
                 {/* Hover underline */}
                 <span 
-                  className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary-400 rounded transition-transform duration-300 ease-out ${
+                  className={`absolute bottom-0 left-0 w-full h-0.5 bg-neutral-400 rounded transition-transform duration-300 ease-out ${
                     hoveredItem === item.path && pathname !== item.path
                       ? 'transform scale-x-100 origin-left'
                       : 'transform scale-x-0 origin-left'
@@ -83,11 +79,7 @@ export default function Navbar() {
           <div className="flex md:hidden items-center justify-center w-full">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`transition-colors duration-300 ${
-                scrolled || pathname !== '/'
-                  ? 'text-secondary-600'
-                  : 'text-secondary-800'
-              } hover:text-primary-600 focus:outline-none`}
+              className="text-neutral-400 hover:text-white focus:outline-none transition-colors duration-300"
             >
               <svg
                 className="h-6 w-6"
@@ -118,7 +110,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-sm shadow-lg border-b border-gray-200">
+        <div className="md:hidden bg-black/95 backdrop-blur-sm shadow-lg border-b border-neutral-800">
           <div className="px-3 pt-3 pb-4 space-y-1">
             {navItems.map((item) => (
               <Link
@@ -126,8 +118,8 @@ export default function Navbar() {
                 href={item.path}
                 className={`block px-3 py-2.5 rounded-lg text-base font-medium text-center transition-colors duration-300 ${
                   pathname === item.path
-                    ? 'text-primary-600 bg-primary-50'
-                    : 'text-secondary-600 hover:text-primary-600 hover:bg-gray-50'
+                    ? 'text-white bg-neutral-800'
+                    : 'text-neutral-400 hover:text-white hover:bg-neutral-900'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -139,4 +131,4 @@ export default function Navbar() {
       )}
     </nav>
   );
-} 
+}

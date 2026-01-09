@@ -196,12 +196,12 @@ export default function Experience() {
     <div className="w-full max-w-7xl mx-auto px-4 py-16 md:py-24">
       <div className="mb-16 text-center animate-fade-in">
         <div className="inline-block relative">
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-secondary-800 to-secondary-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent relative z-10 pb-2">
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent relative z-10 pb-2">
           Experience
         </h1>
-          <div className="absolute left-0 w-full h-1 bg-gradient-to-r from-primary-500 to-blue-400 z-0" style={{ bottom: '0.3rem' }}></div>
+          <div className="absolute left-0 w-full h-1 bg-gradient-to-r from-neutral-400 to-neutral-600 z-0" style={{ bottom: '0.3rem' }}></div>
         </div>
-        <p className="text-lg text-secondary-600 dark:text-gray-300 max-w-2xl mx-auto mt-4 mb-8">
+        <p className="text-lg text-neutral-400 max-w-2xl mx-auto mt-4 mb-8">
           <TypingAnimation 
             texts={[
               "Follow my professional journey and educational background.",
@@ -212,7 +212,7 @@ export default function Experience() {
             typingSpeed={50}
             deletingSpeed={25}
             pauseTime={1800}
-            className="text-lg text-secondary-600 dark:text-gray-300"
+            className="text-lg text-neutral-400"
           />
         </p>
       </div>
@@ -220,8 +220,8 @@ export default function Experience() {
       {/* Work Experience */}
       <section className="mb-20">
         <div className="flex items-center mb-10 animate-fade-in animate-delay-200">
-          <h2 className="text-3xl font-bold text-secondary-800 dark:text-white">Work Experience</h2>
-          <div className="h-0.5 flex-grow ml-6 bg-gradient-to-r from-primary-500/60 to-blue-400/60"></div>
+          <h2 className="text-3xl font-bold text-white">Work Experience</h2>
+          <div className="h-0.5 flex-grow ml-6 bg-gradient-to-r from-neutral-500/60 to-neutral-600/60"></div>
         </div>
         
         <div className="space-y-10">
@@ -231,13 +231,13 @@ export default function Experience() {
               className="group relative transition duration-500 animate-fade-in"
               style={{ animationDelay: `${(index+3) * 0.1}s` }}
             >
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500 to-blue-400 dark:from-primary-600 dark:to-blue-500 rounded-2xl opacity-50 group-hover:opacity-80 blur-sm transition duration-500"></div>
-              <div className="relative bg-white/90 dark:bg-secondary-800/90 backdrop-blur-sm rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:translate-y-[-5px] border border-gray-100 dark:border-secondary-700">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-neutral-500 to-neutral-600 rounded-2xl opacity-50 group-hover:opacity-80 blur-sm transition duration-500"></div>
+              <div className="relative bg-neutral-900/90 backdrop-blur-sm rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:translate-y-[-5px] border border-neutral-700">
                 <div className="p-6 md:p-8">
                   <div className="flex flex-col md:flex-row gap-6">
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center justify-center">
-                      <div className="relative w-20 h-20 md:w-24 md:h-24 bg-white dark:bg-secondary-900 rounded-full overflow-hidden shadow-md">
+                      <div className="relative w-20 h-20 md:w-24 md:h-24 bg-white rounded-full overflow-hidden shadow-md">
                         <div className={`absolute inset-0 ${exp.title === "Millennium" || exp.title === "AI, ML, and Information Research (AMIR) Group" ? "p-4" : ""}`}>
                           <div className="relative w-full h-full">
                             <Image 
@@ -256,22 +256,22 @@ export default function Experience() {
                     <div className="flex-grow">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                         <div>
-                          <h3 className="text-xl md:text-2xl font-bold text-primary-600 dark:text-primary-400">{exp.title}</h3>
-                          <p className="text-lg font-medium text-secondary-700 dark:text-gray-200">
+                          <h3 className="text-xl md:text-2xl font-bold text-white">{exp.title}</h3>
+                          <p className="text-lg font-medium text-neutral-300">
                             {exp.company}
                           </p>
                         </div>
                         <div className="text-right mt-2 md:mt-0">
-                          <p className="text-primary-600 dark:text-primary-400 text-sm md:text-base font-bold">
+                          <p className="text-neutral-300 text-sm md:text-base font-bold">
                             {exp.period}
                           </p>
-                          <p className="text-primary-600 dark:text-primary-400 text-sm md:text-base font-bold">
+                          <p className="text-neutral-300 text-sm md:text-base font-bold">
                             {exp.location}
                           </p>
                         </div>
                       </div>
                       
-                      <ul className="list-disc list-inside space-y-2 mb-6 text-secondary-600 dark:text-gray-300">
+                      <ul className="list-disc list-inside space-y-2 mb-6 text-neutral-400">
                         {exp.description.map((item, idx) => (
                           <li key={idx} className="pl-1">
                             <span className="text-base">{item}</span>
@@ -283,7 +283,7 @@ export default function Experience() {
                         {exp.technologies.map((tech, idx) => (
                           <span 
                             key={idx}
-                            className="px-3 py-1.5 bg-primary-50 text-primary-700 text-sm rounded-full border border-primary-200 shadow-sm hover:shadow hover:bg-primary-100 hover:border-primary-300 hover:-translate-y-0.5 transition-all duration-300 font-medium"
+                            className="px-3 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-600 shadow-sm hover:shadow hover:bg-neutral-700 hover:border-neutral-500 hover:-translate-y-0.5 transition-all duration-300 font-medium"
                           >
                             {tech}
                           </span>
@@ -301,20 +301,20 @@ export default function Experience() {
       {/* Education */}
       <section className="mb-20 animate-fade-in" style={{ animationDelay: '1s' }}>
         <div className="flex items-center mb-10">
-          <h2 className="text-3xl font-bold text-secondary-800 dark:text-white">Education</h2>
-          <div className="h-0.5 flex-grow ml-6 bg-gradient-to-r from-primary-500/60 to-blue-400/60"></div>
+          <h2 className="text-3xl font-bold text-white">Education</h2>
+          <div className="h-0.5 flex-grow ml-6 bg-gradient-to-r from-neutral-500/60 to-neutral-600/60"></div>
         </div>
         
         <div className="space-y-10">
           {education.map((edu, index) => (
             <div key={index} className="group relative transition duration-500 animate-fade-in" style={{ animationDelay: `${(index+11) * 0.1}s` }}>
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500 to-blue-400 dark:from-primary-600 dark:to-blue-500 rounded-2xl opacity-50 group-hover:opacity-80 blur-sm transition duration-500"></div>
-              <div className="relative bg-white/90 dark:bg-secondary-800/90 backdrop-blur-sm rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:translate-y-[-5px] border border-gray-100 dark:border-secondary-700">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-neutral-500 to-neutral-600 rounded-2xl opacity-50 group-hover:opacity-80 blur-sm transition duration-500"></div>
+              <div className="relative bg-neutral-900/90 backdrop-blur-sm rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:translate-y-[-5px] border border-neutral-700">
                 <div className="p-6 md:p-8">
                   <div className="flex flex-col md:flex-row gap-6">
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center justify-center">
-                      <div className="relative w-20 h-20 md:w-24 md:h-24 bg-white dark:bg-secondary-900 rounded-full overflow-hidden shadow-md">
+                      <div className="relative w-20 h-20 md:w-24 md:h-24 bg-white rounded-full overflow-hidden shadow-md">
                         <Image 
                           src={edu.logo} 
                           alt={`${edu.institution} logo`}
@@ -330,22 +330,22 @@ export default function Experience() {
                     <div className="flex-grow">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                         <div>
-                          <h3 className="text-xl md:text-2xl font-bold text-primary-600 dark:text-primary-400">{edu.degree}</h3>
-                          <p className="text-lg font-medium text-secondary-700 dark:text-gray-200">
+                          <h3 className="text-xl md:text-2xl font-bold text-white">{edu.degree}</h3>
+                          <p className="text-lg font-medium text-neutral-300">
                             {edu.institution}
                           </p>
                         </div>
                         <div className="text-right mt-2 md:mt-0">
-                          <p className="text-primary-600 dark:text-primary-400 text-sm md:text-base font-bold">
+                          <p className="text-neutral-300 text-sm md:text-base font-bold">
                             {edu.period}
                           </p>
-                          <p className="text-primary-600 dark:text-primary-400 text-sm md:text-base font-bold">
+                          <p className="text-neutral-300 text-sm md:text-base font-bold">
                             {edu.location}
                           </p>
                         </div>
                       </div>
                       
-                      <ul className="list-disc list-inside space-y-2 text-secondary-600 dark:text-gray-300">
+                      <ul className="list-disc list-inside space-y-2 text-neutral-400">
                         {edu.description.map((item, idx) => (
                           <li key={idx} className="pl-1">
                             <span className="text-base">{item}</span>
@@ -364,22 +364,22 @@ export default function Experience() {
       {/* Skills */}
       <section className="mb-16 animate-fade-in" style={{ animationDelay: '1.3s' }}>
         <div className="flex items-center mb-10">
-          <h2 className="text-3xl font-bold text-secondary-800 dark:text-white">Skills & Awards</h2>
-          <div className="h-0.5 flex-grow ml-6 bg-gradient-to-r from-primary-500/60 to-blue-400/60"></div>
+          <h2 className="text-3xl font-bold text-white">Skills & Awards</h2>
+          <div className="h-0.5 flex-grow ml-6 bg-gradient-to-r from-neutral-500/60 to-neutral-600/60"></div>
         </div>
         
         <div className="group relative transition duration-500">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500 to-blue-400 dark:from-primary-600 dark:to-blue-500 rounded-2xl opacity-50 group-hover:opacity-80 blur-sm transition duration-500"></div>
-          <div className="relative bg-white/90 dark:bg-secondary-800/90 backdrop-blur-sm rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:translate-y-[-5px] border border-gray-100 dark:border-secondary-700">
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-neutral-500 to-neutral-600 rounded-2xl opacity-50 group-hover:opacity-80 blur-sm transition duration-500"></div>
+          <div className="relative bg-neutral-900/90 backdrop-blur-sm rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:translate-y-[-5px] border border-neutral-700">
             <div className="p-6 md:p-8">
               <div className="mb-8">
-                <h3 className="text-xl font-bold mb-4 text-secondary-800 dark:text-white">All Technical Skills</h3>
+                <h3 className="text-xl font-bold mb-4 text-white">All Technical Skills</h3>
                 
                 <div className="grid grid-cols-11 gap-3">
                   {/* JavaScript */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">JavaScript</span>
@@ -389,8 +389,8 @@ export default function Experience() {
                   
                   {/* TypeScript */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">TypeScript</span>
@@ -400,8 +400,8 @@ export default function Experience() {
                   
                   {/* Python */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Python</span>
@@ -411,8 +411,8 @@ export default function Experience() {
                   
                   {/* Java */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Java</span>
@@ -422,8 +422,8 @@ export default function Experience() {
                   
                   {/* C++ */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">C++</span>
@@ -433,8 +433,8 @@ export default function Experience() {
                   
                   {/* C */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="C" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">C</span>
@@ -444,8 +444,8 @@ export default function Experience() {
                   
                   {/* SQL */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-8 h-8 fill-current text-blue-600 relative z-10">
                         <path d="M12 2c-5.05 0-9.375 1.81-9.375 4.044v11.912C2.625 20.19 6.95 22 12 22s9.375-1.81 9.375-4.044V6.044C21.375 3.81 17.05 2 12 2zM3.375 6.044C3.375 4.962 6.857 3.375 12 3.375s8.625 1.587 8.625 2.669V7.65C18.5 8.798 15.396 9.5 12 9.5s-6.5-.702-8.625-1.85V6.044zm0 3.956c1.894 1.022 4.825 1.563 8.625 1.563s6.731-.54 8.625-1.563v3.25C18.5 14.298 15.396 15 12 15s-6.5-.702-8.625-1.85v-3.15zm0 5.5c1.894 1.022 4.825 1.563 8.625 1.563s6.731-.54 8.625-1.563v3.5C20.625 20.188 17.143 21.75 12 21.75S3.375 20.188 3.375 19.1v-3.6z"/>
                       </svg>
@@ -457,8 +457,8 @@ export default function Experience() {
                   
                   {/* Rust */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" alt="Rust" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Rust</span>
@@ -468,8 +468,8 @@ export default function Experience() {
                   
                   {/* Dart */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Dart</span>
@@ -479,8 +479,8 @@ export default function Experience() {
                   
                   {/* React */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">React</span>
@@ -490,8 +490,8 @@ export default function Experience() {
                   
                   {/* Next.js */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-8 h-8 dark:invert relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Next.js</span>
@@ -501,8 +501,8 @@ export default function Experience() {
                   
                   {/* HTML */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">HTML5</span>
@@ -512,8 +512,8 @@ export default function Experience() {
                   
                   {/* CSS */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">CSS3</span>
@@ -523,8 +523,8 @@ export default function Experience() {
                   
                   {/* React Native */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">React Native</span>
@@ -534,8 +534,8 @@ export default function Experience() {
                   
                   {/* Angular */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Angular</span>
@@ -545,8 +545,8 @@ export default function Experience() {
                   
                   {/* Flutter */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Flutter</span>
@@ -556,8 +556,8 @@ export default function Experience() {
                   
                   {/* Bootstrap */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Bootstrap</span>
@@ -567,8 +567,8 @@ export default function Experience() {
                   
                   {/* Node.js */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Node.js</span>
@@ -578,8 +578,8 @@ export default function Experience() {
                   
                   {/* Express.js */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" className="w-8 h-8 dark:invert relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Express.js</span>
@@ -589,8 +589,8 @@ export default function Experience() {
                   
                   {/* PostgreSQL */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">PostgreSQL</span>
@@ -600,8 +600,8 @@ export default function Experience() {
                   
                   {/* MongoDB */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">MongoDB</span>
@@ -611,8 +611,8 @@ export default function Experience() {
                   
                   {/* TensorFlow */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">TensorFlow</span>
@@ -622,8 +622,8 @@ export default function Experience() {
                   
                   {/* PyTorch */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">PyTorch</span>
@@ -633,8 +633,8 @@ export default function Experience() {
                   
                   {/* NumPy */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">NumPy</span>
@@ -644,8 +644,8 @@ export default function Experience() {
                   
                   {/* Pandas */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Pandas</span>
@@ -655,8 +655,8 @@ export default function Experience() {
                   
                   {/* Flask */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" className="w-8 h-8 dark:invert relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Flask</span>
@@ -666,8 +666,8 @@ export default function Experience() {
                   
                   {/* FastAPI */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">FastAPI</span>
@@ -677,8 +677,8 @@ export default function Experience() {
                   
                   {/* Django */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" className="w-8 h-8 relative z-10 dark:invert" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Django</span>
@@ -688,8 +688,8 @@ export default function Experience() {
                   
                   {/* MATLAB */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" alt="MATLAB" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">MATLAB</span>
@@ -699,8 +699,8 @@ export default function Experience() {
                   
                   {/* D3.js */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-plain.svg" alt="D3.js" className="w-8 h-8 relative z-10 dark:invert" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">D3.js</span>
@@ -710,8 +710,8 @@ export default function Experience() {
                   
                   {/* MySQL */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">MySQL</span>
@@ -721,8 +721,8 @@ export default function Experience() {
                   
                   {/* Firebase */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Firebase</span>
@@ -732,8 +732,8 @@ export default function Experience() {
                   
                   {/* Docker */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Docker</span>
@@ -743,8 +743,8 @@ export default function Experience() {
                   
                   {/* Kubernetes */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Kubernetes</span>
@@ -754,8 +754,8 @@ export default function Experience() {
                   
                   {/* Selenium */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg" alt="Selenium" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Selenium</span>
@@ -765,8 +765,8 @@ export default function Experience() {
                   
                   {/* Scikit-learn */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-learn" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Scikit-learn</span>
@@ -776,8 +776,8 @@ export default function Experience() {
                   
                   {/* SciPy */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://scipy.org/images/logo.svg" alt="SciPy" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">SciPy</span>
@@ -787,8 +787,8 @@ export default function Experience() {
                   
                   {/* Github */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github" className="w-8 h-8 relative z-10 dark:invert" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Github</span>
@@ -798,8 +798,8 @@ export default function Experience() {
                   
                   {/* Supabase */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Supabase</span>
@@ -809,8 +809,8 @@ export default function Experience() {
                   
                   {/* AWS */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="w-10 h-10 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">AWS</span>
@@ -820,8 +820,8 @@ export default function Experience() {
                   
                   {/* Azure */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Azure</span>
@@ -831,8 +831,8 @@ export default function Experience() {
                   
                   {/* GCP */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" alt="GCP" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">GCP</span>
@@ -842,8 +842,8 @@ export default function Experience() {
                   
                   {/* Git */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Git</span>
@@ -853,8 +853,8 @@ export default function Experience() {
                   
                   {/* Linux */}
                   <div className="group/icon flex flex-col items-center justify-center">
-                    <div className="relative w-14 h-14 flex items-center justify-center bg-white dark:bg-secondary-700 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/30 to-blue-400/30 dark:from-primary-600/40 dark:to-blue-500/40 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
+                    <div className="relative w-14 h-14 flex items-center justify-center bg-neutral-800 rounded-xl shadow-sm transition duration-300 group-hover/icon:shadow-md overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-r from-neutral-600/30 to-neutral-500/30 opacity-50 group-hover/icon:opacity-100 transition-opacity duration-300"></div>
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" className="w-8 h-8 relative z-10" />
                       <div className="absolute inset-0 bg-black/70 text-white flex items-center justify-center rounded-xl opacity-0 group-hover/icon:opacity-100 transition-opacity duration-300 z-20">
                         <span className="text-xs font-medium">Linux</span>
@@ -865,8 +865,8 @@ export default function Experience() {
               </div>
               
               <div>
-                <h3 className="text-xl font-bold mb-4 text-secondary-800 dark:text-white">Awards</h3>
-                <ul className="list-disc list-inside space-y-3 text-secondary-600 dark:text-gray-300">
+                <h3 className="text-xl font-bold mb-4 text-white">Awards</h3>
+                <ul className="list-disc list-inside space-y-3 text-neutral-400">
                   <li className="pl-1">
                     <span className="text-base font-medium">Georgia Tech Faculty Honors & Dean&#39;s List</span>
                   </li>
@@ -893,7 +893,7 @@ export default function Experience() {
       <div className="text-center mt-16 animate-fade-in animate-delay-800">
         <Link 
           href="/" 
-          className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-400 transition-all duration-300 text-white px-8 py-3 rounded-full shadow-md hover:shadow-lg font-medium group"
+          className="inline-flex items-center gap-2 bg-white hover:bg-neutral-100 transition-all duration-300 text-black px-8 py-3 rounded-full shadow-md hover:shadow-lg font-medium group"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transition-transform duration-300 group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />

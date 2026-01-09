@@ -58,7 +58,7 @@ export default function Projects() {
       githubLink: "https://github.com/ayan-goel/Trading-Competition"
     },
     {
-      title: "C++ High Frequency Market Maker",
+      title: "High Frequency Market Maker",
       description: "Deployed latency-optimized High Frequency Trading market maker with Coinbase level-2 order book achieving sub-0.1ms order-to-fill execution. Built multi-threaded system with atomic ops, lockless structures, Redis caching, & thread-safe execution at 120+ trades/sec.",
       technologies: ["C", "C++", "Redis", "LibWebSockets", "Coinbase API", "AWS EC2"],
      // image: "/images/projects/market_maker.png",
@@ -118,12 +118,12 @@ export default function Projects() {
     <div className="w-full max-w-7xl mx-auto px-4 py-16 md:py-24">
       <div className="mb-16 text-center animate-fade-in">
         <div className="inline-block relative">
-          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-secondary-800 to-secondary-600 bg-clip-text text-transparent relative z-10 pb-2">
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent relative z-10 pb-2">
             Projects
           </h1>
-          <div className="absolute left-0 w-full h-1 bg-gradient-to-r from-primary-500 to-blue-400 z-0" style={{ bottom: '0.3rem' }}></div>
+          <div className="absolute left-0 w-full h-1 bg-gradient-to-r from-neutral-400 to-neutral-600 z-0" style={{ bottom: '0.3rem' }}></div>
         </div>
-        <p className="text-lg text-secondary-600 max-w-2xl mx-auto mt-6">
+        <p className="text-lg text-neutral-400 max-w-2xl mx-auto mt-6">
           <TypingAnimation 
             texts={[
               "Explore my latest work and personal projects.",
@@ -134,7 +134,7 @@ export default function Projects() {
             typingSpeed={50}
             deletingSpeed={25}
             pauseTime={1800}
-            className="text-lg text-secondary-600"
+            className="text-lg text-neutral-400"
           />
         </p>
       </div>
@@ -145,10 +145,10 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.slice(0, 3).map((project, index) => (
             <div key={index} className="group relative transition duration-500 h-full animate-fade-in" style={{ animationDelay: `${(index+1) * 0.1}s` }}>
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500 to-blue-400 rounded-2xl opacity-50 group-hover:opacity-80 blur-sm transition duration-500"></div>
-              <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:translate-y-[-5px] group-hover:shadow-xl border border-gray-100 h-full flex flex-col">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-neutral-500 to-neutral-600 rounded-2xl opacity-50 group-hover:opacity-80 blur-sm transition duration-500"></div>
+              <div className="relative bg-neutral-900/90 backdrop-blur-sm rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:translate-y-[-5px] group-hover:shadow-xl border border-neutral-700 h-full flex flex-col">
                 {/* Project Image */}
-                <div className={`h-48 relative overflow-hidden ${project.title === 'Merge Fitness' ? 'bg-black' : 'bg-gray-200/80'}`}>
+                <div className={`h-48 relative overflow-hidden ${project.title === 'Merge Fitness' ? 'bg-black' : 'bg-neutral-800'}`}>
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20 z-10"></div>
                   {project.image ? (
                     <Image
@@ -161,20 +161,20 @@ export default function Projects() {
                     />
                   ) : (
                     <div className="flex items-center justify-center h-full">
-                      <span className="text-gray-600 z-20">Project Image</span>
+                      <span className="text-neutral-500 z-20">Project Image</span>
                     </div>
                   )}
                 </div>
                 
                 <div className="p-6 flex-grow">
-                  <h3 className="text-xl font-bold text-primary-600 mb-3">{project.title}</h3>
-                  <p className="text-secondary-600 mb-5">{project.description}</p>
+                  <h3 className="text-xl font-bold text-white mb-3">{project.title}</h3>
+                  <p className="text-neutral-400 mb-5">{project.description}</p>
                   
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map((tech, idx) => (
                       <span 
                         key={idx}
-                        className="px-3 py-1.5 bg-primary-50 text-primary-700 text-sm rounded-full border border-primary-200 shadow-sm hover:shadow hover:bg-primary-100 hover:border-primary-300 hover:-translate-y-0.5 transition-all duration-300 font-medium"
+                        className="px-3 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-600 shadow-sm hover:shadow hover:bg-neutral-700 hover:border-neutral-500 hover:-translate-y-0.5 transition-all duration-300 font-medium"
                       >
                         {tech}
                       </span>
@@ -188,7 +188,7 @@ export default function Projects() {
                       href={project.githubLink} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-gray-100 text-secondary-700 text-sm rounded-full shadow-sm hover:shadow-md border border-gray-200 hover:bg-gray-200 transition-all duration-300 font-medium"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-neutral-800 text-neutral-300 text-sm rounded-full shadow-sm hover:shadow-md border border-neutral-600 hover:bg-neutral-700 transition-all duration-300 font-medium"
                     >
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" className="flex-shrink-0">
                         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
@@ -200,7 +200,7 @@ export default function Projects() {
                         href={project.demoLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-primary-500 text-white text-sm rounded-full shadow-sm hover:shadow-md border border-primary-400 hover:bg-primary-600 transition-all duration-300 font-medium"
+                        className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-black text-sm rounded-full shadow-sm hover:shadow-md border border-neutral-300 hover:bg-neutral-100 transition-all duration-300 font-medium"
                       >
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" className="flex-shrink-0">
                           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -295,19 +295,19 @@ export default function Projects() {
       {/* Additional Projects Section */}
       <section className="mt-20 animate-fade-in" style={{ animationDelay: '0.5s' }}>
         <div className="flex items-center mb-10">
-          <h2 className="text-3xl font-bold bg-gradient-to-br from-secondary-800 to-secondary-600 bg-clip-text text-transparent">Additional Projects</h2>
-          <div className="h-0.5 flex-grow ml-6 bg-gradient-to-r from-primary-500/60 to-blue-400/60"></div>
+          <h2 className="text-3xl font-bold bg-gradient-to-br from-white to-neutral-400 bg-clip-text text-transparent">Additional Projects</h2>
+          <div className="h-0.5 flex-grow ml-6 bg-gradient-to-r from-neutral-500/60 to-neutral-600/60"></div>
         </div>
         
         <div className="group relative transition duration-500">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500 to-blue-400 rounded-2xl opacity-50 group-hover:opacity-80 blur-sm transition duration-500"></div>
-          <div className="relative bg-white/90 backdrop-blur-sm rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:translate-y-[-5px] group-hover:shadow-xl border border-gray-100">
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-neutral-500 to-neutral-600 rounded-2xl opacity-50 group-hover:opacity-80 blur-sm transition duration-500"></div>
+          <div className="relative bg-neutral-900/90 backdrop-blur-sm rounded-2xl overflow-hidden transform transition-all duration-500 group-hover:translate-y-[-5px] group-hover:shadow-xl border border-neutral-700">
             <div className="p-6 md:p-8">
               <ul className="space-y-8">
                 {additionalProjects.map((project, index) => (
-                  <li key={index} className={index < additionalProjects.length - 1 ? "border-b border-gray-200 pb-6 group/item" : "group/item"}>
-                    <h3 className="font-bold text-xl text-primary-600 mb-3 group-hover/item:text-primary-500 transition-colors duration-300">{project.title}</h3>
-                    <p className="text-secondary-600 mb-4">
+                  <li key={index} className={index < additionalProjects.length - 1 ? "border-b border-neutral-700 pb-6 group/item" : "group/item"}>
+                    <h3 className="font-bold text-xl text-white mb-3 group-hover/item:text-neutral-200 transition-colors duration-300">{project.title}</h3>
+                    <p className="text-neutral-400 mb-4">
                       {project.description}
                     </p>
                     <div className="flex flex-wrap items-center justify-between">
@@ -315,7 +315,7 @@ export default function Projects() {
                         {project.technologies.map((tech, idx) => (
                           <span 
                             key={idx}
-                            className="px-3 py-1.5 bg-primary-50 text-primary-700 text-sm rounded-full border border-primary-200 shadow-sm hover:shadow hover:bg-primary-100 hover:border-primary-300 hover:-translate-y-0.5 transition-all duration-300 font-medium"
+                            className="px-3 py-1.5 bg-neutral-800 text-neutral-300 text-sm rounded-full border border-neutral-600 shadow-sm hover:shadow hover:bg-neutral-700 hover:border-neutral-500 hover:-translate-y-0.5 transition-all duration-300 font-medium"
                           >
                             {tech}
                           </span>
@@ -326,7 +326,7 @@ export default function Projects() {
                           href={project.githubLink} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 text-secondary-700 text-sm rounded-full shadow-sm hover:shadow-md border border-gray-200 hover:bg-gray-200 transition-all duration-300 font-medium"
+                          className="inline-flex items-center gap-2 px-4 py-2 bg-neutral-800 text-neutral-300 text-sm rounded-full shadow-sm hover:shadow-md border border-neutral-600 hover:bg-neutral-700 transition-all duration-300 font-medium"
                         >
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" className="flex-shrink-0">
                             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
@@ -338,7 +338,7 @@ export default function Projects() {
                             href={project.demoLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-4 py-2 bg-primary-500 text-white text-sm rounded-full shadow-sm hover:shadow-md border border-primary-400 hover:bg-primary-600 transition-all duration-300 font-medium"
+                            className="inline-flex items-center gap-2 px-4 py-2 bg-white text-black text-sm rounded-full shadow-sm hover:shadow-md border border-neutral-300 hover:bg-neutral-100 transition-all duration-300 font-medium"
                           >
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" className="flex-shrink-0">
                               <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
@@ -361,7 +361,7 @@ export default function Projects() {
       <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: '0.7s' }}>
         <Link 
           href="/" 
-          className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-500 hover:to-primary-400 transition-all duration-300 text-white px-8 py-3 rounded-full shadow-md hover:shadow-lg font-medium group"
+          className="inline-flex items-center gap-2 bg-white hover:bg-neutral-100 transition-all duration-300 text-black px-8 py-3 rounded-full shadow-md hover:shadow-lg font-medium group"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transition-transform duration-300 group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />

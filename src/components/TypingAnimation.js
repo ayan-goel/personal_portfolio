@@ -7,7 +7,7 @@ export default function TypingAnimation({
   typingSpeed = 100, 
   deletingSpeed = 50, 
   pauseTime = 2000,
-  className = "text-gradient bg-gradient-to-r from-primary-600 to-blue-500 bg-clip-text text-transparent"
+  className = "text-gradient bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent"
 }) {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
