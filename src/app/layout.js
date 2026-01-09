@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
           <div className="container mx-auto px-4 md:px-6 text-center">
             <div className="flex flex-col items-center justify-center space-y-4">
               <div className="text-sm text-gray-500">
-                © {new Date().getFullYear()} | Designed & Built by Ayan Goel | All Rights Reserved
+                © 2026 | Designed & Built by Ayan Goel | All Rights Reserved
               </div>
             </div>
           </div>

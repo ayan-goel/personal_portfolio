@@ -175,7 +175,7 @@ export default function Home() {
                       </p>
                       
                       <p className="text-lg text-secondary-600 dark:text-gray-300 mb-6 leading-relaxed">
-                      Through internships research, and various other involvements at Georgia Tech, I&#39;ve architected scalable systems, 
+                      Through internships, research, and various other involvements at Georgia Tech, I&#39;ve architected scalable systems, 
                       optimized workflows, and driven impactful results, while working with diverse teams in professional settings.
                       I enjoy tackling complex problems with elegant, 
                       efficient solutions and am always seeking ways to continue growing and building technology
