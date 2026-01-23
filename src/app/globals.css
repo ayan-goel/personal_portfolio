@@ -5,14 +5,14 @@
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 10, 10, 15;
+  --background-end-rgb: 0, 0, 0;
   
   /* Color variables - grey-based accent */
   --primary: 160, 160, 170;
   --primary-dark: 120, 120, 130;
   --secondary: 240, 240, 245;
-  --card-bg: 18, 18, 22;
-  --card-bg-dark: 12, 12, 16;
+  --card-bg: 0, 0, 0;
+  --card-bg-dark: 0, 0, 0;
   
   /* Font variables */
   --font-inter: 'Inter', system-ui, sans-serif;
@@ -29,12 +29,7 @@ html {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      rgb(var(--background-start-rgb)),
-      rgb(var(--background-end-rgb))
-    );
-  background-attachment: fixed;
+  background: #000000;
   letter-spacing: -0.011em;
 }
 
