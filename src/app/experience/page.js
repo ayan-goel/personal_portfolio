@@ -13,9 +13,22 @@ export default function Experience() {
       period: "May 2026 - August 2026",
       logo: "/images/companies/millennium.png",
       description: [
-        "Incoming Summer 2026, working on low latency trading systems and tools for tracking trader PnL using C++, C#, and .NET",
+        "Incoming Summer 2026, working on low-latency trading systems and tools for tracking trader PnL using C++, C#, and .NET",
       ],
       technologies: ["C++", "C#", ".NET"]
+    },
+    {
+      title: "Bits of Good - A Hack4Impact Chapter",
+      company: "Software Engineer",
+      location: "Atlanta, GA",
+      period: "January 2026 - Present",
+      logo: "/images/companies/bog.png",
+      description: [
+        "Creating reusable SaaS template with Next.js, Drizzle ORM, & PostgreSQL, reducing project bootstrap time by 90%",
+        "Designed modular service layer architecture (RBAC, auth hooks, migrations), enabling 65% code reuse on future apps",
+        "Implemented type-safe API template with TypeScript, adopted as org-wide standard reducing endpoint bugs by 72%",
+      ],
+      technologies: ["TypeScript", "Next.js", "PostgreSQL", ]
     },
     {
       title: "Narb (AI Startup Backed by Northrop Grumman)",
@@ -31,7 +44,7 @@ export default function Experience() {
       technologies: ["Next.js", "React Native", "Convex", "FastAPI", "JavaScript", "Python", "OpenAI API", "Pinecone", "AWS", "C++"]
     },
     {
-      title: "AI, ML, and Information Research (AMIR) Group",
+      title: "Aghazadeh Lab at Georgia Tech",
       company: "Undergraduate Researcher",
       location: "Atlanta, GA",
       period: "May 2025 - Present",
@@ -52,7 +65,7 @@ export default function Experience() {
       logo: "/images/companies/fanduel.png",
       description: [
         "Refactoring React Native frontend component architecture to use a content management system, reducing UI update time by 90%",
-        "Engineering RESTful integrations using Node & Express to retrieve player data for new sports, supporting 2.5M+ API calls per day",
+        "Engineering RESTful integrations using Java and Spring Boot to retrieve player data for new sports, supporting 2.5M+ API calls/day",
         "Integrating features into a data aggregation layer (AWS Lambda & AWS DynamoDB) enabling WNBA player betting for 14M+ users",
         "Increased backend repository test coverage by 30% by refactoring functions and writing 2500+ lines of test code with Jest",
         "Researched and resolved major bug in AWS Terraform deployment pipeline, streamlining test builds for 180+ engineers"
@@ -238,7 +251,7 @@ export default function Experience() {
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center justify-center">
                       <div className="relative w-20 h-20 md:w-24 md:h-24 bg-white rounded-full overflow-hidden shadow-md">
-                        <div className={`absolute inset-0 ${exp.title === "Millennium" || exp.title === "AI, ML, and Information Research (AMIR) Group" ? "p-4" : ""}`}>
+                        <div className={`absolute inset-0 ${exp.title === "Millennium" || exp.title === "Aghazadeh Lab at Georgia Tech" ? "p-4" : ""}`}>
                           <div className="relative w-full h-full">
                             <Image 
                               src={exp.logo} 
