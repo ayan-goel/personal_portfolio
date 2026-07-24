@@ -397,7 +397,7 @@
     position: relative;
   }
   .shot img { width: 100%; height: 100%; object-fit: contain; display: block; }
-  .shot:has(img) { background-color: #ffffff; background-image: none; }
+  .shot:has(img) { background-color: #ffffff; background-image: none; padding: 0 22px; }
   .shot.dark:has(img) { background-color: #0d0d0f; }
   .shot span {
     font-family: var(--mono);
@@ -523,6 +523,12 @@
     letter-spacing: 0.03em;
   }
   footer a:hover { color: var(--accent-deep); }
+
+  /* ---------- monochrome imagery (headshot stays in color) ---------- */
+  .logo img,
+  .shot img {
+    filter: grayscale(1);
+  }
 
   /* reveal animation - only hidden when JS confirms it can reveal (progressive enhancement) */
   .js-reveal .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.7s cubic-bezier(.22,.61,.36,1), transform 0.7s cubic-bezier(.22,.61,.36,1); }
