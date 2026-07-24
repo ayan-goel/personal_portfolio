@@ -437,7 +437,7 @@
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 14px 32px;
-    align-items: center;
+    align-items: stretch;
     padding: 20px 24px;
     border: 1px solid var(--line);
     border-radius: var(--radius);
@@ -451,7 +451,7 @@
   .pr-title { font-family: var(--serif); font-weight: 600; font-size: 20px; margin: 0; letter-spacing: -0.01em; }
   .pr-year { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); }
   .pr-desc { margin: 6px 0 0; color: var(--ink-2); font-size: 14.5px; line-height: 1.5; max-width: 70ch; }
-  .pr-side { display: flex; flex-direction: column; align-items: flex-end; gap: 11px; }
+  .pr-side { display: flex; flex-direction: column; align-items: flex-end; justify-content: space-between; gap: 11px; }
   .pr-side .project-stack { justify-content: flex-end; }
   .project-row .project-stack { gap: 6px; }
   .project-row .project-stack span { border: 1px solid var(--line); border-radius: var(--radius); padding: 3px 9px; white-space: nowrap; }
