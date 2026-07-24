@@ -40,6 +40,9 @@
 
     --radius: 4px;
 
+    /* 1 = full color, 0 = greyscale */
+    --img-saturation: 0.6;
+
     --maxw: 1100px;
     --gap: 76px;
   }
@@ -281,6 +284,7 @@
   .logo:has(img) { background: #fff; }
   .logo img { width: 100%; height: 100%; object-fit: contain; padding: 9px; }
   .logo.bleed img { object-fit: cover; padding: 0; }
+  .logo.tight img { padding: 3px; }
   .entry-body {
     min-width: 0;
     display: grid;
@@ -524,10 +528,11 @@
   }
   footer a:hover { color: var(--accent-deep); }
 
-  /* ---------- monochrome imagery (headshot stays in color) ---------- */
+  /* ---------- muted imagery: color retained, vibrancy dialed back ---------- */
+  .avatar,
   .logo img,
   .shot img {
-    filter: grayscale(1);
+    filter: saturate(var(--img-saturation));
   }
 
   /* reveal animation - only hidden when JS confirms it can reveal (progressive enhancement) */
@@ -652,7 +657,7 @@
           </article>
 
           <article class="entry">
-            <div class="logo"><img src="assets/logo-fanduel.png" alt="FanDuel" /></div>
+            <div class="logo tight"><img src="assets/logo-fanduel.png" alt="FanDuel" /></div>
             <div class="entry-body">
               <h3 class="entry-role">Software Engineer Intern</h3>
               <p class="entry-co">FanDuel</p>
