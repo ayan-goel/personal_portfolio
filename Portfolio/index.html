@@ -411,9 +411,8 @@
     border: 1px solid var(--line);
   }
   .project-body { padding: 20px 22px 22px; display: flex; flex-direction: column; flex: 1; }
-  .project-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+  .project-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
   .project-title { font-family: var(--serif); font-weight: 600; font-size: 21px; margin: 0; letter-spacing: -0.01em; }
-  .project-year { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); }
   .project-desc { margin: 9px 0 0; color: var(--ink-2); font-size: 14.5px; line-height: 1.55; flex: 1; }
   .project-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 18px; }
   .project-stack { display: flex; gap: 6px; flex-wrap: wrap; }
@@ -449,7 +448,6 @@
   .pr-main { min-width: 0; }
   .pr-head { display: flex; align-items: baseline; gap: 12px; }
   .pr-title { font-family: var(--serif); font-weight: 600; font-size: 20px; margin: 0; letter-spacing: -0.01em; }
-  .pr-year { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); }
   .pr-desc { margin: 6px 0 0; color: var(--ink-2); font-size: 14.5px; line-height: 1.5; max-width: 70ch; }
   .pr-side { display: flex; flex-direction: column; align-items: flex-end; justify-content: space-between; gap: 11px; }
   .pr-side .project-stack { justify-content: flex-end; }
@@ -746,7 +744,6 @@
             <div class="project-body">
               <div class="project-head">
                 <h3 class="project-title">AKPsi Rush</h3>
-                <span class="project-year">2026</span>
               </div>
               <p class="project-desc">Recruitment platform for Georgia Tech's Alpha Kappa Psi: rushee registration, brother voting, and event management in one place. 250+ users.</p>
               <div class="project-foot">
@@ -766,7 +763,6 @@
             <div class="project-body">
               <div class="project-head">
                 <h3 class="project-title">OneCommit</h3>
-                <span class="project-year">2026</span>
               </div>
               <p class="project-desc">Helps high school athletes get recruited: matches them with the right colleges, emails coaches directly, and adapts based on what it learns. 600+ users.</p>
               <div class="project-foot">
@@ -786,7 +782,6 @@
             <div class="project-body">
               <div class="project-head">
                 <h3 class="project-title">Evobase</h3>
-                <span class="project-year">2026</span>
               </div>
               <p class="project-desc">An optimization infrastructure layer: connect a repo once and it continuously finds framework-specific improvements and opens PRs you can merge with confidence.</p>
               <div class="project-foot">
@@ -806,7 +801,6 @@
             <div class="project-body">
               <div class="project-head">
                 <h3 class="project-title">Merge Fitness</h3>
-                <span class="project-year">2025</span>
               </div>
               <p class="project-desc">Health, fitness, and nutrition companion: workout plans, live training-session tracking, virtual training, and macro logging in a single app. 200+ users.</p>
               <div class="project-foot">
@@ -827,7 +821,7 @@
 
           <article class="project-row">
             <div class="pr-main">
-              <div class="pr-head"><h3 class="pr-title">Vergil</h3><span class="pr-year">2026</span></div>
+              <div class="pr-head"><h3 class="pr-title">Vergil</h3></div>
               <p class="pr-desc">Formal verification for Solidity contracts using LLM loops to create mathematical proofs for SMT solvers.</p>
             </div>
             <div class="pr-side">
@@ -840,7 +834,7 @@
 
           <article class="project-row">
             <div class="pr-main">
-              <div class="pr-head"><h3 class="pr-title">RISC-V Operating System</h3><span class="pr-year">2026</span></div>
+              <div class="pr-head"><h3 class="pr-title">RISC-V Operating System</h3></div>
               <p class="pr-desc">A RISC-V kernel in C built from bare metal with a custom process scheduling algorithm.</p>
             </div>
             <div class="pr-side">
@@ -853,7 +847,7 @@
 
           <article class="project-row">
             <div class="pr-main">
-              <div class="pr-head"><h3 class="pr-title">ESM-2 Inference Engine</h3><span class="pr-year">2026</span></div>
+              <div class="pr-head"><h3 class="pr-title">ESM-2 Inference Engine</h3></div>
               <p class="pr-desc">From-scratch inference engine for protein language models (ESM-2) for increased throughput on CPU.</p>
             </div>
             <div class="pr-side">
@@ -866,7 +860,7 @@
 
           <article class="project-row">
             <div class="pr-main">
-              <div class="pr-head"><h3 class="pr-title">Function-Aware Masking for Antibody LMs</h3><span class="pr-year">2026</span></div>
+              <div class="pr-head"><h3 class="pr-title">Function-Aware Masking for Antibody MLMs</h3></div>
               <p class="pr-desc">Studying whether biologically-informed masking algorithms improve self-supervised learning in antibody language models.</p>
             </div>
             <div class="pr-side">
