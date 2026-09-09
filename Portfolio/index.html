@@ -359,16 +359,16 @@
     color: var(--ink-3);
     margin-bottom: 10px;
   }
-  .cw-list { display: flex; flex-wrap: wrap; gap: 7px; align-items: flex-start; }
+  .cw-list { display: flex; flex-wrap: wrap; gap: 6px; align-items: flex-start; }
   .cw-list span {
-    font-size: 12.5px;
+    font-family: var(--mono);
+    font-size: 11px;
     line-height: 1.35;
     white-space: nowrap;
-    color: var(--ink-2);
-    background: var(--paper-2);
+    color: var(--ink-3);
     border: 1px solid var(--line);
     border-radius: var(--radius);
-    padding: 5px 11px;
+    padding: 3px 9px;
   }
 
   /* projects */
@@ -479,15 +479,15 @@
   .paper-authors { margin: 6px 0 0; font-size: 14.5px; line-height: 1.5; color: var(--ink-3); }
   .paper-authors .me { color: var(--accent-deep); font-weight: 600; }
   .paper-desc { margin: 10px 0 0; color: var(--ink-2); font-size: 14.5px; line-height: 1.5; max-width: 70ch; }
-  .paper-venue { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 13px; }
+  .paper-venue { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 13px; }
   .paper-venue span {
-    font-size: 12.5px;
-    line-height: 1.35;
-    color: var(--ink-2);
-    background: var(--paper-2);
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-3);
+    padding: 3px 9px;
     border: 1px solid var(--line);
     border-radius: var(--radius);
-    padding: 5px 11px;
+    white-space: nowrap;
   }
   .paper-side { display: flex; flex-direction: column; align-items: flex-end; gap: 11px; }
   .paper-side .date { padding-top: 0; }
@@ -638,8 +638,8 @@
       <nav class="nav">
         <a href="#about"><span class="idx">01</span><span class="rule"></span>About</a>
         <a href="#experience"><span class="idx">02</span><span class="rule"></span>Experience</a>
-        <a href="#research"><span class="idx">03</span><span class="rule"></span>Research</a>
-        <a href="#education"><span class="idx">04</span><span class="rule"></span>Education</a>
+        <a href="#education"><span class="idx">03</span><span class="rule"></span>Education</a>
+        <a href="#research"><span class="idx">04</span><span class="rule"></span>Research</a>
         <a href="#projects"><span class="idx">05</span><span class="rule"></span>Projects</a>
         <a href="#skills"><span class="idx">06</span><span class="rule"></span>Skills</a>
         <a href="#awards"><span class="idx">07</span><span class="rule"></span>Awards</a>
@@ -741,51 +741,9 @@
         </div>
       </section>
 
-      <!-- RESEARCH -->
-      <section id="research" class="reveal">
-        <div class="eyebrow"><span class="num">03</span> Research<span class="bar"></span></div>
-        <div class="papers">
-
-          <article class="paper">
-            <div class="paper-main">
-              <h3 class="paper-title">Learning Task-Specific Antibody Representations via Function-Aware Masking</h3>
-              <p class="paper-authors"><span class="me">Ayan Goel</span>, Thomas A. Walton, Amirali Aghazadeh</p>
-              <p class="paper-desc">Places mask corruption according to functional annotations rather than at random, yielding up to a 14% gain on structure-related tasks and a 5.9&times; gain on CDR-related tasks in antibody language models.</p>
-              <div class="paper-venue"><span>MLCB 2026</span><span>Oral presentation</span><span>arXiv:2609.00518</span></div>
-            </div>
-            <div class="paper-side">
-              <div class="date">Sep 2026</div>
-              <div class="project-links">
-                <a class="project-link" href="https://arxiv.org/abs/2609.00518" target="_blank" rel="noopener">Paper
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <article class="paper">
-            <div class="paper-main">
-              <h3 class="paper-title">Structure-Aware Masking for Protein Representation Learning</h3>
-              <p class="paper-authors">Thomas Walton, <span class="me">Ayan Goel</span>, Amirali Aghazadeh</p>
-              <p class="paper-desc">Bucket Masking selects residues by spatial proximity instead of uniformly at random, improving four downstream fitness prediction tasks by up to 14% and better capturing higher-order mutational interactions.</p>
-              <div class="paper-venue"><span>Preprint</span><span>arXiv:2605.16581</span></div>
-            </div>
-            <div class="paper-side">
-              <div class="date">May 2026</div>
-              <div class="project-links">
-                <a class="project-link" href="https://arxiv.org/abs/2605.16581" target="_blank" rel="noopener">Paper
-                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
-                </a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </section>
-
       <!-- EDUCATION -->
       <section id="education" class="reveal">
-        <div class="eyebrow"><span class="num">04</span> Education<span class="bar"></span></div>
+        <div class="eyebrow"><span class="num">03</span> Education<span class="bar"></span></div>
         <div class="stack">
 
           <article class="entry">
@@ -819,6 +777,48 @@
               <p class="entry-co">High School Diploma</p>
               <p class="entry-desc">Valedictorian of the class of 2024. </p>
               <div class="date">2020 - 2024</div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- RESEARCH -->
+      <section id="research" class="reveal">
+        <div class="eyebrow"><span class="num">04</span> Research<span class="bar"></span></div>
+        <div class="papers">
+
+          <article class="paper">
+            <div class="paper-main">
+              <h3 class="paper-title">Learning Task-Specific Antibody Representations via Function-Aware Masking</h3>
+              <p class="paper-authors"><span class="me">Ayan Goel</span>, Thomas Walton, Amirali Aghazadeh</p>
+              <p class="paper-desc">Places mask corruption according to functional annotations rather than at random, yielding up to a 5.9&times; gain on CDR-related tasks, with hybrid strategies that optimize across several functional objectives at once.</p>
+              <div class="paper-venue"><span>MLCB 2026</span><span>Oral presentation</span><span>arXiv:2609.00518</span></div>
+            </div>
+            <div class="paper-side">
+              <div class="date">Sep 2026</div>
+              <div class="project-links">
+                <a class="project-link" href="https://arxiv.org/abs/2609.00518" target="_blank" rel="noopener">Paper
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="paper">
+            <div class="paper-main">
+              <h3 class="paper-title">Structure-Aware Masking for Protein Representation Learning</h3>
+              <p class="paper-authors">Thomas Walton, <span class="me">Ayan Goel</span>, Amirali Aghazadeh</p>
+              <p class="paper-desc">Bucket Masking selects residues by spatial proximity instead of uniformly at random, improving four downstream fitness prediction tasks by up to 14% and better capturing higher-order mutational interactions.</p>
+              <div class="paper-venue"><span>Preprint</span><span>arXiv:2605.16581</span></div>
+            </div>
+            <div class="paper-side">
+              <div class="date">May 2026</div>
+              <div class="project-links">
+                <a class="project-link" href="https://arxiv.org/abs/2605.16581" target="_blank" rel="noopener">Paper
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                </a>
+              </div>
             </div>
           </article>
 
