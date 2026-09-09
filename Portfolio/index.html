@@ -30,6 +30,7 @@
     --ink-3: #a1a1aa;
     --line: #e4e4e7;
     --line-2: #d4d4d8;
+    --chip-ink: #6b6b75;
     --accent: #0a0a0a;
     --accent-deep: #000000;
     --accent-soft: rgba(0, 0, 0, 0.05);
@@ -333,9 +334,9 @@
   .entry-tags span {
     font-family: var(--mono);
     font-size: 11px;
-    color: var(--ink-3);
+    color: var(--chip-ink);
     padding: 3px 9px;
-    border: 1px solid var(--line);
+    border: 1px solid var(--line-2);
     border-radius: var(--radius);
   }
   .date {
@@ -365,8 +366,8 @@
     font-size: 11px;
     line-height: 1.35;
     white-space: nowrap;
-    color: var(--ink-3);
-    border: 1px solid var(--line);
+    color: var(--chip-ink);
+    border: 1px solid var(--line-2);
     border-radius: var(--radius);
     padding: 3px 9px;
   }
@@ -420,9 +421,9 @@
   .project-desc { margin: 9px 0 0; color: var(--ink-2); font-size: 14.5px; line-height: 1.55; flex: 1; }
   .project-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 18px; }
   .project-stack { display: flex; gap: 6px; flex-wrap: wrap; }
-  .project-stack span { font-family: var(--mono); font-size: 10.5px; color: var(--ink-3); }
+  .project-stack span { font-family: var(--mono); font-size: 10.5px; color: var(--chip-ink); }
   .project .project-stack { gap: 6px; }
-  .project .project-stack span { border: 1px solid var(--line); border-radius: var(--radius); padding: 3px 9px; white-space: nowrap; }
+  .project .project-stack span { border: 1px solid var(--line-2); border-radius: var(--radius); padding: 3px 9px; white-space: nowrap; }
   .project-links { display: flex; align-items: center; gap: 13px; flex-shrink: 0; }
   .project-gh { display: inline-flex; color: var(--ink-3); transition: color 0.2s ease, transform 0.2s ease; }
   .project-gh:hover { color: var(--ink); transform: translateY(-1px); }
@@ -456,7 +457,7 @@
   .pr-side { display: flex; flex-direction: column; align-items: flex-end; justify-content: space-between; gap: 11px; }
   .pr-side .project-stack { justify-content: flex-end; }
   .project-row .project-stack { gap: 6px; }
-  .project-row .project-stack span { border: 1px solid var(--line); border-radius: var(--radius); padding: 3px 9px; white-space: nowrap; }
+  .project-row .project-stack span { border: 1px solid var(--line-2); border-radius: var(--radius); padding: 3px 9px; white-space: nowrap; }
 
   /* research */
   .papers { display: flex; flex-direction: column; }
@@ -483,9 +484,9 @@
   .paper-venue span {
     font-family: var(--mono);
     font-size: 11px;
-    color: var(--ink-3);
+    color: var(--chip-ink);
     padding: 3px 9px;
-    border: 1px solid var(--line);
+    border: 1px solid var(--line-2);
     border-radius: var(--radius);
     white-space: nowrap;
   }
