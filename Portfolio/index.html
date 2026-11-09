@@ -292,7 +292,7 @@
     grid-template-columns: 1fr auto;
     grid-template-areas:
       "role date"
-      "co   co"
+      "co   date"
       "desc desc"
       "tags tags"
       "cw   cw";
@@ -322,7 +322,10 @@
     font-weight: 500;
   }
   .entry-co .sep { color: var(--ink-3); margin: 0 7px; }
-  .entry-co .loc { color: var(--ink-3); font-weight: 400; white-space: nowrap; }
+  .entry-co .loc { color: var(--ink-3); font-weight: 400; }
+  @media (min-width: 561px) {
+    .entry-co.computing { margin-right: -4rem; }
+  }
   .entry-desc {
     margin: 11px 0 0;
     color: var(--ink-2);
@@ -711,7 +714,7 @@
             <div class="logo bleed"><img src="assets/logo-gtcoc.jpeg" alt="Georgia Tech College of Computing" /></div>
             <div class="entry-body">
               <h3 class="entry-role">Teaching Assistant</h3>
-              <p class="entry-co">Georgia Tech, College of Computing<span class="sep">·</span><span class="loc">Atlanta, Georgia</span></p>
+              <p class="entry-co computing">Georgia Tech, College of Computing<span class="sep">·</span><span class="loc">Atlanta, Georgia</span></p>
               <p class="entry-desc">CS 4400: Database Systems. Teaching SQL and database fundamentals & design to 400+ students.</p>
               <div class="entry-tags"><span>SQL</span><span>Database Design</span><span>EERD</span></div>
               <div class="date">May 2026 - Present</div>
